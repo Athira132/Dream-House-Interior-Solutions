@@ -163,7 +163,7 @@ function initProjectsFilter() {
 
         setTimeout(() => {
           if (filterValue === 'all' || itemCategory === filterValue) {
-            item.style.display = 'block';
+            item.style.display = 'inline-block';
             setTimeout(() => {
               item.style.opacity = '1';
               item.style.transform = 'scale(1) translateY(0)';

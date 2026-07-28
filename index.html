@@ -131,9 +131,28 @@
         </div>
 
         <div class="about-visual">
-          <div class="photo-wrapper" style="aspect-ratio: 16/10; border-radius: 16px; box-shadow: var(--shadow-medium);">
-            <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Interior Design Studio Visual" loading="lazy">
-            <div class="photo-badge">PHOTO 25</div>
+          <div class="overlap-composition">
+            <!-- Large Main Photo: Photo 25 -->
+            <div class="comp-main">
+              <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+                <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Main Interior Visual" loading="lazy">
+                <div class="photo-badge">PHOTO 25</div>
+              </div>
+            </div>
+            <!-- Small Upper Right Overlapping Photo: Photo 15 -->
+            <div class="comp-small-top">
+              <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+                <img src="https://i.ibb.co/LD0jFmH1/Screenshot-2026-07-28-125646.png" alt="Overlapping Interior Detail" loading="lazy">
+                <div class="photo-badge">PHOTO 15</div>
+              </div>
+            </div>
+            <!-- Small Lower Right Overlapping Photo: Photo 21 -->
+            <div class="comp-small-bottom">
+              <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+                <img src="https://i.ibb.co/TxbDq8G6/Screenshot-2026-07-28-130630.png" alt="Overlapping Interior Detail" loading="lazy">
+                <div class="photo-badge">PHOTO 21</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -224,47 +243,91 @@
     </div>
   </section>
 
-  <!-- 3. Featured Projects Section (3 Project Cards - clean gallery only) -->
-  <section class="featured-projects" id="featured-gallery" style="background: rgba(15,15,18,0.3);">
+  <!-- 3. Our Work Section (Collage) -->
+  <section class="our-work-section" id="our-work" style="background: rgba(15,15,18,0.3);">
     <div class="container">
-      <div class="reveal-on-scroll" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <span class="eyebrow">Portfolio Teaser</span>
-        <h2 class="section-title">Selected Works</h2>
-        <p class="section-desc">We design spaces that look good and work better.</p>
+      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 2.5rem;">
+        <span class="eyebrow">Portfolio Collage</span>
+        <h2 class="section-title" style="margin-bottom: 0.5rem;">OUR WORK</h2>
       </div>
 
-      <div class="projects-masonry reveal-on-scroll delay-100 home-featured-grid" style="gap: 2rem; margin-bottom: 3.5rem;">
-        <!-- Project 1 (Featured Large TV Console - Photo 20) -->
-        <div class="project-item home-featured-large" style="margin-bottom: 0;">
-          <div class="project-thumbnail landscape" style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-small); margin-bottom: 0;">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="Luxury TV Console" loading="lazy">
+      <div class="compact-work-collage reveal-on-scroll delay-100">
+        <!-- Item 1 (PHOTO 20) -->
+        <div class="collage-item col-large">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="Interior Work" loading="lazy">
               <div class="photo-badge">PHOTO 20</div>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Project 2 (Modular Kitchen - Photo 01) -->
-        <div class="project-item" style="margin-bottom: 0;">
-          <div class="project-thumbnail landscape" style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-small); margin-bottom: 0;">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/jPbLt2rq/Screenshot-2026-07-28-125436.png" alt="Premium Modular Kitchen" loading="lazy">
+        <!-- Item 2 (PHOTO 01) -->
+        <div class="collage-item col-small">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/jPbLt2rq/Screenshot-2026-07-28-125436.png" alt="Interior Work" loading="lazy">
               <div class="photo-badge">PHOTO 01</div>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Project 3 (Bedroom - Photo 27) -->
-        <div class="project-item" style="margin-bottom: 0;">
-          <div class="project-thumbnail landscape" style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-small); margin-bottom: 0;">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" alt="Luxury Bedroom Suite" loading="lazy">
+        <!-- Item 3 (PHOTO 07) -->
+        <div class="collage-item col-small">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/LXkNkymY/Screenshot-2026-07-28-130733.png" alt="Interior Work" loading="lazy">
+              <div class="photo-badge">PHOTO 07</div>
+            </div>
+          </a>
+        </div>
+        <!-- Item 4 (PHOTO 27) -->
+        <div class="collage-item col-large">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" alt="Interior Work" loading="lazy">
               <div class="photo-badge">PHOTO 27</div>
             </div>
-          </div>
+          </a>
+        </div>
+        <!-- Item 5 (PHOTO 10) -->
+        <div class="collage-item col-small">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/zW1q1tFQ/Screenshot-2026-07-28-130153.png" alt="Interior Work" loading="lazy">
+              <div class="photo-badge">PHOTO 10</div>
+            </div>
+          </a>
+        </div>
+        <!-- Item 6 (PHOTO 16) -->
+        <div class="collage-item col-wide">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/NdKrNntr/Screenshot-2026-07-28-130826.png" alt="Interior Work" loading="lazy">
+              <div class="photo-badge">PHOTO 16</div>
+            </div>
+          </a>
+        </div>
+        <!-- Item 7 (PHOTO 22) -->
+        <div class="collage-item col-small">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/Zp3s9Lrv/Screenshot-2026-07-28-125457.png" alt="Interior Work" loading="lazy">
+              <div class="photo-badge">PHOTO 22</div>
+            </div>
+          </a>
+        </div>
+        <!-- Item 8 (PHOTO 03) -->
+        <div class="collage-item col-small">
+          <a href="projects.html" class="collage-link">
+            <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
+              <img src="https://i.ibb.co/KcD7TLD0/Screenshot-2026-07-28-130656.png" alt="Interior Work" loading="lazy">
+              <div class="photo-badge">PHOTO 03</div>
+            </div>
+          </a>
         </div>
       </div>
 
-      <div class="reveal-on-scroll delay-200" style="text-align: center;">
-        <a href="projects.html" class="btn btn-outline-gold">View All Projects</a>
+      <div class="reveal-on-scroll delay-200" style="text-align: center; margin-top: 2.5rem;">
+        <a href="projects.html" class="btn btn-outline-gold" style="font-size: 0.8rem; letter-spacing: 0.15em; padding: 0.9rem 2.2rem;">VIEW ALL PROJECTS</a>
       </div>
     </div>
   </section>

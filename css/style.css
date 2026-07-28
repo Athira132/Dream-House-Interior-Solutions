@@ -666,13 +666,13 @@ header.site-header.scrolled .logo-img {
 }
 
 section {
-  padding: 5.5rem 0;
+  padding: 4.5rem 0;
   position: relative;
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
   }
 }
 
@@ -2109,62 +2109,348 @@ html {
   transform: scale(1.0);
 }
 
-/* 4. Branded Social Media Icons in Footer */
+/* 4. Branded Social Media Icons in Footer (High Contrast, Color-Accurate, 44px circular) */
+.social-icon-btn {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+.social-icon-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: #ffffff !important;
+}
+
 .social-icon-btn[aria-label="Facebook"] {
-  color: #1877F2 !important;
-  border-color: rgba(24, 119, 242, 0.3) !important;
+  background: #1877F2 !important;
 }
 .social-icon-btn[aria-label="Facebook"]:hover {
-  color: #ffffff !important;
-  background: #1877F2 !important;
-  border-color: #1877F2 !important;
-  box-shadow: 0 0 15px rgba(24, 119, 242, 0.4) !important;
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(24, 119, 242, 0.6) !important;
 }
 
 .social-icon-btn[aria-label="Instagram"] {
-  color: #E4405F !important;
-  border-color: rgba(228, 64, 95, 0.3) !important;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
 }
 .social-icon-btn[aria-label="Instagram"]:hover {
-  color: #ffffff !important;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-  border-color: transparent !important;
-  box-shadow: 0 0 15px rgba(228, 64, 95, 0.4) !important;
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(228, 64, 95, 0.6) !important;
 }
 
 .social-icon-btn[aria-label="YouTube"] {
-  color: #FF0000 !important;
-  border-color: rgba(255, 0, 0, 0.3) !important;
+  background: #FF0000 !important;
 }
 .social-icon-btn[aria-label="YouTube"]:hover {
-  color: #ffffff !important;
-  background: #FF0000 !important;
-  border-color: #FF0000 !important;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4) !important;
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6) !important;
 }
 
 .social-icon-btn[aria-label="WhatsApp"] {
-  color: #25D366 !important;
-  border-color: rgba(37, 211, 102, 0.3) !important;
+  background: #25D366 !important;
 }
 .social-icon-btn[aria-label="WhatsApp"]:hover {
-  color: #ffffff !important;
-  background: #25D366 !important;
-  border-color: #25D366 !important;
-  box-shadow: 0 0 15px rgba(37, 211, 102, 0.4) !important;
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6) !important;
 }
 
-/* 5. Custom Grid for Home Page Selected Works */
-@media (min-width: 768px) {
-  .home-featured-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+.social-icon-btn[aria-label="Email"] {
+  background: #EA4335 !important;
+}
+.social-icon-btn[aria-label="Email"]:hover {
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(234, 67, 53, 0.6) !important;
+}
+
+.social-icon-btn[aria-label="Google Maps"] {
+  background: #4285F4 !important;
+}
+.social-icon-btn[aria-label="Google Maps"]:hover {
+  transform: scale(1.12) translateY(-2px) !important;
+  box-shadow: 0 0 20px rgba(66, 133, 244, 0.6) !important;
+}
+
+/* 5. Overlapping Composition (About Studio) */
+.overlap-composition {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+.comp-main {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 72%;
+  height: 80%;
+  z-index: 2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.comp-small-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 45%;
+  z-index: 3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  border: 4px solid #0A0A0C; /* gap matching page background */
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.comp-small-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  width: 38%;
+  height: 42%;
+  z-index: 3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  border: 4px solid #0A0A0C; /* gap matching page background */
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.overlap-composition:hover .comp-main {
+  transform: scale(1.02);
+}
+.overlap-composition:hover .comp-small-top {
+  transform: translate(6px, -6px) scale(1.04);
+}
+.overlap-composition:hover .comp-small-bottom {
+  transform: translate(6px, 6px) scale(1.04);
+}
+
+@media (max-width: 991px) {
+  .overlap-composition {
+    height: 340px;
+    max-width: 480px;
   }
-  .home-featured-large {
-    grid-column: span 2 !important;
+}
+@media (max-width: 480px) {
+  .overlap-composition {
+    height: 260px;
+    max-width: 320px;
   }
-  .home-featured-large .project-thumbnail {
-    aspect-ratio: 21/9 !important;
+  .comp-small-top, .comp-small-bottom {
+    border-width: 2px;
+  }
+}
+
+/* 6. Compact Collage (Homepage OUR WORK) */
+.compact-work-collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+.collage-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--shadow-small);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+}
+.collage-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+  z-index: 5;
+}
+.collage-item .photo-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.collage-item:hover img {
+  transform: scale(1.08);
+}
+.collage-item.col-large {
+  grid-column: span 2;
+  grid-row: span 2;
+  aspect-ratio: 1;
+}
+.collage-item.col-small {
+  grid-column: span 1;
+  grid-row: span 1;
+  aspect-ratio: 1;
+}
+.collage-item.col-wide {
+  grid-column: span 2;
+  grid-row: span 1;
+  aspect-ratio: 2/1;
+}
+
+@media (max-width: 991px) {
+  .compact-work-collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .collage-item.col-large,
+  .collage-item.col-wide,
+  .collage-item.col-small {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 4/3;
+  }
+}
+@media (max-width: 575px) {
+  .compact-work-collage {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .collage-item.col-large,
+  .collage-item.col-wide,
+  .collage-item.col-small {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 16/10;
+  }
+}
+
+/* 7. About Editorial Grid (about.html) */
+.about-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 220px);
+  gap: 1.5rem;
+  position: relative;
+}
+.editorial-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease, z-index 0.3s;
+}
+.editorial-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  z-index: 10 !important;
+}
+.editorial-item .photo-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.editorial-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-item:hover img {
+  transform: scale(1.08);
+}
+.editorial-item.item-1 {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.editorial-item.item-2 {
+  grid-column: 4 / 8;
+  grid-row: 1 / 3;
+  z-index: 2;
+  border: 4px solid #0A0A0C;
+}
+.editorial-item.item-3 {
+  grid-column: 8 / 13;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.editorial-item.item-4 {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  z-index: 3;
+  border: 4px solid #0A0A0C;
+}
+.editorial-item.item-5 {
+  grid-column: 8 / 12;
+  grid-row: 2 / 3;
+  z-index: 2;
+  border: 4px solid #0A0A0C;
+}
+
+@media (max-width: 991px) {
+  .about-editorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.2rem;
+  }
+  .editorial-item.item-1,
+  .editorial-item.item-2,
+  .editorial-item.item-3,
+  .editorial-item.item-4,
+  .editorial-item.item-5 {
+    grid-column: span 1;
+    grid-row: auto;
+    border: none;
+    aspect-ratio: 4/3;
+  }
+}
+@media (max-width: 575px) {
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+  .editorial-item {
+    aspect-ratio: 16/10;
+  }
+}
+
+/* 8. Projects Page Masonry (projects.html) */
+.projects-masonry {
+  column-count: 3;
+  column-gap: 1.2rem;
+  width: 100%;
+}
+.projects-masonry .project-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  break-inside: avoid;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+  position: relative;
+  cursor: pointer;
+}
+.projects-masonry .project-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  z-index: 5;
+}
+.projects-masonry .project-item img {
+  width: 100%;
+  height: auto !important;
+  display: block;
+  object-fit: contain !important;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.projects-masonry .project-item:hover img {
+  transform: scale(1.05) translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .projects-masonry {
+    column-count: 2;
+  }
+}
+@media (max-width: 600px) {
+  .projects-masonry {
+    column-count: 1;
   }
 }
 
