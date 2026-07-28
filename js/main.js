@@ -1,38 +1,39 @@
 /**
- * Dream House Interior Solutions - Core Logic
+ * Dream House Interior Solutions - Polished Core Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initMobileMenu();
+  initMobileAccordion();
   initScrollAnimations();
   initHeroParallax();
   initProjectsFilter();
   initProjectModal();
   initContactForm();
   initFloatingButtons();
+  initFAQAccordion();
+  initCursorGlow();
 });
 
-/* Navigation Bar States */
+/* Navigation Bar scrolled state */
 function initNavigation() {
   const header = document.querySelector('.site-header');
-  
   if (!header) return;
 
   const checkScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 40) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
   };
 
-  // Initial check
   checkScroll();
   window.addEventListener('scroll', checkScroll);
 }
 
-/* Mobile Toggle and Menu Drawer */
+/* Mobile Toggle and drawer */
 function initMobileMenu() {
   const toggle = document.querySelector('.mobile-toggle');
   const panel = document.querySelector('.mobile-nav-panel');
@@ -46,8 +47,10 @@ function initMobileMenu() {
   });
 
   // Close panel on link click
-  const navLinks = panel.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
+  const navLinks = panel.querySelectorAll('.nav-link:not(.mobile-dropdown-header)');
+  const submenuLinks = panel.querySelectorAll('.mobile-submenu-link');
+  
+  [...navLinks, ...submenuLinks].forEach(link => {
     link.addEventListener('click', () => {
       toggle.classList.remove('active');
       panel.classList.remove('active');
@@ -63,23 +66,36 @@ function initMobileMenu() {
   });
 }
 
-/* Scroll Triggered reveal animation using Intersection Observer */
+/* Mobile submenu accordion toggling */
+function initMobileAccordion() {
+  const subheader = document.querySelector('.mobile-dropdown-header');
+  const submenu = document.querySelector('.mobile-submenu');
+
+  if (!subheader || !submenu) return;
+
+  subheader.addEventListener('click', (e) => {
+    e.preventDefault();
+    subheader.classList.toggle('active');
+    submenu.classList.toggle('active');
+  });
+}
+
+/* Scroll reveals */
 function initScrollAnimations() {
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
-  
   if (revealElements.length === 0) return;
 
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.15
+    threshold: 0.12
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('reveal-visible');
-        observer.unobserve(entry.target); // Animates once
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
@@ -89,7 +105,7 @@ function initScrollAnimations() {
   });
 }
 
-/* Hero Background Parallax & Cinematic Slow Zoom */
+/* Slow parallax background scroll */
 function initHeroParallax() {
   const heroImage = document.querySelector('.hero-background img');
   if (!heroImage) return;
@@ -97,13 +113,12 @@ function initHeroParallax() {
   window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset;
     // Parallax speed modifier
-    const yTranslation = scrollPosition * 0.3;
-    // Apply translate and subtle scale
-    heroImage.style.transform = `translateY(${yTranslation}px) scale(1.02)`;
+    const yTranslation = scrollPosition * 0.25;
+    heroImage.style.transform = `translateY(${yTranslation}px)`;
   });
 }
 
-/* Projects Filtering Logic */
+/* Projects page categories selector */
 function initProjectsFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectItems = document.querySelectorAll('.project-item');
@@ -112,7 +127,6 @@ function initProjectsFilter() {
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle Active button styling
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -121,10 +135,10 @@ function initProjectsFilter() {
       projectItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category');
         
-        // Stagger fade out and in
         item.style.opacity = '0';
-        item.style.transform = 'scale(0.95) translateY(10px)';
-        
+        item.style.transform = 'scale(0.96) translateY(8px)';
+        item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+
         setTimeout(() => {
           if (filterValue === 'all' || itemCategory === filterValue) {
             item.style.display = 'block';
@@ -135,18 +149,18 @@ function initProjectsFilter() {
           } else {
             item.style.display = 'none';
           }
-        }, 300);
+        }, 350);
       });
     });
   });
 }
 
-/* Fullscreen Project Modal Preview */
+/* Projects details preview overlay */
 function initProjectModal() {
   const projectItems = document.querySelectorAll('.project-item');
   const modal = document.querySelector('.project-modal');
   const closeBtn = document.querySelector('.modal-close');
-  
+
   if (!modal) return;
 
   const modalTitle = modal.querySelector('.modal-title');
@@ -155,7 +169,7 @@ function initProjectModal() {
   const modalValueArea = modal.querySelector('.meta-value-area');
   const modalValueYear = modal.querySelector('.meta-value-year');
   const modalPlaceholderTitle = modal.querySelector('.modal-placeholder .glass-placeholder-title');
-  
+
   projectItems.forEach(item => {
     item.addEventListener('click', () => {
       const title = item.querySelector('.project-title').textContent;
@@ -164,20 +178,18 @@ function initProjectModal() {
       const area = item.getAttribute('data-area') || 'N/A';
       const year = item.getAttribute('data-year') || '2026';
 
-      // Set values inside modal
       modalTitle.textContent = title;
       modalValueCategory.textContent = category;
       modalValueLocation.textContent = location;
       modalValueArea.textContent = area;
       modalValueYear.textContent = year;
-      
+
       if (modalPlaceholderTitle) {
-        modalPlaceholderTitle.textContent = `${title} Image`;
+        modalPlaceholderTitle.textContent = `${title} Work`;
       }
 
-      // Show Modal
       modal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Stop background scrolling
+      document.body.style.overflow = 'hidden';
     });
   });
 
@@ -196,7 +208,6 @@ function initProjectModal() {
     }
   });
 
-  // ESC key listener
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
       closeModal();
@@ -204,12 +215,11 @@ function initProjectModal() {
   });
 }
 
-/* Floating Actions visibility */
+/* Floating Action buttons visibility threshold */
 function initFloatingButtons() {
   const floaters = document.querySelector('.floating-ctas');
   if (!floaters) return;
 
-  // Start hidden, display after passing 300px scroll depth
   floaters.style.opacity = '0';
   floaters.style.pointerEvents = 'none';
   floaters.style.transition = 'opacity 0.4s ease';
@@ -225,7 +235,29 @@ function initFloatingButtons() {
   });
 }
 
-/* Premium Form validation & WhatsApp Submit formulating */
+/* FAQ Collapsible Accordions */
+function initFAQAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length === 0) return;
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close other items
+      faqItems.forEach(i => i.classList.remove('active'));
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+}
+
+/* WhatsApp Enquiry Redirect formulation */
 function initContactForm() {
   const form = document.getElementById('enquiryForm');
   if (!form) return;
@@ -240,32 +272,29 @@ function initContactForm() {
     const message = document.getElementById('formMessage').value.trim();
 
     if (!name || !phone || !service) {
-      alert('Please fill out all required fields (Name, Phone, and Service Interested In).');
+      alert('Please complete all required fields (Name, Phone, and Service selection).');
       return;
     }
 
-    // Build Premium WhatsApp Enquiry Text
-    const whatsappText = `Hello Dream House Solutions, I would like to make an enquiry:
+    const whatsappText = `Hello Dream House Solutions, I've prepared a project inquiry:
     
 - *Name*: ${name}
 - *Phone*: ${phone}
 - *Email*: ${email || 'Not provided'}
-- *Service Interested In*: ${service}
-- *Message*: ${message || 'No additional details.'}`;
+- *Service*: ${service}
+- *Details*: ${message || 'No additional specifications.'}`;
 
     const encodedText = encodeURIComponent(whatsappText);
     const whatsappURL = `https://wa.me/917012242265?text=${encodedText}`;
 
-    // Show nice premium confirmation overlay inside button
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
-    
+
     submitBtn.innerHTML = 'PREPARING ENQUIRY...';
     submitBtn.disabled = true;
 
     setTimeout(() => {
-      submitBtn.innerHTML = 'REDIRECTING TO WHATSAPP...';
-      
+      submitBtn.innerHTML = 'OPENING WHATSAPP...';
       setTimeout(() => {
         window.open(whatsappURL, '_blank');
         submitBtn.innerHTML = originalText;
@@ -273,5 +302,19 @@ function initContactForm() {
         form.reset();
       }, 1000);
     }, 800);
+  });
+}
+
+/* luxury cursor glow interaction tracking */
+function initCursorGlow() {
+  if (window.innerWidth < 992) return;
+
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  document.body.appendChild(glow);
+
+  document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
   });
 }

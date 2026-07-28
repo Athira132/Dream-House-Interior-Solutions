@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Dream House Interior Solutions</title>
-  <meta name="description" content="Get in touch with Dream House Interior Solutions in Pattambi, Kerala for design quotes, consulting, and layout planning.">
+  <meta name="description" content="Get in touch with Dream House Interior Solutions in Pattambi, Kerala for design quotes and layout consulting.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,6 +20,36 @@
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
+        
+        <!-- Services Mega Menu Link -->
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Services <span style="font-size:0.6rem; vertical-align:middle;">&#9662;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Core Architecture</h4>
+                <a href="services/designing.html" class="mega-menu-link">Designing</a>
+                <a href="services/planning-contracting.html" class="mega-menu-link">Planning & Contracting</a>
+                <a href="services/gypsum-pop.html" class="mega-menu-link">Gypsum & POP Work</a>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Residential Areas</h4>
+                <a href="services/living-room.html" class="mega-menu-link">Living Room Interior</a>
+                <a href="services/bedroom.html" class="mega-menu-link">Bedroom Interior</a>
+                <a href="services/modular-kitchen.html" class="mega-menu-link">Modular Kitchen Design</a>
+                <a href="services/bathroom-vanity.html" class="mega-menu-link">Bathroom & Vanity Design</a>
+                <a href="services/wardrobes.html" class="mega-menu-link">Wardrobes & Storage</a>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Specialized Fitouts</h4>
+                <a href="services/commercial.html" class="mega-menu-link">Office & Commercial</a>
+                <a href="services/glass-partition.html" class="mega-menu-link">Glass Partition</a>
+                <a href="services/wooden-door.html" class="mega-menu-link">Wooden Door</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a href="projects.html" class="nav-link">Projects</a>
         <a href="contact.html" class="nav-link active">Contact Us</a>
       </nav>
@@ -40,6 +70,24 @@
   <div class="mobile-nav-panel">
     <a href="index.html" class="nav-link">Home</a>
     <a href="about.html" class="nav-link">About Us</a>
+    <div>
+      <a href="#" class="nav-link mobile-dropdown-header">Services 
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+      <div class="mobile-submenu">
+        <a href="services/designing.html" class="mobile-submenu-link">Designing</a>
+        <a href="services/planning-contracting.html" class="mobile-submenu-link">Planning & Contracting</a>
+        <a href="services/living-room.html" class="mobile-submenu-link">Living Room Interior</a>
+        <a href="services/bedroom.html" class="mobile-submenu-link">Bedroom Interior</a>
+        <a href="services/modular-kitchen.html" class="mobile-submenu-link">Modular Kitchen Design</a>
+        <a href="services/bathroom-vanity.html" class="mobile-submenu-link">Bathroom & Vanity Design</a>
+        <a href="services/wardrobes.html" class="mobile-submenu-link">Wardrobes & Storage</a>
+        <a href="services/commercial.html" class="mobile-submenu-link">Office & Commercial</a>
+        <a href="services/gypsum-pop.html" class="mobile-submenu-link">Gypsum & POP Work</a>
+        <a href="services/glass-partition.html" class="mobile-submenu-link">Glass Partition</a>
+        <a href="services/wooden-door.html" class="mobile-submenu-link">Wooden Door</a>
+      </div>
+    </div>
     <a href="projects.html" class="nav-link">Projects</a>
     <a href="contact.html" class="nav-link active">Contact Us</a>
     <a href="contact.html" class="btn btn-primary">Get a Quote</a>
@@ -47,28 +95,27 @@
 
   <!-- Contact Hero Header -->
   <section class="service-hero" style="height: 40vh;">
-    <div class="service-hero-overlay" style="background: rgba(10,10,11,0.9);"></div>
+    <div class="service-hero-overlay" style="background: rgba(10,10,12,0.95);"></div>
     <div class="service-hero-content">
       <span class="eyebrow">Get in Touch</span>
       <h1 class="service-hero-title">Start Your Design Journey</h1>
-      <p class="service-hero-desc">Have a residential or commercial workspace that needs premium interior planning? Let's connect.</p>
+      <p class="service-hero-desc">Connect with our design team for site assessments and custom structural pricing estimates.</p>
     </div>
   </section>
 
   <!-- Main Contact Block Grid -->
-  <section style="padding: 4rem 0;">
+  <section>
     <div class="container">
       <div class="contact-grid reveal-on-scroll">
         
         <!-- Contact Info column -->
         <div class="contact-info-block">
           <div>
-            <h2 style="font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 1.5rem;">Contact Information</h2>
-            <p style="margin-bottom: 2rem;">Reach out directly for projects in Palakkad, Malappuram, and Thrissur. We respond to design layouts and estimates promptly.</p>
+            <h2 style="font-family: var(--font-serif); font-size: 2.4rem; margin-bottom: 1.25rem;">Contact Details</h2>
+            <p>Reach out directly for projects in Palakkad, Malappuram, and Thrissur. We respond to design layouts and estimates promptly.</p>
           </div>
 
           <div class="contact-details-list">
-            <!-- Address Item -->
             <div class="contact-detail-item">
               <div class="contact-detail-icon">
                 <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
@@ -78,17 +125,15 @@
                 <p class="contact-detail-value">HS Road, Pattambi, Palakkad Dt, Kerala, PIN: 679303</p>
               </div>
             </div>
-            <!-- Email Item -->
             <div class="contact-detail-item">
               <div class="contact-detail-icon">
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
-                <h4 class="contact-detail-title">Email Enquiries</h4>
+                <h4 class="contact-detail-title">Email Us</h4>
                 <p class="contact-detail-value"><a href="mailto:dreamhouseinteriorsolution@gmail.com">dreamhouseinteriorsolution@gmail.com</a></p>
               </div>
             </div>
-            <!-- WhatsApp Item -->
             <div class="contact-detail-item">
               <div class="contact-detail-icon" style="color: #25d366; border-color: rgba(37,211,102,0.2);">
                 <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
@@ -98,7 +143,6 @@
                 <p class="contact-detail-value"><a href="https://wa.me/917012242265" target="_blank">+91 70122 42265</a></p>
               </div>
             </div>
-            <!-- Phone Item -->
             <div class="contact-detail-item">
               <div class="contact-detail-icon">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -149,7 +193,7 @@
 
           <div class="form-group">
             <label class="form-label" for="formMessage">Project Message / Outline</label>
-            <textarea id="formMessage" class="form-control" placeholder="Tell us about your space dimensions, layout preferences, and budget constraints..."></textarea>
+            <textarea id="formMessage" class="form-control" placeholder="Describe room profiles, space layouts, etc..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
@@ -160,7 +204,7 @@
   </section>
 
   <!-- Location Map Card -->
-  <section style="padding: 2rem 0 6rem; background: rgba(15,15,18,0.5);">
+  <section style="background: rgba(15,15,18,0.5);">
     <div class="container">
       <div class="map-card glass-card reveal-on-scroll">
         <div class="map-wrapper">
@@ -187,15 +231,12 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Footer Column 1: Info -->
         <div class="footer-info">
           <a href="index.html" class="logo-text">
             Dream House
             <span>Interior Solutions</span>
           </a>
-          <p class="footer-tagline">
-            Bespoke interior execution services, creating space harmonies that stand the test of time.
-          </p>
+          <p class="footer-tagline">Bespoke interior execution services, creating space harmonies that stand the test of time.</p>
           <div class="footer-social-links">
             <a href="https://www.facebook.com/profile.php?id=100064077821686" target="_blank" class="social-icon-btn" aria-label="Facebook">
               <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -208,8 +249,6 @@
             </a>
           </div>
         </div>
-
-        <!-- Footer Column 2: Quick Links -->
         <div>
           <h4 class="footer-column-title">Company</h4>
           <ul class="footer-links-list">
@@ -219,38 +258,25 @@
             <li><a href="contact.html" class="footer-link">Get in Touch</a></li>
           </ul>
         </div>
-
-        <!-- Footer Column 3: Services -->
         <div>
           <h4 class="footer-column-title">Services</h4>
           <ul class="footer-links-list">
             <li><a href="services/designing.html" class="footer-link">Interior Design</a></li>
             <li><a href="services/modular-kitchen.html" class="footer-link">Modular Kitchens</a></li>
-            <li><a href="services/living-room-interior.html" class="footer-link">Living Room Interiors</a></li>
-            <li><a href="services/office-commercial.html" class="footer-link">Commercial Office</a></li>
+            <li><a href="services/living-room.html" class="footer-link">Living Room Interiors</a></li>
+            <li><a href="services/commercial.html" class="footer-link">Commercial Office</a></li>
           </ul>
         </div>
-
-        <!-- Footer Column 4: Contact -->
         <div>
           <h4 class="footer-column-title">Contact</h4>
-          <ul class="footer-links-list" style="font-size: 0.9rem; color: var(--text-secondary);">
+          <ul class="footer-links-list" style="font-size: 0.95rem; color: var(--text-secondary);">
             <li style="line-height: 1.5;">HS Road, Pattambi,<br>Palakkad Dt, Kerala</li>
             <li>Phone: +91 80865 60895</li>
-            <li>WhatsApp: +91 70122 42265</li>
           </ul>
         </div>
       </div>
-
-      <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <p class="footer-copyright">
-          &copy; 2026 Dream House Interior Solutions. All Rights Reserved.
-        </p>
-        <div class="footer-bottom-links">
-          <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          <a href="#" class="footer-bottom-link">Terms of Service</a>
-        </div>
+        <p class="footer-copyright">&copy; 2026 Dream House Interior Solutions. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
