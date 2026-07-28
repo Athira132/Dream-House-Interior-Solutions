@@ -2130,6 +2130,13 @@ html {
   text-align: center;
   padding-top: 130px !important;
   padding-bottom: 45px !important;
+  overflow: hidden !important;
+}
+.service-hero-bg img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
 }
 
 /* 3. Image visibility and original aspect ratios */
@@ -2464,48 +2471,175 @@ html {
   }
 }
 
-/* 8. Projects Page Masonry (projects.html) */
-.projects-masonry {
-  column-count: 3;
-  column-gap: 1.2rem;
+/* 8. Projects Page Asymmetric Grid (projects.html) */
+.projects-asymmetric-grid {
+  display: flex;
+  gap: 6px;
   width: 100%;
 }
-.projects-masonry .project-item {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 1.2rem;
-  break-inside: avoid;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+.projects-col-left {
+  flex: 26%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.projects-col-center {
+  flex: 44%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.projects-col-right {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.projects-asymmetric-grid .project-item {
   position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #080809;
   cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
 }
-.projects-masonry .project-item:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-  z-index: 5;
+.projects-asymmetric-grid .project-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+  z-index: 10;
 }
-.projects-masonry .project-item img {
+.projects-asymmetric-grid .project-item img {
   width: 100%;
   height: auto !important;
   display: block;
   object-fit: contain !important;
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.projects-masonry .project-item:hover img {
-  transform: scale(1.05) translateY(-2px);
+.projects-asymmetric-grid .project-item:hover img {
+  transform: scale(1.04);
 }
 
 @media (max-width: 991px) {
-  .projects-masonry {
-    column-count: 2;
+  .projects-asymmetric-grid {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .projects-col-left {
+    flex: 48%;
+  }
+  .projects-col-right {
+    flex: 48%;
+  }
+  .projects-col-center {
+    flex: 100%;
+    order: -1; /* Put the large main center images on top for tablet/mobile */
   }
 }
-@media (max-width: 600px) {
-  .projects-masonry {
-    column-count: 1;
+@media (max-width: 575px) {
+  .projects-col-left,
+  .projects-col-center,
+  .projects-col-right {
+    flex: 100%;
   }
+  .projects-asymmetric-grid {
+    gap: 10px;
+  }
+}
+
+/* 9. Compact 6-Photo Homepage Collage */
+.home-collage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 100%;
+}
+.collage-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.collage-img-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #080809;
+}
+.collage-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.collage-img-wrapper:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .home-collage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .home-collage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 10. Directional Scroll Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  will-change: transform, opacity;
+}
+
+/* Default/Up direction */
+.reveal-on-scroll.reveal-up {
+  transform: translateY(40px);
+}
+.reveal-on-scroll.reveal-up.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Left direction */
+.reveal-on-scroll.reveal-left {
+  transform: translateX(-40px);
+}
+.reveal-on-scroll.reveal-left.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right direction */
+.reveal-on-scroll.reveal-right {
+  transform: translateX(40px);
+}
+.reveal-on-scroll.reveal-right.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale & Fade direction */
+.reveal-on-scroll.reveal-scale {
+  transform: scale(0.93);
+}
+.reveal-on-scroll.reveal-scale.reveal-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Fallback default if no direction specified */
+.reveal-on-scroll:not(.reveal-left):not(.reveal-right):not(.reveal-scale):not(.reveal-up) {
+  transform: translateY(40px);
+}
+.reveal-on-scroll:not(.reveal-left):not(.reveal-right):not(.reveal-scale):not(.reveal-up).reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
