@@ -181,16 +181,17 @@ function initProjectsFilter() {
 function initProjectModal() {
   const projectItems = document.querySelectorAll('.project-item');
   const modal = document.querySelector('.project-modal');
-  const closeBtn = document.querySelector('.modal-close');
+  const closeBtn = document.querySelector('.modal-close') || document.querySelector('.project-modal-close');
 
   if (!modal) return;
 
-  const modalTitle = modal.querySelector('.modal-title');
+  const modalTitle = modal.querySelector('.project-modal-title');
   const modalValueCategory = modal.querySelector('.meta-value-category');
   const modalValueLocation = modal.querySelector('.meta-value-location');
   const modalValueArea = modal.querySelector('.meta-value-area');
   const modalValueYear = modal.querySelector('.meta-value-year');
-  const modalPlaceholderTitle = modal.querySelector('.modal-placeholder .glass-placeholder-title');
+  const modalImg = modal.querySelector('#modalProjectImg');
+  const modalBadge = modal.querySelector('#modalProjectBadge');
 
   projectItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -199,6 +200,9 @@ function initProjectModal() {
       const location = item.querySelector('.project-location').textContent;
       const area = item.getAttribute('data-area') || 'N/A';
       const year = item.getAttribute('data-year') || '2026';
+      
+      const img = item.querySelector('img');
+      const badge = item.querySelector('.photo-badge');
 
       modalTitle.textContent = title;
       modalValueCategory.textContent = category;
@@ -206,8 +210,15 @@ function initProjectModal() {
       modalValueArea.textContent = area;
       modalValueYear.textContent = year;
 
-      if (modalPlaceholderTitle) {
-        modalPlaceholderTitle.textContent = `${title} Work`;
+      if (modalImg && img) {
+        modalImg.src = img.src;
+        modalImg.alt = title;
+      }
+      if (modalBadge && badge) {
+        modalBadge.textContent = badge.textContent;
+        modalBadge.style.display = 'block';
+      } else if (modalBadge) {
+        modalBadge.style.display = 'none';
       }
 
       modal.classList.add('active');
