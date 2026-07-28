@@ -636,13 +636,13 @@ header.site-header.scrolled {
 }
 
 section {
-  padding: 7.5rem 0;
+  padding: 5.5rem 0;
   position: relative;
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 6.25rem 0;
+    padding: 4.5rem 0;
   }
 }
 
