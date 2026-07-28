@@ -185,34 +185,17 @@ function initProjectModal() {
 
   if (!modal) return;
 
-  const modalTitle = modal.querySelector('.project-modal-title');
-  const modalValueCategory = modal.querySelector('.meta-value-category');
-  const modalValueLocation = modal.querySelector('.meta-value-location');
-  const modalValueArea = modal.querySelector('.meta-value-area');
-  const modalValueYear = modal.querySelector('.meta-value-year');
   const modalImg = modal.querySelector('#modalProjectImg');
   const modalBadge = modal.querySelector('#modalProjectBadge');
 
   projectItems.forEach(item => {
     item.addEventListener('click', () => {
-      const title = item.querySelector('.project-title').textContent;
-      const category = item.querySelector('.project-category').textContent;
-      const location = item.querySelector('.project-location').textContent;
-      const area = item.getAttribute('data-area') || 'N/A';
-      const year = item.getAttribute('data-year') || '2026';
-      
       const img = item.querySelector('img');
       const badge = item.querySelector('.photo-badge');
 
-      modalTitle.textContent = title;
-      modalValueCategory.textContent = category;
-      modalValueLocation.textContent = location;
-      modalValueArea.textContent = area;
-      modalValueYear.textContent = year;
-
       if (modalImg && img) {
         modalImg.src = img.src;
-        modalImg.alt = title;
+        modalImg.alt = img.alt || 'Project Visual';
       }
       if (modalBadge && badge) {
         modalBadge.textContent = badge.textContent;

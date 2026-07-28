@@ -330,15 +330,28 @@ header.site-header.scrolled {
 }
 
 .logo-img {
-  height: 52px;
+  height: 72px;
   width: auto;
   display: block;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
+}
+
+header.site-header.scrolled .logo-img {
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 52px;
+  }
+  header.site-header.scrolled .logo-img {
+    height: 46px;
+  }
 }
 
 .logo-img:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+  opacity: 0.95;
+  transform: scale(1.01);
 }
 
 .logo-text span {
