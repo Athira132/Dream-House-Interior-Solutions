@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFloatingButtons();
   initFAQAccordion();
   initCursorGlow();
+  initBookingPopup();
 });
 
 /* Navigation Bar scrolled state */
@@ -31,6 +32,27 @@ function initNavigation() {
 
   checkScroll();
   window.addEventListener('scroll', checkScroll);
+
+  // Smooth scroll for nav "Contact Us" buttons targeting contact anchor
+  const contactLinks = document.querySelectorAll('a[href*="#contact-section"], a[href*="#contact"]');
+  contactLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const contactSection = document.getElementById('contact-section') || document.getElementById('contact');
+      // Verify if on Home page by checking if the target anchor element exists in the DOM
+      if (contactSection) {
+        e.preventDefault();
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Hide mobile drawer panel if open
+        const toggle = document.querySelector('.mobile-toggle');
+        const panel = document.querySelector('.mobile-nav-panel');
+        if (toggle && panel) {
+          toggle.classList.remove('active');
+          panel.classList.remove('active');
+        }
+      }
+    });
+  });
 }
 
 /* Mobile Toggle and drawer */
@@ -317,4 +339,121 @@ function initCursorGlow() {
     glow.style.left = e.clientX + 'px';
     glow.style.top = e.clientY + 'px';
   });
+}
+
+/* Scroll Triggered Booking Popup Form */
+function initBookingPopup() {
+  const modal = document.querySelector('.booking-modal');
+  const closeBtn = document.querySelector('.booking-modal-close');
+  const cancelBtn = document.querySelector('.btn-close-modal');
+  const bookingForm = document.getElementById('bookingForm');
+  const waBookingBtn = document.getElementById('btnWaBooking');
+
+  if (!modal) return;
+
+  let popupTriggered = false;
+
+  const showPopup = () => {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closePopup = () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    sessionStorage.setItem('bookingPopupShown', 'true');
+  };
+
+  // Scroll depth detection
+  window.addEventListener('scroll', () => {
+    if (popupTriggered) return;
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+    if (scrollPercent >= 60) {
+      popupTriggered = true;
+      if (!sessionStorage.getItem('bookingPopupShown')) {
+        showPopup();
+      }
+    }
+  });
+
+  // Closures
+  if (closeBtn) closeBtn.addEventListener('click', closePopup);
+  if (cancelBtn) cancelBtn.addEventListener('click', closePopup);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closePopup();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closePopup();
+    }
+  });
+
+  // Standard Form Submit (Redirecting values to WhatsApp)
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('bookName').value.trim();
+      const phone = document.getElementById('bookPhone').value.trim();
+      const email = document.getElementById('bookEmail').value.trim();
+      const service = document.getElementById('bookService').value;
+      const date = document.getElementById('bookDate').value;
+      const message = document.getElementById('bookMessage').value.trim();
+
+      if (!name || !phone || !service || !date) {
+        alert('Please complete all required fields (Name, Phone, Service, and Date).');
+        return;
+      }
+
+      const waText = `Hello Dream House Solutions, I would like to book a Free Interior Design Consultation:
+      
+- *Name*: ${name}
+- *Phone*: ${phone}
+- *Email*: ${email || 'Not provided'}
+- *Service*: ${service}
+- *Date*: ${date}
+- *Message*: ${message || 'No additional notes.'}`;
+
+      const encoded = encodeURIComponent(waText);
+      const url = `https://wa.me/917012242265?text=${encoded}`;
+      
+      window.open(url, '_blank');
+      closePopup();
+      bookingForm.reset();
+    });
+  }
+
+  // Direct WhatsApp Booking button
+  if (waBookingBtn) {
+    waBookingBtn.addEventListener('click', () => {
+      // Fetch current values or send a default booking text
+      const name = document.getElementById('bookName').value.trim();
+      const phone = document.getElementById('bookPhone').value.trim();
+      const service = document.getElementById('bookService').value;
+      const date = document.getElementById('bookDate').value;
+
+      let waText = "Hello Dream House Solutions, I'd like to book a Free Interior Design Consultation on WhatsApp.";
+      if (name && phone && service && date) {
+        waText = `Hello Dream House Solutions, I would like to book a Free Interior Design Consultation:
+        
+- *Name*: ${name}
+- *Phone*: ${phone}
+- *Service*: ${service}
+- *Preferred Date*: ${date}`;
+      }
+
+      const url = `https://wa.me/917012242265?text=${encodeURIComponent(waText)}`;
+      window.open(url, '_blank');
+      closePopup();
+      if (bookingForm) bookingForm.reset();
+    });
+  }
 }
