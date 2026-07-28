@@ -144,16 +144,16 @@
     </div>
   </section>
 
-  <!-- 2. Services Preview Section (6 Services) -->
+  <!-- 2. Services Preview Section (Compact single row) -->
   <section class="services-preview-section" id="services-overview">
     <div class="container">
-      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
         <span class="eyebrow">Services Scope</span>
-        <h2 class="section-title">Bespoke Design Solutions</h2>
-        <p class="section-desc">We offer end-to-end design, contracting, and custom layout installations tailored to your spatial needs.</p>
+        <h2 class="section-title" style="margin-bottom: 0.5rem;">Bespoke Design Solutions</h2>
+        <p class="section-desc" style="max-width: 500px; margin: 0;">We offer end-to-end design, contracting, and custom layout installations.</p>
       </div>
 
-      <div class="services-grid reveal-on-scroll delay-100" style="margin-bottom: 3rem;">
+      <div class="services-grid reveal-on-scroll delay-100" style="margin-bottom: 2rem;">
         <div class="service-card glass-card">
           <div class="service-card-top">
             <div class="service-icon">
@@ -162,7 +162,7 @@
             <h3 class="service-card-title">Designing</h3>
           </div>
           <a href="services/designing.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="service-card glass-card">
@@ -173,7 +173,7 @@
             <h3 class="service-card-title">Planning & Contracting</h3>
           </div>
           <a href="services/planning-contracting.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="service-card glass-card">
@@ -184,7 +184,7 @@
             <h3 class="service-card-title">Living Room Interior</h3>
           </div>
           <a href="services/living-room.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="service-card glass-card">
@@ -195,7 +195,7 @@
             <h3 class="service-card-title">Bedroom Interior</h3>
           </div>
           <a href="services/bedroom.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="service-card glass-card">
@@ -203,10 +203,10 @@
             <div class="service-icon">
               <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            <h3 class="service-card-title">Modular Kitchen Design</h3>
+            <h3 class="service-card-title">Modular Kitchen</h3>
           </div>
           <a href="services/modular-kitchen.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
         <div class="service-card glass-card">
@@ -217,9 +217,13 @@
             <h3 class="service-card-title">Bathroom & Vanity</h3>
           </div>
           <a href="services/bathroom-vanity.html" class="service-card-link">
-            Explore Service <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
+      </div>
+
+      <div class="reveal-on-scroll delay-200" style="text-align: center;">
+        <a href="projects.html" class="btn btn-outline-gold" style="padding: 0.8rem 2rem; font-size: 0.75rem;">View All Services</a>
       </div>
     </div>
   </section>
@@ -418,47 +422,41 @@
     <div class="booking-modal-content glass-card">
       <button class="booking-modal-close" aria-label="Close Popup">&times;</button>
       <h2 class="booking-modal-title" style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center;">Book a Free Consultation</h2>
-      <form id="bookingForm">
-        <div class="form-group" style="margin-bottom: 1.25rem;">
+      <form id="bookingForm" class="compact-form">
+        <div class="form-group" style="margin-bottom: 0.9rem;">
           <label class="form-label" for="bookName" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Full Name *</label>
-          <input type="text" id="bookName" class="form-control" placeholder="Enter your full name" required style="width:100%; padding: 0.8rem 1rem;">
+          <input type="text" id="bookName" class="form-control" placeholder="Enter your full name" required style="width:100%; padding: 0.72rem 1rem;">
         </div>
-        <div class="form-group-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+        <div class="form-group-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 0.9rem;">
           <div class="form-group" style="margin-bottom: 0;">
             <label class="form-label" for="bookPhone" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Phone *</label>
-            <input type="tel" id="bookPhone" class="form-control" placeholder="Phone number" required style="width:100%; padding: 0.8rem 1rem;">
+            <input type="tel" id="bookPhone" class="form-control" placeholder="Phone number" required style="width:100%; padding: 0.72rem 1rem;">
           </div>
           <div class="form-group" style="margin-bottom: 0;">
             <label class="form-label" for="bookEmail" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Email</label>
-            <input type="email" id="bookEmail" class="form-control" placeholder="Email address" style="width:100%; padding: 0.8rem 1rem;">
+            <input type="email" id="bookEmail" class="form-control" placeholder="Email address" style="width:100%; padding: 0.72rem 1rem;">
           </div>
         </div>
-        <div class="form-group-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
-          <div class="form-group" style="margin-bottom: 0;">
-            <label class="form-label" for="bookService" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Preferred Service *</label>
-            <select id="bookService" class="form-control" required style="width:100%; padding: 0.8rem 1rem;">
-              <option value="" disabled selected>Select service</option>
-              <option value="Interior Designing">Interior Designing</option>
-              <option value="Planning & Contracting">Planning & Contracting</option>
-              <option value="Living Room Interior">Living Room Interior</option>
-              <option value="Bedroom Interior">Bedroom Interior</option>
-              <option value="Modular Kitchen Design">Modular Kitchen Design</option>
-              <option value="Bathroom & Vanity Design">Bathroom & Vanity Design</option>
-              <option value="Wardrobes & Storage">Wardrobes & Storage</option>
-              <option value="Office & Commercial">Office & Commercial</option>
-              <option value="Gypsum & POP Work">Gypsum & POP Work</option>
-              <option value="Glass Partition">Glass Partition</option>
-              <option value="Wooden Door">Wooden Door</option>
-            </select>
-          </div>
-          <div class="form-group" style="margin-bottom: 0;">
-            <label class="form-label" for="bookDate" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Preferred Date *</label>
-            <input type="date" id="bookDate" class="form-control" required style="width:100%; padding: 0.8rem 1rem;">
-          </div>
+        <div class="form-group" style="margin-bottom: 0.9rem;">
+          <label class="form-label" for="bookService" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Preferred Service *</label>
+          <select id="bookService" class="form-control" required style="width:100%; padding: 0.72rem 1rem;">
+            <option value="" disabled selected>Select service</option>
+            <option value="Interior Designing">Interior Designing</option>
+            <option value="Planning & Contracting">Planning & Contracting</option>
+            <option value="Living Room Interior">Living Room Interior</option>
+            <option value="Bedroom Interior">Bedroom Interior</option>
+            <option value="Modular Kitchen Design">Modular Kitchen Design</option>
+            <option value="Bathroom & Vanity Design">Bathroom & Vanity Design</option>
+            <option value="Wardrobes & Storage">Wardrobes & Storage</option>
+            <option value="Office & Commercial">Office & Commercial</option>
+            <option value="Gypsum & POP Work">Gypsum & POP Work</option>
+            <option value="Glass Partition">Glass Partition</option>
+            <option value="Wooden Door">Wooden Door</option>
+          </select>
         </div>
         <div class="form-group" style="margin-bottom: 1.5rem;">
           <label class="form-label" for="bookMessage" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">Message</label>
-          <textarea id="bookMessage" class="form-control" placeholder="Describe layout details..." style="width:100%; padding: 0.8rem 1rem; min-height: 90px;"></textarea>
+          <textarea id="bookMessage" class="form-control" placeholder="Describe layout details..." style="width:100%; padding: 0.72rem 1rem; min-height: 80px;"></textarea>
         </div>
         <div class="booking-modal-buttons">
           <button type="submit" class="btn btn-primary">Book Now</button>

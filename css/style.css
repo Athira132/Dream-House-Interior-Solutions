@@ -1862,3 +1862,127 @@ footer.site-footer {
   transform: scale(1.1) !important;
 }
 
+/* Compact Services Preview Layout */
+.services-preview-section {
+  padding: 3.75rem 0 !important; /* ~60px top and bottom padding */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr); /* 6 cards in a single row */
+  }
+}
+
+.service-card {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.service-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.06);
+  border: 1px solid var(--border-gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.service-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.service-card:hover .service-icon {
+  background: var(--gold);
+  color: #000000;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+}
+
+.service-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.service-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+  margin-top: 0.4rem;
+}
+
+.service-card-link svg {
+  width: 11px;
+  height: 11px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.service-card:hover .service-card-link {
+  color: var(--gold);
+}
+
+.service-card:hover .service-card-link svg {
+  transform: translateX(3px);
+}
+
+/* Compact Forms Spacing Overrides */
+.compact-form .form-group {
+  margin-bottom: 0.9rem;
+}
+
+.compact-form .form-group-row {
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.compact-form .form-control {
+  padding: 0.72rem 1rem;
+  font-size: 0.88rem;
+}
+
+.compact-form textarea.form-control {
+  min-height: 80px;
+}
+
+.compact-form .form-label {
+  margin-bottom: 0.4rem;
+  font-size: 0.68rem;
+}
+

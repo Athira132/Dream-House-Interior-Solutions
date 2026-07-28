@@ -405,11 +405,10 @@ function initBookingPopup() {
       const phone = document.getElementById('bookPhone').value.trim();
       const email = document.getElementById('bookEmail').value.trim();
       const service = document.getElementById('bookService').value;
-      const date = document.getElementById('bookDate').value;
       const message = document.getElementById('bookMessage').value.trim();
 
-      if (!name || !phone || !service || !date) {
-        alert('Please complete all required fields (Name, Phone, Service, and Date).');
+      if (!name || !phone || !service) {
+        alert('Please complete all required fields (Name, Phone, and Service).');
         return;
       }
 
@@ -419,7 +418,6 @@ function initBookingPopup() {
 - *Phone*: ${phone}
 - *Email*: ${email || 'Not provided'}
 - *Service*: ${service}
-- *Date*: ${date}
 - *Message*: ${message || 'No additional notes.'}`;
 
       const encoded = encodeURIComponent(waText);
@@ -438,16 +436,14 @@ function initBookingPopup() {
       const name = document.getElementById('bookName').value.trim();
       const phone = document.getElementById('bookPhone').value.trim();
       const service = document.getElementById('bookService').value;
-      const date = document.getElementById('bookDate').value;
 
       let waText = "Hello Dream House Solutions, I'd like to book a Free Interior Design Consultation on WhatsApp.";
-      if (name && phone && service && date) {
+      if (name && phone && service) {
         waText = `Hello Dream House Solutions, I would like to book a Free Interior Design Consultation:
         
 - *Name*: ${name}
 - *Phone*: ${phone}
-- *Service*: ${service}
-- *Preferred Date*: ${date}`;
+- *Service*: ${service}`;
       }
 
       const url = `https://wa.me/917012242265?text=${encodeURIComponent(waText)}`;
