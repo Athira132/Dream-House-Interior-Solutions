@@ -2310,6 +2310,12 @@ html {
   }
 }
 
+.overlap-composition img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
 /* 6. Compact Collage (Homepage OUR WORK) */
 .compact-work-collage {
   display: grid;
@@ -2471,34 +2477,17 @@ html {
   }
 }
 
-/* 8. Projects Page Asymmetric Grid (projects.html) */
-.projects-asymmetric-grid {
-  display: flex;
-  gap: 6px;
+/* 8. Projects Page Masonry Layout (projects.html) */
+.projects-masonry {
+  column-count: 3;
+  column-gap: 12px;
   width: 100%;
 }
-.projects-col-left {
-  flex: 26%;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.projects-col-center {
-  flex: 44%;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.projects-col-right {
-  flex: 30%;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.projects-asymmetric-grid .project-item {
-  position: relative;
+.projects-masonry .project-item {
+  display: inline-block;
   width: 100%;
+  margin-bottom: 12px;
+  break-inside: avoid;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -2506,46 +2495,38 @@ html {
   cursor: pointer;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
 }
-.projects-asymmetric-grid .project-item:hover {
+.projects-masonry .project-item:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 12px 25px rgba(0,0,0,0.5);
   z-index: 10;
 }
-.projects-asymmetric-grid .project-item img {
+.projects-masonry .project-item img {
   width: 100%;
   height: auto !important;
   display: block;
   object-fit: contain !important;
   transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.projects-asymmetric-grid .project-item:hover img {
+.projects-masonry .project-item:hover img {
   transform: scale(1.04);
 }
 
 @media (max-width: 991px) {
-  .projects-asymmetric-grid {
-    flex-wrap: wrap;
-    gap: 8px;
+  .projects-masonry {
+    column-count: 2;
+    column-gap: 10px;
   }
-  .projects-col-left {
-    flex: 48%;
-  }
-  .projects-col-right {
-    flex: 48%;
-  }
-  .projects-col-center {
-    flex: 100%;
-    order: -1; /* Put the large main center images on top for tablet/mobile */
+  .projects-masonry .project-item {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 575px) {
-  .projects-col-left,
-  .projects-col-center,
-  .projects-col-right {
-    flex: 100%;
+  .projects-masonry {
+    column-count: 1;
+    column-gap: 8px;
   }
-  .projects-asymmetric-grid {
-    gap: 10px;
+  .projects-masonry .project-item {
+    margin-bottom: 8px;
   }
 }
 
