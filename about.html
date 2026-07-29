@@ -109,22 +109,48 @@
   <section>
     <div class="container">
       <div class="about-grid reveal-on-scroll">
-        <div class="about-content">
-          <span class="eyebrow">Our Philosophy</span>
-          <h2 class="section-title">Aesthetics & Quality</h2>
-          <p style="margin-bottom: 2rem; max-width: 500px; line-height: 1.8;">
-            Dream House started in Pattambi with a simple goal: to make luxury interior design affordable for everyone. We design and build modern homes, offices, and shops across Kerala. We believe in honest pricing, quality work, and on-time completion.
-          </p>
+        <!-- LEFT on desktop / TOP on mobile: One large premium interior image -->
+        <div class="about-visual" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-small); aspect-ratio: 4/3;">
+          <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Dream House Philosophy Visual" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
         </div>
 
-        <div class="about-visual" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-          <div class="photo-wrapper" style="aspect-ratio: 9/12; border-radius: 12px; box-shadow: var(--shadow-small); margin-bottom: 0;">
-            <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Interior Detail Visual" loading="lazy">
-            
-          </div>
-          <div class="photo-wrapper" style="aspect-ratio: 9/12; border-radius: 12px; box-shadow: var(--shadow-small); margin-top: 2rem; margin-bottom: 0;">
-            <img src="https://i.ibb.co/fctmyCW/Screenshot-2026-07-28-125852.png" alt="Interior Detail Visual" loading="lazy">
-            
+        <!-- RIGHT on desktop / BOTTOM on mobile: Philosophy content + feature items -->
+        <div class="about-content" style="height: auto; min-height: 0; overflow: visible;">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">Aesthetics & Quality</h2>
+          <p style="margin-bottom: 2rem; max-width: 500px; line-height: 1.8; color: var(--text-secondary);">
+            Dream House started in Pattambi with a simple goal: to make luxury interior design affordable for everyone. We design and build modern homes, offices, and shops across Kerala. We believe in honest pricing, quality work, and on-time completion.
+          </p>
+
+          <!-- Core Feature Items (Fully Visible, No Clipping) -->
+          <div class="philosophy-features" style="display: flex; flex-direction: column; gap: 1.2rem; height: auto; min-height: 0; overflow: visible;">
+            <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Honest & Transparent Costing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">We provide clear, detailed itemised quotes with no hidden charges or unexpected surprises.</p>
+              </div>
+            </div>
+            <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Premium Quality Materials</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">Exclusively using top-grade BWP Marine Plywood, branded fittings, and check points at every execution phase.</p>
+              </div>
+            </div>
+            <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
+              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Strict Timeline Commitment</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">We monitor timelines closely to complete and hand over projects on or before the committed date.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
