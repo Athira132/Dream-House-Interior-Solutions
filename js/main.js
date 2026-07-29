@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParallax();
   initProjectsFilter();
   initProjectsMasonry();
+  initCustomDropdowns();
   initProjectModal();
   initContactForm();
   initFloatingButtons();
@@ -360,6 +361,15 @@ function initContactForm() {
   const form = document.getElementById('enquiryForm');
   if (!form) return;
 
+  form.addEventListener('reset', () => {
+    const trigger = form.querySelector('.custom-select-trigger');
+    if (trigger) trigger.textContent = 'Select a Service';
+    const hiddenInput = form.querySelector('input[type="hidden"]');
+    if (hiddenInput) hiddenInput.value = '';
+    const options = form.querySelectorAll('.custom-option');
+    options.forEach(o => o.classList.remove('selected'));
+  });
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -426,6 +436,17 @@ function initBookingPopup() {
   const waBookingBtn = document.getElementById('btnWaBooking');
 
   if (!modal) return;
+
+  if (bookingForm) {
+    bookingForm.addEventListener('reset', () => {
+      const trigger = bookingForm.querySelector('.custom-select-trigger');
+      if (trigger) trigger.textContent = 'Select service';
+      const hiddenInput = bookingForm.querySelector('input[type="hidden"]');
+      if (hiddenInput) hiddenInput.value = '';
+      const options = bookingForm.querySelectorAll('.custom-option');
+      options.forEach(o => o.classList.remove('selected'));
+    });
+  }
 
   let popupTriggered = false;
 
@@ -528,4 +549,51 @@ function initBookingPopup() {
       if (bookingForm) bookingForm.reset();
     });
   }
+}
+
+/* Custom premium select dropdown implementation */
+function initCustomDropdowns() {
+  const wrappers = document.querySelectorAll('.custom-select-wrapper');
+  
+  wrappers.forEach(wrapper => {
+    const trigger = wrapper.querySelector('.custom-select-trigger');
+    const options = wrapper.querySelectorAll('.custom-option');
+    const hiddenInput = wrapper.querySelector('input[type="hidden"]');
+    
+    if (!trigger || !hiddenInput) return;
+    
+    // Toggle dropdown open/closed
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      document.querySelectorAll('.custom-select-wrapper').forEach(w => {
+        if (w !== wrapper) w.classList.remove('open');
+      });
+      wrapper.classList.toggle('open');
+    });
+    
+    // Select option
+    options.forEach(opt => {
+      opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const val = opt.getAttribute('data-value');
+        const text = opt.textContent;
+        
+        trigger.textContent = text;
+        hiddenInput.value = val;
+        
+        options.forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        
+        wrapper.classList.remove('open');
+        
+        // Dispatch custom change event to trigger form state updates
+        hiddenInput.dispatchEvent(new Event('change'));
+      });
+    });
+  });
+  
+  // Close dropdown on outside click
+  document.addEventListener('click', () => {
+    wrappers.forEach(w => w.classList.remove('open'));
+  });
 }
