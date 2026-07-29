@@ -2268,7 +2268,6 @@ html {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0,0,0,0.7);
-  border: 4px solid #0A0A0C; /* gap matching page background */
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .comp-small-bottom {
@@ -2281,7 +2280,6 @@ html {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0,0,0,0.7);
-  border: 4px solid #0A0A0C; /* gap matching page background */
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .overlap-composition:hover .comp-main {
