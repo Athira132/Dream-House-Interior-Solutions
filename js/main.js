@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initHeroParallax();
   initProjectsFilter();
+  initProjectsMasonry();
   initProjectModal();
   initContactForm();
   initFloatingButtons();
@@ -141,6 +142,76 @@ function initHeroParallax() {
 }
 
 /* Projects page categories selector */
+/* Projects page dynamic masonry layout positioning calculations */
+function initProjectsMasonry() {
+  const container = document.querySelector('.projects-masonry');
+  if (!container) return;
+
+  // Add class for javascript-enabled layout rules
+  container.classList.add('js-masonry');
+
+  const applyMasonry = () => {
+    const items = Array.from(container.querySelectorAll('.project-item')).filter(
+      item => item.style.display !== 'none'
+    );
+
+    const containerWidth = container.offsetWidth;
+    const gap = 12; // 12px gap
+
+    let colCount = 3;
+    if (window.innerWidth <= 575) {
+      colCount = 1;
+    } else if (window.innerWidth <= 991) {
+      colCount = 2;
+    }
+
+    const colWidth = (containerWidth - (colCount - 1) * gap) / colCount;
+    const colHeights = Array(colCount).fill(0);
+
+    items.forEach(item => {
+      // Find column with minimum height
+      let minCol = 0;
+      for (let i = 1; i < colCount; i++) {
+        if (colHeights[i] < colHeights[minCol]) {
+          minCol = i;
+        }
+      }
+
+      const left = minCol * (colWidth + gap);
+      const top = colHeights[minCol];
+
+      item.style.left = `${left}px`;
+      item.style.top = `${top}px`;
+      item.style.width = `${colWidth}px`;
+
+      colHeights[minCol] += item.offsetHeight + gap;
+    });
+
+    container.style.height = `${Math.max(...colHeights)}px`;
+  };
+
+  // Bind to window global for easy trigger during filters
+  window.applyProjectsMasonry = applyMasonry;
+
+  // Trigger when images finish downloading asynchronously
+  const imgs = container.querySelectorAll('img');
+  imgs.forEach(img => {
+    if (img.complete) {
+      applyMasonry();
+    } else {
+      img.addEventListener('load', applyMasonry);
+    }
+  });
+
+  // Re-calculate on resize and load
+  window.addEventListener('resize', applyMasonry);
+  window.addEventListener('load', applyMasonry);
+
+  // Apply immediately
+  setTimeout(applyMasonry, 50);
+}
+
+/* Projects page categories selector with masonry callback integration */
 function initProjectsFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectItems = document.querySelectorAll('.project-item');
@@ -153,6 +224,7 @@ function initProjectsFilter() {
       btn.classList.add('active');
 
       const filterValue = btn.getAttribute('data-filter');
+      let updatedCount = 0;
 
       projectItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category');
@@ -167,9 +239,19 @@ function initProjectsFilter() {
             setTimeout(() => {
               item.style.opacity = '1';
               item.style.transform = 'scale(1) translateY(0)';
+              
+              updatedCount++;
+              if (updatedCount === projectItems.length && window.applyProjectsMasonry) {
+                window.applyProjectsMasonry();
+              }
             }, 50);
           } else {
             item.style.display = 'none';
+            
+            updatedCount++;
+            if (updatedCount === projectItems.length && window.applyProjectsMasonry) {
+              window.applyProjectsMasonry();
+            }
           }
         }, 350);
       });

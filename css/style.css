@@ -2511,6 +2511,19 @@ html {
   transform: scale(1.04);
 }
 
+/* Progressive Enhancement: Dynamic Javascript Masonry Layout */
+.projects-masonry.js-masonry {
+  position: relative !important;
+  column-count: auto !important;
+  column-gap: 0 !important;
+  display: block !important;
+}
+.projects-masonry.js-masonry .project-item {
+  position: absolute !important;
+  margin-bottom: 0 !important;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease, box-shadow 0.8s ease, left 0.8s cubic-bezier(0.16, 1, 0.3, 1), top 0.8s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
 @media (max-width: 991px) {
   .projects-masonry {
     column-count: 2;
