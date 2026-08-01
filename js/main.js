@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBookingPopup();
   initServicesSlider();
   initReviewsSlider();
+  initProjectsCarousel();
 });
 
 /* Navigation Bar scrolled state */
@@ -450,8 +451,6 @@ function initBookingPopup() {
     });
   }
 
-  let popupTriggered = false;
-
   const showPopup = () => {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -460,24 +459,7 @@ function initBookingPopup() {
   const closePopup = () => {
     modal.classList.remove('active');
     document.body.style.overflow = '';
-    sessionStorage.setItem('bookingPopupShown', 'true');
   };
-
-  // Scroll depth detection
-  window.addEventListener('scroll', () => {
-    if (popupTriggered) return;
-
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
-    if (scrollPercent >= 60) {
-      popupTriggered = true;
-      if (!sessionStorage.getItem('bookingPopupShown')) {
-        showPopup();
-      }
-    }
-  });
 
   // Closures
   if (closeBtn) closeBtn.addEventListener('click', closePopup);
@@ -834,6 +816,95 @@ function initReviewsSlider() {
     isHovered = false;
   });
 
+  startAutoSlide();
+}
+
+function initProjectsCarousel() {
+  const track = document.querySelector('.projects-carousel-track');
+  const prevBtn = document.querySelector('.projects-prev');
+  const nextBtn = document.querySelector('.projects-next');
+  if (!track) return;
+
+  const items = Array.from(track.children);
+  if (items.length === 0) return;
+
+  let currentIndex = 0;
+  let autoSlideInterval = null;
+  const itemsVisible = () => {
+    if (window.innerWidth <= 576) return 1;
+    if (window.innerWidth <= 992) return 2;
+    return 3;
+  };
+
+  const getSlideWidth = () => {
+    const item = items[0];
+    const computedStyles = window.getComputedStyle(track);
+    const gap = parseFloat(computedStyles.gap) || 24;
+    return item.getBoundingClientRect().width + gap;
+  };
+
+  const updateSlidePosition = () => {
+    const maxIndex = items.length - itemsVisible();
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    const slideWidth = getSlideWidth();
+    const amountToMove = -currentIndex * slideWidth;
+    track.style.transform = `translateX(${amountToMove}px)`;
+
+    // Update button states
+    if (prevBtn) prevBtn.disabled = currentIndex === 0;
+    if (nextBtn) nextBtn.disabled = currentIndex === maxIndex;
+  };
+
+  const nextSlide = () => {
+    const maxIndex = items.length - itemsVisible();
+    if (currentIndex >= maxIndex) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateSlidePosition();
+  };
+
+  const prevSlide = () => {
+    const maxIndex = items.length - itemsVisible();
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex;
+    } else {
+      currentIndex--;
+    }
+    updateSlidePosition();
+  };
+
+  const startAutoSlide = () => {
+    stopAutoSlide();
+    autoSlideInterval = setInterval(nextSlide, 4500); // 4.5 seconds interval
+  };
+
+  const stopAutoSlide = () => {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+  };
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      startAutoSlide(); // reset timer on user interaction
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      startAutoSlide(); // reset timer on user interaction
+    });
+  }
+
+  // Recalculate on window resize
+  window.addEventListener('resize', updateSlidePosition);
+
+  // Initialize
+  updateSlidePosition();
   startAutoSlide();
 }
 

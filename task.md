@@ -1,8 +1,9 @@
-- [x] Redesign homepage Services section with exactly 6 cards (Living Room, Modular Kitchen, Bedroom, Office Space, False Ceiling, Lighting Design)
-- [x] Integrate gold SVG line icons next to card titles
-- [x] Add gold "VIEW ALL SERVICES" button next to heading area
+- [x] Redesign homepage Services section to match the reference image's icon-only layout
+- [x] Integrate custom gold SVG line icons (Couch, Cabinet, Bed, Chair, Ceiling grid, Pendant lamp) centered inside 1:1 square cards
+- [x] Remove the subtitle description under Services to match the reference layout
+- [x] Align the outlined "VIEW ALL SERVICES" button next to the heading
 - [x] Restore homepage Projects section directly below Services with zero gaps
 - [x] Add exactly 3 large project cards (Modern Living Room, Luxury Modular Kitchen, Elegant Bedroom)
-- [x] Style project cards with gradient bottom overlays, titles, categories, and zoom hover effects
+- [x] Style project cards with bottom overlays showing centered white project titles (no category labels)
 - [x] Remove any numerical labels/photo numbers from services and projects cards
 - [x] Deploy layout updates to remote repository
