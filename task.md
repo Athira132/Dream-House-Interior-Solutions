@@ -1,6 +1,6 @@
-- [x] Replace hero living-room image with a bright, luxury, naturally lit modern living room design
-- [x] Overwrite assets/hero_morning_living.jpg with new 16:9 photorealistic render
-- [x] Replace navigation phone text layout with gold CALL NOW button across all 15 HTML files
-- [x] Style btn-call-now button using background #D9A62E, black text, and hover transition
-- [x] Ensure testimonials slider height adjusts dynamically to text block
+- [x] Remove showcase placeholder description text from designing.html
+- [x] Fix broken ImgBB image URL hashes for Living Room and Office in designing.html
+- [x] Style showcase elements with a responsive aspect-ratio to prevent collapse
+- [x] Point home page hero background image to assets/service_living.jpg
+- [x] Tune hero overlay gradient opacity to stand out brightly
 - [x] Deploy updates to remote repository
