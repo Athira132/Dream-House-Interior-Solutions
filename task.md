@@ -1,5 +1,6 @@
-- [x] Locate and remove the Premium Living Room fireplace project from projects.html (Project 32)
-- [x] Replace the hero_living image reference in living-room.html hero banner with service_living.jpg
-- [x] Physically delete hero_living.jpg from assets directory
-- [x] Confirm layouts reflow and autoplay transitions function normally
+- [x] Insert the new About Us section in index.html after the Stats strip
+- [x] Reuse the luxury living room image (assets/living_lux_1.jpg) as the visual highlight
+- [x] Set up two-column layout showing the image on left and copy with a "Learn More" button on right
+- [x] Apply scale animations, rounded corners, and reveal-on-scroll entry animations
+- [x] Enforce mobile responsive layout stacking the image vertically above the description
 - [x] Deployed updates to remote repository
