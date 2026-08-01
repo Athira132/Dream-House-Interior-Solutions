@@ -1,6 +1,5 @@
-- [x] Locate and remove the Modern Foyer Staircase project from projects.html (Project 19)
-- [x] Remove the Modern Foyer Staircase slide from about.html portfolio slider
-- [x] Replace the project_staircase image reference in planning-contracting.html with ceiling_lux_1.jpg
-- [x] Physically delete project_staircase.jpg from assets directory
-- [x] Confirm layouts reflow and autoplay transition functions are working normally
+- [x] Locate and remove the Premium Living Room fireplace project from projects.html (Project 32)
+- [x] Replace the hero_living image reference in living-room.html hero banner with service_living.jpg
+- [x] Physically delete hero_living.jpg from assets directory
+- [x] Confirm layouts reflow and autoplay transitions function normally
 - [x] Deployed updates to remote repository
