@@ -1882,3 +1882,37 @@ textarea.form-control {
     width: 100%;
   }
 }
+
+/* Service Card Icon Header */
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+/* Portfolio Overlay Animations */
+.project-item:hover img {
+  transform: scale(1.05);
+}
+
+.project-item:hover .project-overlay {
+  background: linear-gradient(to top, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.1) 100%) !important;
+}
+
+.project-item:hover .overlay-content {
+  transform: translateY(-4px);
+}
