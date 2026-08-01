@@ -1,9 +1,8 @@
-- [x] Redesign homepage Services section to match the reference image's icon-only layout
-- [x] Integrate custom gold SVG line icons (Couch, Cabinet, Bed, Chair, Ceiling grid, Pendant lamp) centered inside 1:1 square cards
-- [x] Remove the subtitle description under Services to match the reference layout
-- [x] Align the outlined "VIEW ALL SERVICES" button next to the heading
-- [x] Restore homepage Projects section directly below Services with zero gaps
-- [x] Add exactly 3 large project cards (Modern Living Room, Luxury Modular Kitchen, Elegant Bedroom)
-- [x] Style project cards with bottom overlays showing centered white project titles (no category labels)
-- [x] Remove any numerical labels/photo numbers from services and projects cards
-- [x] Deploy layout updates to remote repository
+- [x] Remove automatic scroll depth popup triggers from main.js (modal only opens on intentional click)
+- [x] Build Projects horizontal carousel slider containing 8 distinct project images (Living, Kitchen, Bedroom, Office, TV unit, etc.)
+- [x] Style project cards with visible titles and categories overlayed on a dark gradient (always readable)
+- [x] Enable automatic smooth sliding transition every 4.5 seconds
+- [x] Wire manual left/right navigation arrows to Projects carousel
+- [x] Remove all numerical markings from project card overlays
+- [x] Redesign 'VIEW ALL SERVICES' & 'VIEW ALL PROJECTS' buttons to use a solid gold background (#D9A62E) with bold black text
+- [x] Deploy updates to remote repository
