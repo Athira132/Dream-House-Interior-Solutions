@@ -1,8 +1,5 @@
-- [x] Restrict JS masonry absolute positioning to the main projects.html page (early return in main.js)
-- [x] Enforce aspect-ratio: 4 / 3 and object-fit: cover for all showcase grid elements in style.css
-- [x] Clean showcase headers and remove placeholder descriptions from all 11 service subpages
-- [x] Limit all subpage showcase galleries to exactly 3 mini images
-- [x] Remove the rectangular hero-text-backdrop from index.html
-- [x] Configure a smooth left-heavy gradient overlay (.hero-overlay) on homepage hero banner
-- [x] Set mobile-specific gradient overlay opacity override inside media query
+- [x] Redesign all 11 service landing pages to have exactly 4 main sections (Hero, About, Showcase, and CTA) plus the standard footer
+- [x] Strip out process timeline steps, spec tables, FAQ accordions, and extra benefits cards from all subpages
+- [x] Standardize showcase grids to display exactly 3 matching 4:3 aspect-ratio images
+- [x] Keep headers, navbars, and floating contact actions intact
 - [x] Deploy updates to remote repository

@@ -2159,3 +2159,94 @@ textarea.form-control {
   height: 100% !important;
   object-fit: cover !important;
 }
+
+/* Premium service page closing CTA section styling */
+.premium-service-cta {
+  padding: 6.5rem 0;
+  background-color: #0b0b0d;
+  border-top: 1px solid rgba(217, 166, 46, 0.15); /* Subtle gold accent line */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-cta-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.premium-cta-content .eyebrow {
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.premium-cta-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+.premium-cta-text {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-cta-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-call-now-cta {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.btn-call-now-cta:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .premium-service-cta {
+    padding: 4.5rem 0;
+  }
+  .premium-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .premium-cta-actions .btn {
+    width: 100%;
+  }
+}
