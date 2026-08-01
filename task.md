@@ -1,5 +1,7 @@
-- [x] Replaced WhatsApp box-style CTA with a wide, minimal, premium closing CTA layout
-- [x] Tailored elegant headings and supporting text dynamically for all 11 subpages
-- [x] Configured prominent primary gold consultation buttons and secondary Call Now triggers
-- [x] Integrated a top gold accent border line and spacious padding styles
+- [x] Identify campfire/fire-pit outdoor images in projects.html and planning-contracting.html
+- [x] Generate 4 high-quality realistic interior design images (Living Room, Bedroom, Modular Kitchen, Staircase)
+- [x] Replace campfire/outdoor images with generated interior assets in projects.html
+- [x] Re-categorize replacement projects in portfolio grid and remove empty OUTDOOR filter button
+- [x] Replace campfire/outdoor images in planning-contracting.html with local interior assets
+- [x] Tweak hero-overlay linear-gradient values to match user specification exactly (rgba(0,0,0,0.12) fade at 65%)
 - [x] Deployed updates to remote repository
