@@ -1,9 +1,5 @@
-- [x] Remove Contemporary Dining project from index.html
-- [x] Add Modern Stair Case project card using resolved image https://i.ibb.co/kstTFGf7/Screenshot-2026-07-28-125755.png
-- [x] Replace Living Room project image with resolved URL https://i.ibb.co/XrDW7yn6/Screenshot-2026-07-28-125910.png
-- [x] Set TV Unit Design card image to the previous Living Room photo https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png
-- [x] Replace Modern Office Space project image with resolved URL https://i.ibb.co/YFvV9YPb/Screenshot-2026-07-28-112538.png
-- [x] Clean testimonial slides to display ONLY centered customer names
-- [x] Strip out review quotes, ratings, and avatars from testimonials
-- [x] Keep carousel timings and transition controls untouched
+- [x] Restore 5-star ratings, actual reviews, and reviewer names to the client testimonials section
+- [x] Structure card to display rating stars at the top, quote text in the center, and reviewer name at the bottom
+- [x] Adjust card size to fit review text comfortably without excess vertical spacing
+- [x] Retain transitions, arrow navigation, and indicators
 - [x] Deploy updates to remote repository
