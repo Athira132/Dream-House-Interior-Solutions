@@ -1,5 +1,6 @@
-- [x] Restore 5-star ratings, actual reviews, and reviewer names to the client testimonials section
-- [x] Structure card to display rating stars at the top, quote text in the center, and reviewer name at the bottom
-- [x] Adjust card size to fit review text comfortably without excess vertical spacing
-- [x] Retain transitions, arrow navigation, and indicators
+- [x] Replace hero living-room image with a bright, luxury, naturally lit modern living room design
+- [x] Overwrite assets/hero_morning_living.jpg with new 16:9 photorealistic render
+- [x] Replace navigation phone text layout with gold CALL NOW button across all 15 HTML files
+- [x] Style btn-call-now button using background #D9A62E, black text, and hover transition
+- [x] Ensure testimonials slider height adjusts dynamically to text block
 - [x] Deploy updates to remote repository
