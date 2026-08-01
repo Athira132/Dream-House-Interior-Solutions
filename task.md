@@ -1,5 +1,5 @@
-- [x] Verify Homepage Hero Banner image is assets/service_living.jpg
-- [x] Select distinct, bright premium living-room image (assets/living_lux_1.jpg) for the homepage About Us section
-- [x] Confirm no duplication of the Hero Banner photo anywhere in the About section
-- [x] Match existing website typography, spacing, colors, and premium interior-design aesthetic
+- [x] Sourced a bright, premium living-room interior image (assets/living_room_lounge.jpg)
+- [x] Swapped the image inside the About Us summary section of index.html
+- [x] Preserved the homepage Hero Banner image assets/service_living.jpg untouched
+- [x] Maintained text, heading, buttons, transitions, and layout structure intact
 - [x] Deployed updates to remote repository

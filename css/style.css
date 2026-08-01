@@ -188,7 +188,7 @@ header.site-header {
   left: 0;
   width: 100%;
   height: 90px;
-  z-index: 1000;
+  z-index: 2000;
   background: var(--bg-nav);
   backdrop-filter: blur(var(--blur-nav));
   -webkit-backdrop-filter: blur(var(--blur-nav));
@@ -360,23 +360,39 @@ header.site-header.scrolled .logo-link img {
   background: none;
   border: none;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
   position: relative;
-  z-index: 1001;
+  z-index: 2002;
+  padding: 0;
 }
 
 .mobile-toggle span {
   display: block;
-  width: 100%;
+  position: absolute;
+  left: 8px; /* Centered horizontally: (44px target - 28px span) / 2 = 8px */
+  width: 28px;
   height: 2px;
   background-color: var(--text-primary);
-  margin: 5px 0;
   transition: var(--transition-fast);
 }
 
+.mobile-toggle span:nth-child(1) {
+  top: 15px;
+}
+
+.mobile-toggle span:nth-child(2) {
+  top: 21px;
+}
+
+.mobile-toggle span:nth-child(3) {
+  top: 27px;
+}
+
+/* Active transitions to form centered X icon */
 .mobile-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg);
+  top: 21px;
 }
 
 .mobile-toggle.active span:nth-child(2) {
@@ -384,7 +400,8 @@ header.site-header.scrolled .logo-link img {
 }
 
 .mobile-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg);
+  top: 21px;
 }
 
 /* Mobile nav panel */
@@ -395,7 +412,7 @@ header.site-header.scrolled .logo-link img {
   width: 320px;
   height: 100%;
   background: var(--bg-secondary);
-  z-index: 999;
+  z-index: 1999;
   padding: 8rem 2rem 2rem;
   transition: var(--transition-smooth);
   border-left: 1px solid var(--border-light);
@@ -1866,8 +1883,13 @@ textarea.form-control {
     height: 80px;
   }
   
-  .nav-menu, .nav-cta, .nav-right-info {
-    display: none;
+  .nav-menu, .nav-cta, .nav-right-info .btn-call-now {
+    display: none !important;
+  }
+  
+  .nav-right-info {
+    display: flex !important;
+    align-items: center;
   }
   
   .mobile-toggle {
