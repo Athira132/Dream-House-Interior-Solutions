@@ -1,6 +1,6 @@
-- [x] Remove showcase placeholder description text from designing.html
-- [x] Fix broken ImgBB image URL hashes for Living Room and Office in designing.html
-- [x] Style showcase elements with a responsive aspect-ratio to prevent collapse
-- [x] Point home page hero background image to assets/service_living.jpg
-- [x] Tune hero overlay gradient opacity to stand out brightly
+- [x] Configure a flat black transparent shade overlay (.hero-overlay) over the homepage hero banner
+- [x] Apply a default 40% shade opacity on desktop screens
+- [x] Set 52% shade opacity override for mobile viewports (<= 768px width)
+- [x] Ensure image stays clearly visible through the black tint shade
+- [x] Keep heading, subheadings, and CTA buttons sharp above the overlay layer
 - [x] Deploy updates to remote repository
