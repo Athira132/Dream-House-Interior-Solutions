@@ -1,6 +1,8 @@
-- [x] Clear global black overlay (.hero-overlay) from the entire hero background image
-- [x] Wrap hero heading, eyebrow, and subtitle in a localized container (.hero-text-backdrop)
-- [x] Apply a black semi-transparent background (45% opacity) and glass blur (12px) to the text backdrop
-- [x] Set mobile-specific backdrop opacity to 58% for smaller screens
-- [x] Keep top menu bar and bottom CTA buttons unshaded
+- [x] Restrict JS masonry absolute positioning to the main projects.html page (early return in main.js)
+- [x] Enforce aspect-ratio: 4 / 3 and object-fit: cover for all showcase grid elements in style.css
+- [x] Clean showcase headers and remove placeholder descriptions from all 11 service subpages
+- [x] Limit all subpage showcase galleries to exactly 3 mini images
+- [x] Remove the rectangular hero-text-backdrop from index.html
+- [x] Configure a smooth left-heavy gradient overlay (.hero-overlay) on homepage hero banner
+- [x] Set mobile-specific gradient overlay opacity override inside media query
 - [x] Deploy updates to remote repository
