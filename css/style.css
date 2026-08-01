@@ -578,6 +578,13 @@ header.site-header.scrolled .logo-link img {
 /* Services section design */
 .services-preview-section {
   background-color: var(--bg-deep);
+  padding-top: 3rem;
+  padding-bottom: 5.5rem;
+}
+
+.services-preview-section .section-title {
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  font-weight: 700;
 }
 
 .services-slider-container {
