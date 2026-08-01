@@ -578,8 +578,8 @@ header.site-header.scrolled .logo-link img {
 /* Services section design */
 .services-preview-section {
   background-color: var(--bg-deep);
-  padding-top: 3rem;
-  padding-bottom: 5.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .services-preview-section .section-title {
@@ -594,23 +594,86 @@ header.site-header.scrolled .logo-link img {
   padding: 1rem 0;
 }
 
-.services-slider-track {
+.services-preview-section .services-slider-track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.services-preview-section .service-card {
+  aspect-ratio: 1 / 1;
+  background-color: #0c0c0e;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
   display: flex;
-  gap: 1.5rem;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-  cursor: grab;
-  user-select: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 2.2rem 1rem;
+  text-decoration: none;
+  transition: border-color 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex: none;
 }
 
-.services-slider-track:active {
-  cursor: grabbing;
+.services-preview-section .service-card:hover {
+  border-color: var(--gold);
+  background-color: #111113;
+  transform: translateY(-4px);
 }
 
+.services-preview-section .service-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--gold);
+  stroke: var(--gold);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.services-preview-section .service-card:hover .service-icon {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.45));
+}
+
+.services-preview-section .service-card .service-card-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  text-align: center;
+  transition: color 0.35s ease;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.services-preview-section .service-card:hover .service-card-title {
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .services-preview-section .services-slider-track {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  .services-preview-section .service-card {
+    flex: 0 0 150px;
+    scroll-snap-align: start;
+  }
+}
+
+/* Base service card styling fallback for subpages */
 .service-card {
-  flex: 0 0 300px;
-  width: 300px;
-  height: 380px;
   background: var(--bg-secondary);
   border: 1px solid var(--border-light);
   padding: 0;

@@ -1,5 +1,8 @@
-- [x] Reduce padding above Services section (padding-top to 3rem)
-- [x] Slightly scale down Services section title size
-- [x] Update client testimonial profiles with realistic Indian portrait avatars (mixed gender)
-- [x] Verify visual alignments
-- [x] Deploy updates to remote repository
+- [x] Redesign homepage Services section with exactly 6 cards (Living Room, Modular Kitchen, Bedroom, Office Space, False Ceiling, Lighting Design)
+- [x] Integrate gold SVG line icons next to card titles
+- [x] Add gold "VIEW ALL SERVICES" button next to heading area
+- [x] Restore homepage Projects section directly below Services with zero gaps
+- [x] Add exactly 3 large project cards (Modern Living Room, Luxury Modular Kitchen, Elegant Bedroom)
+- [x] Style project cards with gradient bottom overlays, titles, categories, and zoom hover effects
+- [x] Remove any numerical labels/photo numbers from services and projects cards
+- [x] Deploy layout updates to remote repository
