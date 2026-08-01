@@ -1,7 +1,7 @@
-- [x] Convert static 3-card Design Perspectives layout on about.html to sliding carousel
-- [x] Configure exactly 8 service-focused interior-design showcase slides
-- [x] Enforce consistent 4:3 aspect ratio and object-fit: cover for all slides
-- [x] Add auto-sliding interval transitions (3.5 seconds) in main.js
-- [x] Implement hover pause behavior and previous/next navigation buttons
-- [x] Design fluid, responsive width media queries (Desktop: 3, Tablet: 2, Mobile: 1 card)
+- [x] Remove the "Premium Living Room" slide from the About page portfolio carousel
+- [x] Generate a new cozy sofa lounge living-room image using the generate_image tool
+- [x] Swap the second image source inside the living-room.html showcase with the new asset
+- [x] Set the background of hero-overlay to transparent in style.css to keep navbar and right side of banner fully bright
+- [x] Configure a soft radial-gradient dark backdrop behind/around hero-content to improve heading contrast
+- [x] Apply matching mobile styling overrides for hero-content backdrop inside the media query
 - [x] Deployed updates to remote repository
