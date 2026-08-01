@@ -1,8 +1,9 @@
-- [x] Remove automatic scroll depth popup triggers from main.js (modal only opens on intentional click)
-- [x] Build Projects horizontal carousel slider containing 8 distinct project images (Living, Kitchen, Bedroom, Office, TV unit, etc.)
-- [x] Style project cards with visible titles and categories overlayed on a dark gradient (always readable)
-- [x] Enable automatic smooth sliding transition every 4.5 seconds
-- [x] Wire manual left/right navigation arrows to Projects carousel
-- [x] Remove all numerical markings from project card overlays
-- [x] Redesign 'VIEW ALL SERVICES' & 'VIEW ALL PROJECTS' buttons to use a solid gold background (#D9A62E) with bold black text
+- [x] Remove Contemporary Dining project from index.html
+- [x] Add Modern Stair Case project card using resolved image https://i.ibb.co/kstTFGf7/Screenshot-2026-07-28-125755.png
+- [x] Replace Living Room project image with resolved URL https://i.ibb.co/XrDW7yn6/Screenshot-2026-07-28-125910.png
+- [x] Set TV Unit Design card image to the previous Living Room photo https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png
+- [x] Replace Modern Office Space project image with resolved URL https://i.ibb.co/YFvV9YPb/Screenshot-2026-07-28-112538.png
+- [x] Clean testimonial slides to display ONLY centered customer names
+- [x] Strip out review quotes, ratings, and avatars from testimonials
+- [x] Keep carousel timings and transition controls untouched
 - [x] Deploy updates to remote repository
