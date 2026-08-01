@@ -1,0 +1,9 @@
+- [x] Remove extra sections (Portfolio, About, Process) from `index.html` after Services
+- [x] Create Client Testimonials with 5 Indian Client names (Arun Krishnan, Priya Menon, Rahul Nair, Anjali Iyer, Sanjay Kumar)
+- [x] Center Client Testimonials card with rating, quote, small circular avatar, name, and subtitle
+- [x] Implement left/right navigation arrows on the sides of the testimonial card
+- [x] Create compact horizontal Final Consultation CTA banner (living room image left, text center, BOOK NOW button right)
+- [x] Redesign footer: Green logo & tagline column, Column 2 (Quick Links), Column 3 (Services), Column 4 (Contact Us & Social icons row)
+- [x] Propagate the footer changes (removing duplicate CTAs, column layout) across all root files and subpages
+- [x] Strip all numeric labels/photo badges overlaying photos from all pages
+- [x] Push the refinements to production Vercel deployment
