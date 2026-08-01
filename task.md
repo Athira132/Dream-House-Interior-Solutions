@@ -1,7 +1,6 @@
-- [x] Remove the "Premium Living Room" slide from the About page portfolio carousel
-- [x] Generate a new cozy sofa lounge living-room image using the generate_image tool
-- [x] Swap the second image source inside the living-room.html showcase with the new asset
-- [x] Set the background of hero-overlay to transparent in style.css to keep navbar and right side of banner fully bright
-- [x] Configure a soft radial-gradient dark backdrop behind/around hero-content to improve heading contrast
-- [x] Apply matching mobile styling overrides for hero-content backdrop inside the media query
+- [x] Locate and remove the Modern Foyer Staircase project from projects.html (Project 19)
+- [x] Remove the Modern Foyer Staircase slide from about.html portfolio slider
+- [x] Replace the project_staircase image reference in planning-contracting.html with ceiling_lux_1.jpg
+- [x] Physically delete project_staircase.jpg from assets directory
+- [x] Confirm layouts reflow and autoplay transition functions are working normally
 - [x] Deployed updates to remote repository
