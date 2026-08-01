@@ -159,22 +159,58 @@
   </section>
 
   <!-- Editorial Showcase Section -->
-  <section style="background: var(--bg-secondary);">
+  <section style="background: var(--bg-secondary); overflow: hidden;">
     <div class="container">
-      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem;">
-        <span class="eyebrow">Studio Portfolios</span>
-        <h2 class="section-title">Design Perspectives</h2>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem;" class="reveal-on-scroll">
+        <div>
+          <span class="eyebrow">Studio Portfolios</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Design Perspectives</h2>
+        </div>
+        <!-- Slider Navigation Controls -->
+        <div style="display: flex; gap: 0.8rem;">
+          <button class="about-slider-prev" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.25s ease;" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+          </button>
+          <button class="about-slider-next" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.25s ease;" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </button>
+        </div>
       </div>
 
-      <div class="showcase-grid-3 reveal-on-scroll delay-100">
-        <div class="showcase-item">
-          <img src="https://i.ibb.co/QvjmrhY1/Screenshot-2026-07-28-130550.png" alt="Design Vignette 1" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-        </div>
-        <div class="showcase-item">
-          <img src="https://i.ibb.co/1G2s3RzX/Screenshot-2026-07-28-130232.png" alt="Design Vignette 2" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-        </div>
-        <div class="showcase-item">
-          <img src="https://i.ibb.co/LD0jFmH1/Screenshot-2026-07-28-125646.png" alt="Design Vignette 3" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+      <div class="about-portfolio-slider reveal-on-scroll delay-100">
+        <div class="about-portfolio-track">
+          <!-- Slide 1: Living Room -->
+          <div class="about-portfolio-slide">
+            <img src="assets/project_living.jpg" alt="Luxury Living Room Design" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 2: Bedroom -->
+          <div class="about-portfolio-slide">
+            <img src="assets/project_bedroom.jpg" alt="Contemporary Bedroom Layout" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 3: Modular Kitchen -->
+          <div class="about-portfolio-slide">
+            <img src="assets/project_kitchen.jpg" alt="Minimalist Modular Kitchen" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 4: Staircase -->
+          <div class="about-portfolio-slide">
+            <img src="assets/project_staircase.jpg" alt="Modern Foyer Staircase Architecture" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 5: Bathroom -->
+          <div class="about-portfolio-slide">
+            <img src="assets/hero_bathroom.jpg" alt="Luxury Master Washroom" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 6: Wardrobe -->
+          <div class="about-portfolio-slide">
+            <img src="assets/hero_wardrobes.jpg" alt="Bespoke Fitted Wardrobes" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 7: Office -->
+          <div class="about-portfolio-slide">
+            <img src="assets/hero_commercial.jpg" alt="Modern Walnut Office Workspace" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
+          <!-- Slide 8: Gypsum Ceiling -->
+          <div class="about-portfolio-slide">
+            <img src="assets/hero_gypsum.jpg" alt="Architectural Gypsum Ceiling" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+          </div>
         </div>
       </div>
     </div>

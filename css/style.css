@@ -2250,3 +2250,52 @@ textarea.form-control {
     width: 100%;
   }
 }
+
+/* About Page Portfolio Carousel Slider Styling */
+.about-portfolio-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-portfolio-track {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-portfolio-slide {
+  flex: 0 0 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-small);
+  background-color: #0c0c0e;
+}
+
+.about-portfolio-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .about-portfolio-slide {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-portfolio-slide {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+/* Navigation button hovers */
+.about-slider-prev:hover, .about-slider-next:hover {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  color: #000000 !important;
+  transform: scale(1.05);
+}

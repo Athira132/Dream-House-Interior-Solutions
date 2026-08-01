@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initServicesSlider();
   initReviewsSlider();
   initProjectsCarousel();
+  initAboutSlider();
 });
 
 /* Navigation Bar scrolled state */
@@ -908,5 +909,91 @@ function initProjectsCarousel() {
   // Initialize
   updateSlidePosition();
   startAutoSlide();
+}
+
+/* About Page Portfolio Carousel Slider */
+function initAboutSlider() {
+  const track = document.querySelector('.about-portfolio-track');
+  const slides = document.querySelectorAll('.about-portfolio-slide');
+  const prevBtn = document.querySelector('.about-slider-prev');
+  const nextBtn = document.querySelector('.about-slider-next');
+  if (!track || slides.length === 0) return;
+
+  let currentIndex = 0;
+  let autoplayInterval = null;
+
+  function getVisibleCount() {
+    if (window.innerWidth >= 992) return 3;
+    if (window.innerWidth >= 576) return 2;
+    return 1;
+  }
+
+  function updateSlider() {
+    const visibleCount = getVisibleCount();
+    const maxIndex = Math.max(0, slides.length - visibleCount);
+    if (currentIndex > maxIndex) {
+      currentIndex = 0;
+    }
+    const cardWidth = slides[0].getBoundingClientRect().width;
+    const gap = 24; // 1.5rem gap is 24px
+    track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+  }
+
+  function nextSlide() {
+    const visibleCount = getVisibleCount();
+    const maxIndex = Math.max(0, slides.length - visibleCount);
+    if (currentIndex >= maxIndex) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateSlider();
+  }
+
+  function prevSlide() {
+    const visibleCount = getVisibleCount();
+    const maxIndex = Math.max(0, slides.length - visibleCount);
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex;
+    } else {
+      currentIndex--;
+    }
+    updateSlider();
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      startAutoplay(); // reset interval on interaction
+    });
+  }
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      startAutoplay(); // reset interval on interaction
+    });
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayInterval = setInterval(nextSlide, 3500);
+  }
+
+  function stopAutoplay() {
+    if (autoplayInterval) clearInterval(autoplayInterval);
+  }
+
+  // Hover Pause
+  const container = document.querySelector('.about-portfolio-slider');
+  if (container) {
+    container.addEventListener('mouseenter', stopAutoplay);
+    container.addEventListener('mouseleave', startAutoplay);
+  }
+
+  window.addEventListener('resize', updateSlider);
+
+  // Initialize
+  startAutoplay();
+  updateSlider();
 }
 

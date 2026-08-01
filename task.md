@@ -1,7 +1,5 @@
-- [x] Identify campfire/fire-pit outdoor images in projects.html and planning-contracting.html
-- [x] Generate 4 high-quality realistic interior design images (Living Room, Bedroom, Modular Kitchen, Staircase)
-- [x] Replace campfire/outdoor images with generated interior assets in projects.html
-- [x] Re-categorize replacement projects in portfolio grid and remove empty OUTDOOR filter button
-- [x] Replace campfire/outdoor images in planning-contracting.html with local interior assets
-- [x] Tweak hero-overlay linear-gradient values to match user specification exactly (rgba(0,0,0,0.12) fade at 65%)
+- [x] Resolve direct image hosting URL from Imgbb page link: https://ibb.co/HprB35Xh
+- [x] Locate "Our Philosophy" section on about.html page (around line 115)
+- [x] Replace old image source with resolved direct link (https://i.ibb.co/Qj6ptyXD/Screenshot-2026-07-28-125535.png)
+- [x] Confirm styling attributes (object-fit: cover) are maintained on the container
 - [x] Deployed updates to remote repository
