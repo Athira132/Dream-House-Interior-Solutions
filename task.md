@@ -1,5 +1,7 @@
-- [x] Resolve direct image hosting URL from Imgbb page link: https://ibb.co/HprB35Xh
-- [x] Locate "Our Philosophy" section on about.html page (around line 115)
-- [x] Replace old image source with resolved direct link (https://i.ibb.co/Qj6ptyXD/Screenshot-2026-07-28-125535.png)
-- [x] Confirm styling attributes (object-fit: cover) are maintained on the container
+- [x] Convert static 3-card Design Perspectives layout on about.html to sliding carousel
+- [x] Configure exactly 8 service-focused interior-design showcase slides
+- [x] Enforce consistent 4:3 aspect ratio and object-fit: cover for all slides
+- [x] Add auto-sliding interval transitions (3.5 seconds) in main.js
+- [x] Implement hover pause behavior and previous/next navigation buttons
+- [x] Design fluid, responsive width media queries (Desktop: 3, Tablet: 2, Mobile: 1 card)
 - [x] Deployed updates to remote repository
