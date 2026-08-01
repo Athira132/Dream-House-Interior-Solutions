@@ -1,6 +1,6 @@
-- [x] Configure a flat black transparent shade overlay (.hero-overlay) over the homepage hero banner
-- [x] Apply a default 40% shade opacity on desktop screens
-- [x] Set 52% shade opacity override for mobile viewports (<= 768px width)
-- [x] Ensure image stays clearly visible through the black tint shade
-- [x] Keep heading, subheadings, and CTA buttons sharp above the overlay layer
+- [x] Clear global black overlay (.hero-overlay) from the entire hero background image
+- [x] Wrap hero heading, eyebrow, and subtitle in a localized container (.hero-text-backdrop)
+- [x] Apply a black semi-transparent background (45% opacity) and glass blur (12px) to the text backdrop
+- [x] Set mobile-specific backdrop opacity to 58% for smaller screens
+- [x] Keep top menu bar and bottom CTA buttons unshaded
 - [x] Deploy updates to remote repository

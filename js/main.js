@@ -149,7 +149,9 @@ function initHeroParallax() {
 /* Projects page dynamic masonry layout positioning calculations */
 function initProjectsMasonry() {
   const container = document.querySelector('.projects-masonry');
-  if (!container) return;
+  const filters = document.querySelector('.portfolio-filters');
+  // Only apply dynamic absolute masonry positioning on the main portfolio page!
+  if (!container || !filters) return;
 
   // Add class for javascript-enabled layout rules
   container.classList.add('js-masonry');
