@@ -17,12 +17,12 @@
       </a>
       
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link active">ABOUT</a>
         
         <!-- Services Mega Menu Link -->
         <div class="nav-dropdown">
-          <a href="#" class="nav-link">Services <span style="font-size:0.6rem; vertical-align:middle;">&#9662;</span></a>
+          <a href="#" class="nav-link">SERVICES <span style="font-size:0.6rem; vertical-align:middle;">&#9662;</span></a>
           <div class="mega-menu">
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
@@ -49,28 +49,33 @@
           </div>
         </div>
 
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="projects.html" class="nav-link">PORTFOLIO</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
       </nav>
 
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-outline-gold" style="padding: 0.6rem 1.4rem; font-size: 0.75rem;">Contact Us</a>
+      <div class="nav-right-info">
+        <a href="tel:+917012242265" class="header-call-link">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div class="header-call-text">
+            <span>7012 242 265</span>
+            <small>Call us anytime</small>
+          </div>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-
-      <button class="mobile-toggle" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
   <!-- Mobile Dropdown Navigation Panel -->
   <div class="mobile-nav-panel">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link active">About Us</a>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link active">ABOUT</a>
     <div>
-      <a href="#" class="nav-link mobile-dropdown-header">Services 
+      <a href="#" class="nav-link mobile-dropdown-header">SERVICES 
         <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
       </a>
       <div class="mobile-submenu">
@@ -87,12 +92,11 @@
         <a href="services/wooden-door.html" class="mobile-submenu-link">Wooden Door</a>
       </div>
     </div>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="contact.html" class="nav-link">Contact Us</a>
-    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="projects.html" class="nav-link">PORTFOLIO</a>
+    <a href="contact.html" class="nav-link">CONTACT</a>
   </div>
 
-  <!-- About Hero Header (Reverted to original hero banner) -->
+  <!-- About Hero Header -->
   <section class="service-hero">
     <div class="service-hero-bg">
       <img src="assets/hero_about.jpg" alt="About Us Hero Banner">
@@ -110,45 +114,45 @@
     <div class="container">
       <div class="about-grid reveal-on-scroll">
         <!-- LEFT on desktop / TOP on mobile: One large premium interior image -->
-        <div class="about-visual" style="position: relative; width: 100%; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-small); aspect-ratio: 4/3;">
-          <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Dream House Philosophy Visual" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        <div class="about-visual">
+          <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Dream House Philosophy Visual" loading="lazy">
         </div>
 
         <!-- RIGHT on desktop / BOTTOM on mobile: Philosophy content + feature items -->
-        <div class="about-content" style="height: auto; min-height: 0; overflow: visible;">
+        <div class="about-content">
           <span class="eyebrow">Our Philosophy</span>
-          <h2 class="section-title" style="margin-bottom: 1.5rem;">Aesthetics & Quality</h2>
-          <p style="margin-bottom: 2rem; max-width: 500px; line-height: 1.8; color: var(--text-secondary);">
+          <h2 class="section-title">Aesthetics & Quality</h2>
+          <p style="margin-bottom: 2rem; max-width: 500px; line-height: 1.8;">
             Dream House started in Pattambi with a simple goal: to make luxury interior design affordable for everyone. We design and build modern homes, offices, and shops across Kerala. We believe in honest pricing, quality work, and on-time completion.
           </p>
 
-          <!-- Core Feature Items (Fully Visible, No Clipping) -->
-          <div class="philosophy-features" style="display: flex; flex-direction: column; gap: 1.2rem; height: auto; min-height: 0; overflow: visible;">
+          <!-- Core Feature Items -->
+          <div class="philosophy-features" style="display: flex; flex-direction: column; gap: 1.5rem;">
             <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
-              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="feature-icon" style="color: var(--gold); margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
               <div>
-                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Honest & Transparent Costing</h4>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">We provide clear, detailed itemised quotes with no hidden charges or unexpected surprises.</p>
+                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.3rem;">Honest & Transparent Costing</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">We provide clear, detailed itemised quotes with no hidden charges or unexpected surprises.</p>
               </div>
             </div>
             <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
-              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="feature-icon" style="color: var(--gold); margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
               <div>
-                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Premium Quality Materials</h4>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">Exclusively using top-grade BWP Marine Plywood, branded fittings, and check points at every execution phase.</p>
+                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.3rem;">Premium Quality Materials</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Exclusively using top-grade BWP Marine Plywood, branded fittings, and checks at every execution phase.</p>
               </div>
             </div>
             <div class="philosophy-feature-item" style="display: flex; align-items: flex-start; gap: 1rem;">
-              <div class="feature-icon" style="color: var(--gold); font-size: 1.2rem; line-height: 1; margin-top: 0.2rem;">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <div class="feature-icon" style="color: var(--gold); margin-top: 0.2rem;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
               <div>
-                <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.3rem;">Strict Timeline Commitment</h4>
-                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">We monitor timelines closely to complete and hand over projects on or before the committed date.</p>
+                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.3rem;">Strict Timeline Commitment</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">We monitor timelines closely to complete and hand over projects on or before the committed date.</p>
               </div>
             </div>
           </div>
@@ -157,119 +161,51 @@
     </div>
   </section>
 
-  <!-- Editorial Gallery Section -->
-  <section style="background: rgba(15,15,18,0.25);">
+  <!-- Editorial Showcase Section -->
+  <section style="background: var(--bg-secondary);">
     <div class="container">
-      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 3rem;">
+      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem;">
         <span class="eyebrow">Studio Portfolios</span>
-        <h2 class="section-title" style="margin-bottom: 0.5rem;">Design Perspectives</h2>
+        <h2 class="section-title">Design Perspectives</h2>
       </div>
 
-      <div class="about-editorial-grid reveal-on-scroll delay-100">
-        <!-- Photo 1 -->
-        <div class="editorial-item item-1">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="https://i.ibb.co/QvjmrhY1/Screenshot-2026-07-28-130550.png" alt="Design Vignette" loading="lazy">
-            
-          </div>
+      <div class="showcase-grid-3 reveal-on-scroll delay-100">
+        <div class="showcase-item">
+          <img src="https://i.ibb.co/QvjmrhY1/Screenshot-2026-07-28-130550.png" alt="Design Vignette 1" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
         </div>
-        <!-- Photo 2 -->
-        <div class="editorial-item item-2">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="https://i.ibb.co/1G2s3RzX/Screenshot-2026-07-28-130232.png" alt="Design Vignette" loading="lazy">
-            
-          </div>
+        <div class="showcase-item">
+          <img src="https://i.ibb.co/1G2s3RzX/Screenshot-2026-07-28-130232.png" alt="Design Vignette 2" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
         </div>
-        <!-- Photo 3 -->
-        <div class="editorial-item item-3">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="https://i.ibb.co/LD0jFmH1/Screenshot-2026-07-28-125646.png" alt="Design Vignette" loading="lazy">
-            
-          </div>
-        </div>
-        <!-- Photo 4 -->
-        <div class="editorial-item item-4">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="https://i.ibb.co/bMkzPTnY/Screenshot-2026-07-28-130124.png" alt="Design Vignette" loading="lazy">
-            
-          </div>
-        </div>
-        <!-- Photo 5 -->
-        <div class="editorial-item item-5">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="https://i.ibb.co/M5GMGGDD/Screenshot-2026-07-28-125935.png" alt="Design Vignette" loading="lazy">
-            
-          </div>
-        </div>
-        <!-- Photo 6 -->
-        <div class="editorial-item item-6">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="assets/bedroom_lux_1.jpg" alt="Luxury Master Bedroom" loading="lazy">
-          </div>
-        </div>
-        <!-- Photo 7 -->
-        <div class="editorial-item item-7">
-          <div class="photo-wrapper" style="height: 100%; border-radius: inherit;">
-            <img src="assets/living_lux_1.jpg" alt="Premium Living Room Interior" loading="lazy">
-          </div>
+        <div class="showcase-item">
+          <img src="https://i.ibb.co/LD0jFmH1/Screenshot-2026-07-28-125646.png" alt="Design Vignette 3" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Core Values & Quality Commitments -->
-  <section style="background: rgba(15,15,18,0.3);">
+  <section>
     <div class="container">
-      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 3.5rem;">
+      <div class="reveal-on-scroll" style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 4rem;">
         <span class="eyebrow">Our Standards</span>
         <h2 class="section-title">Design Values & Quality Promise</h2>
         <p class="section-desc">We follow strict steps to deliver perfect results every single time.</p>
       </div>
 
-      <div class="why-grid reveal-on-scroll delay-100" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3.5rem;">
-        <div class="highlight-card glass-card" style="padding: 2.5rem 2rem;">
-          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.8rem;">Our Mission</h3>
+      <div class="services-grid reveal-on-scroll delay-100" style="margin-bottom: 5rem;">
+        <div class="service-card" style="min-height: auto; padding: 2.5rem 2rem;">
+          <h3 class="service-card-title" style="font-size: 1.3rem; color: var(--gold); margin-bottom: 0.8rem;">Our Mission</h3>
           <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">To design comfortable rooms that make your daily life easier and happier.</p>
         </div>
-        <div class="highlight-card glass-card" style="padding: 2.5rem 2rem;">
-          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.8rem;">Our Vision</h3>
+        <div class="service-card" style="min-height: auto; padding: 2.5rem 2rem;">
+          <h3 class="service-card-title" style="font-size: 1.3rem; color: var(--gold); margin-bottom: 0.8rem;">Our Vision</h3>
           <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">To be the most trusted interior design team in Kerala, known for high quality and transparent costs.</p>
         </div>
-        <div class="highlight-card glass-card" style="padding: 2.5rem 2rem;">
-          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold); margin-bottom: 0.8rem;">Quality Materials</h3>
+        <div class="service-card" style="min-height: auto; padding: 2.5rem 2rem;">
+          <h3 class="service-card-title" style="font-size: 1.3rem; color: var(--gold); margin-bottom: 0.8rem;">Quality Materials</h3>
           <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">We use strong water-proof materials and check every joint for a perfect finish.</p>
         </div>
       </div>
-
-      <!-- Execution Timeline Journey -->
-      <div class="about-timeline-container reveal-on-scroll delay-200">
-        <h3 style="font-family: var(--font-serif); font-size: 2rem; text-align: center; margin-bottom: 3rem; color: var(--text-primary);">Our Growth Journey</h3>
-        
-        <div class="timeline-tree">
-          <div class="timeline-node">
-            <div class="timeline-badge-year">2020</div>
-            <div class="timeline-content glass-card">
-              <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); margin-bottom: 0.5rem;">The Start</h4>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">We started our studio in Pattambi, designing beautiful local homes.</p>
-            </div>
-          </div>
-          <div class="timeline-node">
-            <div class="timeline-badge-year">2023</div>
-            <div class="timeline-content glass-card">
-              <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); margin-bottom: 0.5rem;">Full Execution</h4>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">We started doing complete contracting work with our own team of skilled workers.</p>
-            </div>
-          </div>
-          <div class="timeline-node">
-            <div class="timeline-badge-year">2026</div>
-            <div class="timeline-content glass-card">
-              <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold); margin-bottom: 0.5rem;">Expansion</h4>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">We expanded our services to cover commercial spaces and luxury villas across Kerala.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -282,7 +218,7 @@
             <img src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" alt="Dream House Logo" class="logo-img" style="height: 60px;">
           </a>
           <p class="footer-tagline">We design beautiful and comfortable homes and offices that fit your style and budget.</p>
-                              <div class="footer-social-links" style="margin-top: 1rem;">
+          <div class="footer-social-links" style="margin-top: 1rem;">
             <a href="https://www.facebook.com/profile.php?id=100064077821686" target="_blank" class="social-icon-btn" aria-label="Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
@@ -291,6 +227,15 @@
             </a>
             <a href="https://www.youtube.com/channel/UC_JZIRee_6iJRSRosFs3j-w" target="_blank" class="social-icon-btn" aria-label="YouTube">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://wa.me/917012242265" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            </a>
+            <a href="mailto:dreamhouseinteriorsolution@gmail.com" class="social-icon-btn" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://maps.app.goo.gl/pKcuPM1gU2tcczP87" target="_blank" class="social-icon-btn" aria-label="Google Maps">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             </a>
           </div>
         </div>
@@ -338,12 +283,11 @@
     </div>
   </footer>
 
-  <!-- Sticky Floating Contact Actions (WhatsApp & Call) -->
+  <!-- Sticky Floating Contact Actions -->
   <div class="floating-ctas">
     <a href="tel:+918086560895" class="floating-btn call-btn" aria-label="Call Us">
       <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
-    <!-- Official WhatsApp Logo Sticky Action Button -->
     <a href="https://wa.me/917012242265" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
       <svg viewBox="0 0 448 512" fill="currentColor">
         <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>

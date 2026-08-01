@@ -17,12 +17,12 @@
       </a>
       
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About Us</a>
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
         
         <!-- Services Mega Menu Link -->
         <div class="nav-dropdown">
-          <a href="#" class="nav-link">Services <span style="font-size:0.6rem; vertical-align:middle;">&#9662;</span></a>
+          <a href="#" class="nav-link">SERVICES <span style="font-size:0.6rem; vertical-align:middle;">&#9662;</span></a>
           <div class="mega-menu">
             <div class="mega-menu-grid">
               <div class="mega-menu-col">
@@ -49,28 +49,33 @@
           </div>
         </div>
 
-        <a href="projects.html" class="nav-link active">Projects</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="projects.html" class="nav-link active">PORTFOLIO</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
       </nav>
 
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-outline-gold" style="padding: 0.6rem 1.4rem; font-size: 0.75rem;">Contact Us</a>
+      <div class="nav-right-info">
+        <a href="tel:+917012242265" class="header-call-link">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div class="header-call-text">
+            <span>7012 242 265</span>
+            <small>Call us anytime</small>
+          </div>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-
-      <button class="mobile-toggle" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
   <!-- Mobile Dropdown Navigation Panel -->
   <div class="mobile-nav-panel">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About Us</a>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
     <div>
-      <a href="#" class="nav-link mobile-dropdown-header">Services 
+      <a href="#" class="nav-link mobile-dropdown-header">SERVICES 
         <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
       </a>
       <div class="mobile-submenu">
@@ -87,12 +92,11 @@
         <a href="services/wooden-door.html" class="mobile-submenu-link">Wooden Door</a>
       </div>
     </div>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-link">Contact Us</a>
-    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="projects.html" class="nav-link active">PORTFOLIO</a>
+    <a href="contact.html" class="nav-link">CONTACT</a>
   </div>
 
-  <!-- Projects Hero Header (Reverted to original hero banner) -->
+  <!-- Projects Hero Header -->
   <section class="service-hero">
     <div class="service-hero-bg">
       <img src="assets/hero_projects.jpg" alt="Our Projects Portfolio Hero Banner">
@@ -105,11 +109,11 @@
     </div>
   </section>
 
-  <!-- Filter & Portfolio Grid (Gallery only contains Images + Badge + Hover) -->
+  <!-- Filter & Portfolio Grid -->
   <section>
     <div class="container">
       <div class="reveal-on-scroll" style="display: flex; justify-content: center; margin-bottom: 3.5rem;">
-        <div class="projects-filter-bar glass-card" style="flex-wrap: wrap; justify-content: center; gap: 0.5rem; padding: 0.8rem; display: flex;">
+        <div class="projects-filter-bar">
           <button class="filter-btn active" data-filter="all">ALL</button>
           <button class="filter-btn" data-filter="kitchen">KITCHEN</button>
           <button class="filter-btn" data-filter="living-room">LIVING</button>
@@ -121,362 +125,561 @@
         </div>
       </div>
 
-      
-      
       <div class="projects-masonry reveal-on-scroll delay-100">
-        <!-- Project 1: Kitchen 1 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="kitchen">
+        <!-- Project 1: Kitchen -->
+        <div class="project-item" data-category="kitchen">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/jPbLt2rq/Screenshot-2026-07-28-125436.png" alt="Modular Kitchen" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 29</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 4: Kitchen 4 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="kitchen">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/KjVJS020/Screenshot-2026-07-28-130354.png" alt="Modular Kitchen" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7: Wardrobe 1 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/LXkNkymY/Screenshot-2026-07-28-130733.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 10: Wardrobe 4 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/zW1q1tFQ/Screenshot-2026-07-28-130153.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 13: Wardrobe 7 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/TDwgRtDx/Screenshot-2026-07-28-125926.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 16: Outdoor 1 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="outdoor">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/NdKrNntr/Screenshot-2026-07-28-130826.png" alt="Outdoor Project" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 19: Outdoor 4 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="outdoor">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/8LwFFDsB/Screenshot-2026-07-28-125820.png" alt="Outdoor Project" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 22: TV Area 3 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="tv-unit">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/Zp3s9Lrv/Screenshot-2026-07-28-125457.png" alt="TV Console" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 25: Living Area 1 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="living-room">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Living Room Detail" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 28: Study Area 1 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="study-area">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/M5GMGGDD/Screenshot-2026-07-28-125935.png" alt="Study Desk" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Kitchen 2 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="kitchen">
+        <!-- Project 2: Kitchen -->
+        <div class="project-item" data-category="kitchen">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/vvQrMZ5y/Screenshot-2026-07-28-125747.png" alt="Modular Kitchen" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 30</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 5: Kitchen 5 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="kitchen">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/QvjmrhY1/Screenshot-2026-07-28-130550.png" alt="Modular Kitchen" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 8: Wardrobe 2 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/Lz7N9y5q/Screenshot-2026-07-28-130448.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 11: Wardrobe 5 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/mrTC1BgB/Screenshot-2026-07-28-130202.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 14: Wardrobe 8 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="wardrobe">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/3mdr0f8d/Screenshot-2026-07-28-125620.png" alt="Wardrobe Design" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 17: Outdoor 2 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="outdoor">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/KjJjLTT3/Screenshot-2026-07-28-130434.png" alt="Outdoor Project" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 20: TV Area 1 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="tv-unit">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="TV Console" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 23: TV Area 4 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="tv-unit">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/bMkzPTnY/Screenshot-2026-07-28-130124.png" alt="TV Console" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 26: Living Area 2 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="living-room">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/fctmyCW/Screenshot-2026-07-28-125852.png" alt="Living Room Detail" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 29: Study Area 2 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="study-area">
-          <div class="project-thumbnail">
-            <div class="photo-wrapper">
-              <img src="https://i.ibb.co/1tBKvPNz/Screenshot-2026-07-28-130813.png" alt="Study Workspace" loading="lazy">
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Kitchen 3 -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="kitchen">
+        <!-- Project 3: Kitchen -->
+        <div class="project-item" data-category="kitchen">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/KcD7TLD0/Screenshot-2026-07-28-130656.png" alt="Modular Kitchen" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 31</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 6: Kitchen 6 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="kitchen">
+        <!-- Project 4: Kitchen -->
+        <div class="project-item" data-category="kitchen">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/KjVJS020/Screenshot-2026-07-28-130354.png" alt="Modular Kitchen" loading="lazy">
+              <div class="photo-badge">PHOTO 32</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Kitchen -->
+        <div class="project-item" data-category="kitchen">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/QvjmrhY1/Screenshot-2026-07-28-130550.png" alt="Modular Kitchen" loading="lazy">
+              <div class="photo-badge">PHOTO 33</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Kitchen -->
+        <div class="project-item" data-category="kitchen">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/Wv2yYJnV/Screenshot-2026-07-28-130307.png" alt="Modular Kitchen" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 34</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modular Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 9: Wardrobe 3 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="wardrobe">
+        <!-- Project 7: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/LXkNkymY/Screenshot-2026-07-28-130733.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 35</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/Lz7N9y5q/Screenshot-2026-07-28-130448.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 36</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/1G2s3RzX/Screenshot-2026-07-28-130232.png" alt="Wardrobe Design" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 37</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 12: Wardrobe 6 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="wardrobe">
+        <!-- Project 10: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/zW1q1tFQ/Screenshot-2026-07-28-130153.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 38</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/mrTC1BgB/Screenshot-2026-07-28-130202.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 39</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/N2cbRjGn/Screenshot-2026-07-28-125943.png" alt="Wardrobe Design" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 40</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 13: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/TDwgRtDx/Screenshot-2026-07-28-125926.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 41</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 14: Wardrobe -->
+        <div class="project-item" data-category="wardrobe">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/3mdr0f8d/Screenshot-2026-07-28-125620.png" alt="Wardrobe Design" loading="lazy">
+              <div class="photo-badge">PHOTO 42</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Modern Wardrobe</h3>
+                  <p>Wardrobe Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Project 15: Pooja Space -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="living-room">
+        <div class="project-item" data-category="living-room">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/LD0jFmH1/Screenshot-2026-07-28-125646.png" alt="Pooja Space" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 43</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Pooja Space</h3>
+                  <p>Living & Prayer Area</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 18: Outdoor 3 -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="outdoor">
+        <!-- Project 16: Outdoor -->
+        <div class="project-item" data-category="outdoor">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/NdKrNntr/Screenshot-2026-07-28-130826.png" alt="Outdoor Project" loading="lazy">
+              <div class="photo-badge">PHOTO 44</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Outdoor Design</h3>
+                  <p>Exterior Landscaping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 17: Outdoor -->
+        <div class="project-item" data-category="outdoor">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/KjJjLTT3/Screenshot-2026-07-28-130434.png" alt="Outdoor Project" loading="lazy">
+              <div class="photo-badge">PHOTO 45</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Outdoor Design</h3>
+                  <p>Exterior Landscaping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 18: Outdoor -->
+        <div class="project-item" data-category="outdoor">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/Ng6C6qzr/Screenshot-2026-07-28-125808.png" alt="Outdoor Project" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 46</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Outdoor Design</h3>
+                  <p>Exterior Landscaping</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 21: TV Area 2 -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="tv-unit">
+        <!-- Project 19: Outdoor -->
+        <div class="project-item" data-category="outdoor">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/8LwFFDsB/Screenshot-2026-07-28-125820.png" alt="Outdoor Project" loading="lazy">
+              <div class="photo-badge">PHOTO 47</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Outdoor Design</h3>
+                  <p>Exterior Landscaping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 20: TV Area -->
+        <div class="project-item" data-category="tv-unit">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="TV Console" loading="lazy">
+              <div class="photo-badge">PHOTO 48</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>TV Console</h3>
+                  <p>Living Area TV Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 21: TV Area -->
+        <div class="project-item" data-category="tv-unit">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/TxbDq8G6/Screenshot-2026-07-28-130630.png" alt="TV Console" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 49</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>TV Console</h3>
+                  <p>Living Area TV Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 24: TV Area 5 -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="tv-unit">
+        <!-- Project 22: TV Area -->
+        <div class="project-item" data-category="tv-unit">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/Zp3s9Lrv/Screenshot-2026-07-28-125457.png" alt="TV Console" loading="lazy">
+              <div class="photo-badge">PHOTO 50</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>TV Console</h3>
+                  <p>Living Area TV Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 23: TV Area -->
+        <div class="project-item" data-category="tv-unit">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/bMkzPTnY/Screenshot-2026-07-28-130124.png" alt="TV Console" loading="lazy">
+              <div class="photo-badge">PHOTO 51</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>TV Console</h3>
+                  <p>Living Area TV Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 24: TV Area -->
+        <div class="project-item" data-category="tv-unit">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/G41ZRQFT/Screenshot-2026-07-28-125506.png" alt="TV Console" loading="lazy">
-              
+              <div class="photo-badge">PHOTO 52</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>TV Console</h3>
+                  <p>Living Area TV Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 27: Bedroom Cot -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="bedroom">
+        <!-- Project 25: Living Area -->
+        <div class="project-item" data-category="living-room">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Living Room Detail" loading="lazy">
+              <div class="photo-badge">PHOTO 53</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Living Room</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 26: Living Area -->
+        <div class="project-item" data-category="living-room">
+          <div class="project-thumbnail">
+            <div class="photo-wrapper">
+              <img src="https://i.ibb.co/fctmyCW/Screenshot-2026-07-28-125852.png" alt="Living Room Detail" loading="lazy">
+              <div class="photo-badge">PHOTO 54</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Living Room</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 27: Bedroom -->
+        <div class="project-item" data-category="bedroom">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
               <img src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" alt="Bedroom Interior" loading="lazy">
+              <div class="photo-badge">PHOTO 55</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Bedroom Design</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 28: Bedroom Wardrobe & Cot -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="bedroom">
+        <!-- Project 28: Office / Study -->
+        <div class="project-item" data-category="study-area">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="https://i.ibb.co/N2cbRjGn/Screenshot-2026-07-28-125943.png" alt="Luxury Bedroom Wardrobe & Cot" loading="lazy">
+              <img src="https://i.ibb.co/M5GMGGDD/Screenshot-2026-07-28-125935.png" alt="Study Workspace" loading="lazy">
+              <div class="photo-badge">PHOTO 56</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Study Workspace</h3>
+                  <p>Office & Study Area</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 29: Bedroom Cot Detail -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="bedroom">
+        <!-- Project 29: Office / Study -->
+        <div class="project-item" data-category="study-area">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="https://i.ibb.co/TDwgRtDx/Screenshot-2026-07-28-125926.png" alt="Premium Bedroom Cot Wall" loading="lazy">
+              <img src="https://i.ibb.co/1tBKvPNz/Screenshot-2026-07-28-130813.png" alt="Study Workspace" loading="lazy">
+              <div class="photo-badge">PHOTO 57</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Study Workspace</h3>
+                  <p>Office & Study Area</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 30: Premium Luxury Bedroom -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="bedroom">
+        <!-- Project 30: Bedroom Cot Luxury -->
+        <div class="project-item" data-category="bedroom">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="assets/bedroom_lux_1.jpg" alt="Premium Luxury Bedroom Cot" loading="lazy">
+              <img src="assets/bedroom_lux_1.jpg" alt="Premium Luxury Bedroom" loading="lazy">
+              <div class="photo-badge">PHOTO 15</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Master Suite</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 31: Luxury Living Room -->
-        <div class="project-item reveal-on-scroll reveal-left delay-0" data-category="living-room">
+        <!-- Project 31: Living Room Luxury -->
+        <div class="project-item" data-category="living-room">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="assets/living_lux_1.jpg" alt="Luxury Contemporary Living Room" loading="lazy">
+              <img src="assets/living_lux_1.jpg" alt="Luxury Living Room" loading="lazy">
+              <div class="photo-badge">PHOTO 17</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Luxury Living Room</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 32: Premium Living Area -->
-        <div class="project-item reveal-on-scroll reveal-scale delay-100" data-category="living-room">
+        <!-- Project 32: Living Room Details -->
+        <div class="project-item" data-category="living-room">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="assets/hero_living.jpg" alt="Premium Luxury Living Room Detail" loading="lazy">
+              <img src="assets/hero_living.jpg" alt="Premium Living Room" loading="lazy">
+              <div class="photo-badge">PHOTO 18</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Premium Living Room</h3>
+                  <p>Residential Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 33: Premium Walnut Workspace -->
-        <div class="project-item reveal-on-scroll reveal-right delay-200" data-category="study-area">
+        <!-- Project 33: Office Walnut Workspace -->
+        <div class="project-item" data-category="study-area">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="assets/hero_commercial.jpg" alt="Premium Walnut Office Workspace" loading="lazy">
+              <img src="assets/hero_commercial.jpg" alt="Walnut Office Workspace" loading="lazy">
+              <div class="photo-badge">PHOTO 19</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Executive Office</h3>
+                  <p>Commercial Fitout</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 34: Luxury Modular Kitchen -->
-        <div class="project-item reveal-on-scroll reveal-up delay-300" data-category="kitchen">
+        <!-- Project 34: Modular Kitchen Layout -->
+        <div class="project-item" data-category="kitchen">
           <div class="project-thumbnail">
             <div class="photo-wrapper">
-              <img src="assets/hero_kitchen.jpg" alt="Luxury Modular Kitchen Layout" loading="lazy">
+              <img src="assets/hero_kitchen.jpg" alt="Modular Kitchen Layout" loading="lazy">
+              <div class="photo-badge">PHOTO 20</div>
+              <div class="project-overlay">
+                <div class="overlay-content">
+                  <h3>Executive Kitchen</h3>
+                  <p>Kitchen Interior</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- Lightbox Modal Container -->
+  <div class="project-modal">
+    <div class="project-modal-container">
+      <button class="project-modal-close" aria-label="Close Preview">&times;</button>
+      <div class="project-modal-visual">
+        <img id="modalProjectImg" src="" alt="Project Preview">
+        <span id="modalProjectBadge" class="photo-badge" style="display: none;"></span>
       </div>
     </div>
   </div>
@@ -490,7 +693,7 @@
             <img src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" alt="Dream House Logo" class="logo-img" style="height: 60px;">
           </a>
           <p class="footer-tagline">We design beautiful and comfortable homes and offices that fit your style and budget.</p>
-                              <div class="footer-social-links" style="margin-top: 1rem;">
+          <div class="footer-social-links" style="margin-top: 1rem;">
             <a href="https://www.facebook.com/profile.php?id=100064077821686" target="_blank" class="social-icon-btn" aria-label="Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
@@ -499,6 +702,15 @@
             </a>
             <a href="https://www.youtube.com/channel/UC_JZIRee_6iJRSRosFs3j-w" target="_blank" class="social-icon-btn" aria-label="YouTube">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://wa.me/917012242265" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            </a>
+            <a href="mailto:dreamhouseinteriorsolution@gmail.com" class="social-icon-btn" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://maps.app.goo.gl/pKcuPM1gU2tcczP87" target="_blank" class="social-icon-btn" aria-label="Google Maps">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             </a>
           </div>
         </div>
@@ -551,7 +763,6 @@
     <a href="tel:+918086560895" class="floating-btn call-btn" aria-label="Call Us">
       <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
-    <!-- Official WhatsApp Logo Sticky Action Button -->
     <a href="https://wa.me/917012242265" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
       <svg viewBox="0 0 448 512" fill="currentColor">
         <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
