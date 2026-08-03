@@ -1,5 +1,6 @@
-- [x] Sourced a bright, premium living-room interior image (assets/living_room_lounge.jpg)
-- [x] Swapped the image inside the About Us summary section of index.html
-- [x] Preserved the homepage Hero Banner image assets/service_living.jpg untouched
-- [x] Maintained text, heading, buttons, transitions, and layout structure intact
+- [x] Uncover layout bug where nav-right-info hides mobile-toggle inside media queries
+- [x] Configure nav-right-info flex display and hide desktop call button on mobile width queries
+- [x] Increase hamburger button dimensions to 44px for comfortable touch finger interaction
+- [x] Refine line spans positioning (28px width, left: 8px) and configure a centered X active state cross
+- [x] Increase z-indexes of header, toggle, and panel to prevent overlapping behind page sections
 - [x] Deployed updates to remote repository
