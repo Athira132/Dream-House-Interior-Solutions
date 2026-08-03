@@ -501,11 +501,31 @@ header.site-header.scrolled .logo-link img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.98) 0%, 
+    rgba(0, 0, 0, 0.92) 15%, 
+    rgba(0, 0, 0, 0.8) 35%, 
+    rgba(0, 0, 0, 0.55) 55%, 
+    rgba(0, 0, 0, 0.25) 75%, 
+    rgba(0, 0, 0, 0.05) 90%, 
+    rgba(0, 0, 0, 0) 100%
+  );
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 80%);
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 80%);
+  mask-image: linear-gradient(to right, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,1) 40%, 
+    rgba(0,0,0,0.6) 65%, 
+    rgba(0,0,0,0.15) 85%, 
+    rgba(0,0,0,0) 100%
+  );
+  -webkit-mask-image: linear-gradient(to right, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,1) 40%, 
+    rgba(0,0,0,0.6) 65%, 
+    rgba(0,0,0,0.15) 85%, 
+    rgba(0,0,0,0) 100%
+  );
   z-index: 2;
 }
 
@@ -1242,9 +1262,26 @@ header.site-header.scrolled .logo-link img {
 
 @media (max-width: 768px) {
   .hero-overlay {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0) 100%) !important;
-    mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%) !important;
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%) !important;
+    background: linear-gradient(to right, 
+      rgba(0, 0, 0, 0.98) 0%, 
+      rgba(0, 0, 0, 0.92) 20%, 
+      rgba(0, 0, 0, 0.8) 45%, 
+      rgba(0, 0, 0, 0.5) 70%, 
+      rgba(0, 0, 0, 0.15) 85%, 
+      rgba(0, 0, 0, 0) 100%
+    ) !important;
+    mask-image: linear-gradient(to right, 
+      rgba(0,0,0,1) 0%, 
+      rgba(0,0,0,1) 60%, 
+      rgba(0,0,0,0.5) 80%, 
+      rgba(0,0,0,0) 100%
+    ) !important;
+    -webkit-mask-image: linear-gradient(to right, 
+      rgba(0,0,0,1) 0%, 
+      rgba(0,0,0,1) 60%, 
+      rgba(0,0,0,0.5) 80%, 
+      rgba(0,0,0,0) 100%
+    ) !important;
   }
   .hero-content {
     background: transparent !important;
