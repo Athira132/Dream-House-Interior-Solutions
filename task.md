@@ -1,6 +1,6 @@
-- [x] Uncover layout bug where nav-right-info hides mobile-toggle inside media queries
-- [x] Configure nav-right-info flex display and hide desktop call button on mobile width queries
-- [x] Increase hamburger button dimensions to 44px for comfortable touch finger interaction
-- [x] Refine line spans positioning (28px width, left: 8px) and configure a centered X active state cross
-- [x] Increase z-indexes of header, toggle, and panel to prevent overlapping behind page sections
+- [x] Configure CSS display rules for .services-grid on about.html
+- [x] Apply grid overrides for .bedroom-grid, .commercial-grid, etc., to collapse to 1 column on mobile viewports
+- [x] Scale down form and card paddings on small screens (320px - 430px)
+- [x] Ensure .service-hero container remains clear of fixed header overlap
+- [x] Update homepage hero overlay to vertical gradient on mobile to shield text readability
 - [x] Deployed updates to remote repository
