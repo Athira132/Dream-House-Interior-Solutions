@@ -1,5 +1,5 @@
-- [x] Uncover Portfolio height collapsing layout bug where absolute position overlays collapse to 0px height
-- [x] Configure height overrides to maintain image layout offsets and correct masonry script height calculations
-- [x] Apply flex wrapping rules to projects-filter-bar inside mobile media queries
-- [x] Ensure category tabs remain visible and fully wrap on common widths (320px - 430px)
+- [x] Sourced scroll reveal delay hiding the entire portfolio grid container initially
+- [x] Removed reveal-on-scroll delay wrapper classes from projects-masonry container
+- [x] Updated 32 loading="lazy" attributes to loading="eager" on gallery images
+- [x] Ensured prompt priority rendering when page opens
 - [x] Deployed updates to remote repository

@@ -702,18 +702,47 @@ header.site-header.scrolled .logo-link img {
 
 @media (max-width: 992px) {
   .services-preview-section .services-slider-track {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding: 0.5rem 0;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem !important;
+    width: 100% !important;
+    overflow-x: visible !important;
+    padding: 0.5rem 0 !important;
+    flex-wrap: wrap !important;
   }
   
   .services-preview-section .service-card {
-    flex: 0 0 150px;
-    scroll-snap-align: start;
+    flex: none !important;
+    width: 100% !important;
+    aspect-ratio: 1.5 / 1 !important;
+    scroll-snap-align: none !important;
+    padding: 2rem 1.5rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-preview-section .services-slider-track {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .services-preview-section .service-card {
+    aspect-ratio: 2.2 / 1 !important;
+    padding: 1.5rem 1.5rem !important;
+    gap: 1rem !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+  
+  .services-preview-section .service-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .services-preview-section .service-card .service-card-title {
+    font-size: 0.95rem !important;
+    text-align: left !important;
   }
 }
 
