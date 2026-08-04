@@ -1,6 +1,5 @@
-- [x] Configure CSS display rules for .services-grid on about.html
-- [x] Apply grid overrides for .bedroom-grid, .commercial-grid, etc., to collapse to 1 column on mobile viewports
-- [x] Scale down form and card paddings on small screens (320px - 430px)
-- [x] Ensure .service-hero container remains clear of fixed header overlap
-- [x] Update homepage hero overlay to vertical gradient on mobile to shield text readability
+- [x] Uncover Portfolio height collapsing layout bug where absolute position overlays collapse to 0px height
+- [x] Configure height overrides to maintain image layout offsets and correct masonry script height calculations
+- [x] Apply flex wrapping rules to projects-filter-bar inside mobile media queries
+- [x] Ensure category tabs remain visible and fully wrap on common widths (320px - 430px)
 - [x] Deployed updates to remote repository
