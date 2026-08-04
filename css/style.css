@@ -2443,3 +2443,97 @@ textarea.form-control {
     line-height: 1.65;
   }
 }
+
+/* About Page Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Subpage Hero Section Mobile Adjustments */
+.service-hero {
+  transition: min-height 0.3s ease, padding 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .service-hero {
+    height: auto !important;
+    min-height: 360px !important;
+    padding: 110px 1.5rem 4rem !important; /* pushes content down below 80px fixed header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-hero-title {
+    font-size: clamp(2rem, 6vw, 3rem) !important;
+  }
+  .service-hero-desc {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    max-width: 540px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 320px !important;
+    padding: 100px 1rem 3.5rem !important;
+  }
+  .about-quote {
+    font-size: 1.25rem !important;
+    line-height: 1.45 !important;
+  }
+}
+
+/* Small Screen Layout Overflow Fixes (320px - 430px) */
+@media (max-width: 575px) {
+  /* Prevent custom grid items from overflowing on small screens */
+  .bedroom-grid, .commercial-grid, .living-grid, .kitchen-grid, .contracting-grid, .wardrobe-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+  
+  /* Reduce padding on forms inside containers to maximize writing area */
+  .booking-modal-content, .compact-form {
+    padding: 2.5rem 1.5rem !important;
+  }
+  
+  /* Reduce card padding on mobile */
+  .review-card {
+    padding: 2.5rem 1.5rem !important;
+  }
+  
+  /* Scale down floating actions slightly to maximize screen space */
+  .floating-ctas {
+    bottom: 20px !important;
+    right: 20px !important;
+    gap: 8px !important;
+  }
+  .floating-btn {
+    width: 46px !important;
+    height: 46px !important;
+  }
+  
+  /* Make homepage hero title fit narrow viewports */
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.8rem) !important;
+  }
+  
+  /* Change left-to-right fade gradient to a top-to-bottom overlay for full readability */
+  .hero-overlay {
+    background: linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0.85) 0%, 
+      rgba(0, 0, 0, 0.65) 50%, 
+      rgba(0, 0, 0, 0.45) 100%
+    ) !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+  }
+}
