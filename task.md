@@ -1,5 +1,5 @@
-- [x] Sourced scroll reveal delay hiding the entire portfolio grid container initially
-- [x] Removed reveal-on-scroll delay wrapper classes from projects-masonry container
-- [x] Updated 32 loading="lazy" attributes to loading="eager" on gallery images
-- [x] Ensured prompt priority rendering when page opens
+- [x] Configured CSS grid rules for Our Services section on homepage
+- [x] Convert services slider track to a 2-column grid on tablet and 1-column list on mobile
+- [x] Style mobile service cards with horizontal flex alignment, gold icons on the left, and typography on the right
+- [x] Restructured card dimensions and paddings to prevent clipping on widths (320px - 430px)
 - [x] Deployed updates to remote repository
