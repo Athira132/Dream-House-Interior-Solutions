@@ -2594,12 +2594,12 @@ textarea.form-control {
   line-height: 1.1 !important;
   text-transform: uppercase !important;
   color: #ffffff !important;
-  -webkit-text-stroke: 1.5px #D4AF6A !important;
+  -webkit-text-stroke: 2.5px #0a0a0c !important;
 }
 
 .hero-title span, .service-hero-title span {
   color: #ffffff !important;
-  -webkit-text-stroke: 1.5px #D4AF6A !important;
+  -webkit-text-stroke: 2.5px #0a0a0c !important;
 }
 
 .hero-content .eyebrow, .service-hero-content .eyebrow {
@@ -2624,5 +2624,9 @@ textarea.form-control {
     height: 75vh !important;
     min-height: 480px !important;
     padding: 0 0 6rem 0 !important;
+  }
+  .hero-title, .service-hero-title,
+  .hero-title span, .service-hero-title span {
+    -webkit-text-stroke: 1.5px #0a0a0c !important;
   }
 }
