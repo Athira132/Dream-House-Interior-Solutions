@@ -1,3 +1,6 @@
-- [x] Clean up path typos (../https://) on all 7 service subpages
+- [x] Remove all gradients, transparent black layers, and shades from hero overlays globally
+- [x] Strip text-shadow rules and container backgrounds from hero writings on all pages
+- [x] Configure hero section heights to 80vh (desktop) and 65vh (mobile) to extend banners downward
+- [x] Position hero headings directly over the raw bright photos with left-flex alignment
 - [x] Re-run global sequential numbering to ensure all badges remain synchronized
 - [x] Deployed updates to remote repository

@@ -2574,22 +2574,49 @@ textarea.form-control {
 
 /* Unified Large Hero Banners with Raw Bright Images */
 .hero-section, .service-hero {
-  height: 80vh !important;
-  min-height: 550px !important;
+  height: 90vh !important;
+  min-height: 650px !important;
   display: flex !important;
   align-items: flex-end !important;
   justify-content: flex-start !important;
-  padding: 0 0 6rem 0 !important;
+  padding: 0 0 10rem 0 !important;
 }
 
 .hero-overlay, .service-hero-overlay {
   display: none !important;
 }
 
+/* Highly prominent typography overrides for raw background images */
+.hero-title, .service-hero-title {
+  font-size: clamp(3.2rem, 7vw, 5.2rem) !important;
+  font-weight: 900 !important; /* Extremely bold/black */
+  letter-spacing: -0.02em !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase !important;
+  color: var(--white) !important;
+}
+
+.hero-content .eyebrow, .service-hero-content .eyebrow {
+  font-size: 0.95rem !important;
+  letter-spacing: 0.3em !important;
+  font-weight: 800 !important;
+  color: var(--gold) !important;
+  margin-bottom: 1.5rem !important;
+  display: inline-block !important;
+}
+
+.hero-desc, .service-hero-desc {
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  max-width: 700px !important;
+  color: #f9fafb !important;
+}
+
 @media (max-width: 768px) {
   .hero-section, .service-hero {
-    height: 65vh !important;
-    min-height: 400px !important;
-    padding: 0 0 3.5rem 0 !important;
+    height: 75vh !important;
+    min-height: 480px !important;
+    padding: 0 0 6rem 0 !important;
   }
 }
