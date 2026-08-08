@@ -1,2 +1,3 @@
-- [x] Configure webkit-text-stroke outline border (1px solid #0a0a0c) on all hero headings and inner spans in style.css
+- [x] Configure hero headings (titles, spans) to deep dark charcoal (#0a0a0c) in style.css
+- [x] Apply a 1.5px webkit-text-stroke outline border in champagne gold (#D4AF6A) to hero headings
 - [x] Deployed updates to remote repository
