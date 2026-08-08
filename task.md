@@ -1,5 +1,6 @@
-- [x] Configured CSS grid rules for Our Services section on homepage
-- [x] Convert services slider track to a 2-column grid on tablet and 1-column list on mobile
-- [x] Style mobile service cards with horizontal flex alignment, gold icons on the left, and typography on the right
-- [x] Restructured card dimensions and paddings to prevent clipping on widths (320px - 430px)
+- [x] Resolve 7 new unique ImgBB sharing links to direct image CDN links
+- [x] Insert new modular kitchen, TV unit, cupboard, staircase, and gallery-only photos to respective sections and main gallery
+- [x] Compile master list of 59 unique showcase photos and assign consistent sequential numbering (01 to 59)
+- [x] Inject photo-badge markup programmatically into all photo container divs across all HTML files
+- [x] Configure style rules in style.css to keep corner labels styled relatively and correctly positioned
 - [x] Deployed updates to remote repository
