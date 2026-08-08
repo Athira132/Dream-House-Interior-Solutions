@@ -1,5 +1,6 @@
-- [x] Replace Photo 40 with Photo 34 (TV unit image) in index.html and living-room.html
-- [x] Remove the 9 blacklisted photos completely from all gallery sections on all pages
-- [x] Renumber the remaining 46 photos sequentially from 1 to 46
-- [x] Verify layout consistency and ensure no gaps in numbering
+- [x] Resolve Home page hero banner share link to direct CDN image
+- [x] Convert Home page hero section into a clean, image-only banner and shift text content below
+- [x] Map and configure corresponding gallery photos as hero backgrounds on all 11 subpages
+- [x] Strip text overlays and dark covers from subpage heroes, moving title sections below the banner images
+- [x] Re-run global sequential numbering to ensure all badges remain synchronized
 - [x] Deployed updates to remote repository
