@@ -1,3 +1,3 @@
-- [x] Configure hero headings (titles, spans) to Arial Black font-family in style.css
-- [x] Clean up unused Google Font link tags for Archivo Black in <head> of all 15 HTML files
+- [x] Inject Google Font link tag for Poppins in <head> of all 15 HTML files
+- [x] Configure hero headings (titles, spans) to Poppins (font weight 700) in style.css
 - [x] Deployed updates to remote repository

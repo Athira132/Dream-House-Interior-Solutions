@@ -26,8 +26,8 @@
   --border-hover: rgba(255, 255, 255, 0.15);
   
   /* Fonts */
-  --font-serif: 'Sekuya', system-ui;
-  --font-sans: 'Sekuya', system-ui;
+  --font-serif: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
   
   /* Transition & Blur */
   --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2625,44 +2625,20 @@ textarea.form-control {
   }
 }
 
+
 /* Appended Global Customizations */
 
-/* Sekuya regular font support */
-.sekuya-regular {
-  font-family: "Sekuya", system-ui;
-  font-weight: 400;
-  font-style: normal;
+/* Bullet-proof Poppins override for the entire site */
+*, *::before, *::after {
+  font-family: "Poppins", sans-serif !important;
 }
-
-/* Bullet-proof font override for entire site */
-body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, select, textarea, div, li, ul, ol, section {
-  font-family: "Sekuya", system-ui !important;
-}
-
-/* Transparent navbar styles globally */
-header.site-header, header.site-header.scrolled {
-  background: transparent !important;
-  background-color: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-/* Mobile toggle bolder white bars */
-.mobile-toggle span {
-  background-color: #ffffff !important;
-  height: 3px !important;
-}
-
-/* Appended Global Customizations - Archivo and Black Navbar */
 
 /* Poppins Hero headings */
 .hero-title, .service-hero-title,
 .hero-title span, .service-hero-title span {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-size: clamp(2.4rem, 6vw, 4.5rem) !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   letter-spacing: -0.03em !important;
   line-height: 1.05 !important;
   text-transform: uppercase !important;
@@ -2671,10 +2647,20 @@ header.site-header, header.site-header.scrolled {
   text-shadow: 0 2px 10px rgba(10, 10, 12, 0.45), 0 1px 3px rgba(10, 10, 12, 0.3) !important;
 }
 
-/* Navbar menu text to black */
+/* Section Headings Hierarchy */
+h1, h2, .section-title {
+  font-weight: 700 !important;
+}
+
+/* Card Headings Hierarchy */
+h3, h4, .card-title, .project-title, .service-card h3 {
+  font-weight: 600 !important;
+}
+
+/* Navigation links Hierarchy */
 header.site-header .nav-link {
   color: #000000 !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 header.site-header .nav-link:hover, 
@@ -2686,4 +2672,14 @@ header.site-header .nav-link.active {
 header.site-header .mobile-toggle span {
   background-color: #000000 !important;
   height: 3px !important;
+}
+
+/* Transparent navbar styles globally */
+header.site-header, header.site-header.scrolled {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
