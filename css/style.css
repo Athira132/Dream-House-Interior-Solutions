@@ -2593,13 +2593,13 @@ textarea.form-control {
   letter-spacing: -0.02em !important;
   line-height: 1.1 !important;
   text-transform: uppercase !important;
-  color: #D4AF6A !important;
-  -webkit-text-stroke: 1px #0a0a0c !important;
+  color: #0a0a0c !important;
+  -webkit-text-stroke: 1.5px #D4AF6A !important;
 }
 
 .hero-title span, .service-hero-title span {
-  color: #D4AF6A !important;
-  -webkit-text-stroke: 1px #0a0a0c !important;
+  color: #0a0a0c !important;
+  -webkit-text-stroke: 1.5px #D4AF6A !important;
 }
 
 .hero-content .eyebrow, .service-hero-content .eyebrow {

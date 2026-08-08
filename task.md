@@ -1,3 +1,2 @@
-- [x] Configure hero headings (titles, spans, and eyebrows) to champagne gold (#D4AF6A) in style.css
-- [x] Set hero descriptions and subheadings to muted champagne (#E5D3B3) in style.css
+- [x] Configure webkit-text-stroke outline border (1px solid #0a0a0c) on all hero headings and inner spans in style.css
 - [x] Deployed updates to remote repository
