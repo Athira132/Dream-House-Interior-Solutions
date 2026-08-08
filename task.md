@@ -1,6 +1,4 @@
-- [x] Resolve 7 new unique ImgBB sharing links to direct image CDN links
-- [x] Insert new modular kitchen, TV unit, cupboard, staircase, and gallery-only photos to respective sections and main gallery
-- [x] Compile master list of 59 unique showcase photos and assign consistent sequential numbering (01 to 59)
-- [x] Inject photo-badge markup programmatically into all photo container divs across all HTML files
-- [x] Configure style rules in style.css to keep corner labels styled relatively and correctly positioned
+- [x] Run duplicate audit across all galleries on all pages to ensure unique image sets
+- [x] Reconfigure numbering registry to output non-padded sequential integers (1, 2, 3...)
+- [x] Inject updated photo-badge elements across all HTML pages
 - [x] Deployed updates to remote repository
