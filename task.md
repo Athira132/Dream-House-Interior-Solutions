@@ -1,7 +1,3 @@
-- [x] Restore overlaid headings on top of all hero banners globally
-- [x] Configure double gradient overlay rules in style.css for high readability without masking background images
-- [x] Increase all service page hero banner heights significantly (70vh on desktop, 60vh on mobile)
-- [x] Set specific designated gallery photos as hero banner backgrounds for specified subpages
-- [x] Remove the showcase gallery sections from the 5 designated landing pages completely
-- [x] Re-run global sequential numbering to ensure all remaining badges are fully synchronized
+- [x] Clean up path typos (../https://) on all 7 service subpages
+- [x] Re-run global sequential numbering to ensure all badges remain synchronized
 - [x] Deployed updates to remote repository

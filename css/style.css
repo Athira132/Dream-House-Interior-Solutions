@@ -2571,3 +2571,25 @@ textarea.form-control {
 .about-summary-visual {
   position: relative !important;
 }
+
+/* Unified Large Hero Banners with Raw Bright Images */
+.hero-section, .service-hero {
+  height: 80vh !important;
+  min-height: 550px !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  padding: 0 0 6rem 0 !important;
+}
+
+.hero-overlay, .service-hero-overlay {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section, .service-hero {
+    height: 65vh !important;
+    min-height: 400px !important;
+    padding: 0 0 3.5rem 0 !important;
+  }
+}
