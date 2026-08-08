@@ -1,4 +1,6 @@
-- [x] Configure hero headings (titles, spans) to pure white (#ffffff) in style.css
-- [x] Remove all webkit-text-stroke outline border styling from hero headings globally
-- [x] Adjust heading font size to clamp(2.4rem, 5.5vw, 3.8rem) and font weight to 800 for an elegant balance
+- [x] Inject Google Font link tag for Archivo Black in <head> of all 15 HTML files
+- [x] Apply Archivo Black (font weight 900, clamp size, -0.03em letter-spacing, 1.05 line-height) globally in style.css to all hero headings
+- [x] Configure a subtle, high-contrast text-shadow for universal hero heading legibility
+- [x] Style header.site-header .nav-link to black (#000000) and bold (font weight 700)
+- [x] Style mobile toggle toggle bars to black (#000000)
 - [x] Deployed updates to remote repository
