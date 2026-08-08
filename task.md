@@ -1,4 +1,5 @@
-- [x] Run duplicate audit across all galleries on all pages to ensure unique image sets
-- [x] Reconfigure numbering registry to output non-padded sequential integers (1, 2, 3...)
-- [x] Inject updated photo-badge elements across all HTML pages
+- [x] Replace Photo 40 with Photo 34 (TV unit image) in index.html and living-room.html
+- [x] Remove the 9 blacklisted photos completely from all gallery sections on all pages
+- [x] Renumber the remaining 46 photos sequentially from 1 to 46
+- [x] Verify layout consistency and ensure no gaps in numbering
 - [x] Deployed updates to remote repository
