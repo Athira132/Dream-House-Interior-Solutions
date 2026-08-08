@@ -26,8 +26,8 @@
   --border-hover: rgba(255, 255, 255, 0.15);
   
   /* Fonts */
-  --font-serif: 'Cormorant Garamond', serif;
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Sekuya', system-ui;
+  --font-sans: 'Sekuya', system-ui;
   
   /* Transition & Blur */
   --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2629,4 +2629,34 @@ textarea.form-control {
   .hero-title span, .service-hero-title span {
     -webkit-text-stroke: 1.5px #0a0a0c !important;
   }
+}
+
+/* Appended Global Customizations */
+
+/* Sekuya regular font support */
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bullet-proof font override for entire site */
+body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, select, textarea, div, li, ul, ol, section {
+  font-family: "Sekuya", system-ui !important;
+}
+
+/* Transparent navbar styles globally */
+header.site-header, header.site-header.scrolled {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Mobile toggle bolder white bars */
+.mobile-toggle span {
+  background-color: #ffffff !important;
+  height: 3px !important;
 }

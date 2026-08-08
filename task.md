@@ -1,3 +1,4 @@
 - [x] Configure hero headings (titles, spans) to pure white (#ffffff) in style.css
-- [x] Maintain 1.5px webkit-text-stroke outline border in champagne gold (#D4AF6A) to hero headings
+- [x] Apply a 2.5px webkit-text-stroke outline border in black (#0a0a0c) on desktop
+- [x] Apply a 1.5px webkit-text-stroke outline border in black (#0a0a0c) on mobile
 - [x] Deployed updates to remote repository
