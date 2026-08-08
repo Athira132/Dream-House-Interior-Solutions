@@ -2604,7 +2604,7 @@ textarea.form-control {
   font-size: 0.95rem !important;
   letter-spacing: 0.3em !important;
   font-weight: 800 !important;
-  color: #D4AF6A !important;
+  color: #000000 !important;
   margin-bottom: 1.5rem !important;
   display: inline-block !important;
 }
@@ -2660,7 +2660,7 @@ h3, h4, .card-title, .project-title, .service-card h3 {
 /* Navigation links Hierarchy */
 header.site-header .nav-link {
   color: #000000 !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 header.site-header .nav-link:hover, 
@@ -2671,7 +2671,7 @@ header.site-header .nav-link.active {
 /* Mobile toggle hamburger bars to black */
 header.site-header .mobile-toggle span {
   background-color: #000000 !important;
-  height: 3px !important;
+  height: 4px !important;
 }
 
 /* Transparent navbar styles globally */

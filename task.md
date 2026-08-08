@@ -1,3 +1,4 @@
-- [x] Inject Google Font link tag for Poppins in <head> of all 15 HTML files
-- [x] Configure hero headings (titles, spans) to Poppins (font weight 700) in style.css
+- [x] Inject Google Font link tag for multi-weight Poppins in <head> of all 15 HTML files
+- [x] Apply Poppins globally using * selector in style.css to override all native fonts
+- [x] Configure weights hierarchy rules (Hero: 800, Section: 700, Card: 600, Navigation: 600)
 - [x] Deployed updates to remote repository
