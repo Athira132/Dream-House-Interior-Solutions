@@ -1,4 +1,6 @@
-- [x] Configure hero headings (titles, spans) to pure white (#ffffff) in style.css
-- [x] Apply a 2.5px webkit-text-stroke outline border in black (#0a0a0c) on desktop
-- [x] Apply a 1.5px webkit-text-stroke outline border in black (#0a0a0c) on mobile
+- [x] Inject Google Font link tags for Sekuya font in <head> of all 15 HTML files
+- [x] Apply Sekuya font overrides globally to root variables and elements in style.css
+- [x] Style header.site-header and its scrolled state to transparent (remove backdrops, blurs, borders)
+- [x] Set .nav-link menu texts to white (#ffffff) and font weight to 700
+- [x] Scale mobile hamburger button toggle bars to 3px thick white (#ffffff)
 - [x] Deployed updates to remote repository

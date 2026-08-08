@@ -2588,18 +2588,16 @@ textarea.form-control {
 
 /* Highly prominent typography overrides for raw background images */
 .hero-title, .service-hero-title {
-  font-size: clamp(3.2rem, 7vw, 5.2rem) !important;
-  font-weight: 900 !important; /* Extremely bold/black */
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem) !important;
+  font-weight: 800 !important; /* Bold/prominent, but not oversized */
   letter-spacing: -0.02em !important;
-  line-height: 1.1 !important;
+  line-height: 1.15 !important;
   text-transform: uppercase !important;
   color: #ffffff !important;
-  -webkit-text-stroke: 2.5px #0a0a0c !important;
 }
 
 .hero-title span, .service-hero-title span {
   color: #ffffff !important;
-  -webkit-text-stroke: 2.5px #0a0a0c !important;
 }
 
 .hero-content .eyebrow, .service-hero-content .eyebrow {
@@ -2624,10 +2622,6 @@ textarea.form-control {
     height: 75vh !important;
     min-height: 480px !important;
     padding: 0 0 6rem 0 !important;
-  }
-  .hero-title, .service-hero-title,
-  .hero-title span, .service-hero-title span {
-    -webkit-text-stroke: 1.5px #0a0a0c !important;
   }
 }
 
