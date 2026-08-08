@@ -1,6 +1,4 @@
-- [x] Remove all gradients, transparent black layers, and shades from hero overlays globally
-- [x] Strip text-shadow rules and container backgrounds from hero writings on all pages
-- [x] Configure hero section heights to 80vh (desktop) and 65vh (mobile) to extend banners downward
-- [x] Position hero headings directly over the raw bright photos with left-flex alignment
-- [x] Re-run global sequential numbering to ensure all badges remain synchronized
+- [x] Configure hero section heights to 90vh (desktop) and 75vh (mobile) in style.css to extend banners downward
+- [x] Apply bold typography settings to hero headings (font weight 900, larger font size, gold eyebrows, bright descriptions)
+- [x] Align text containers with increased bottom padding (10rem on desktop, 6rem on mobile)
 - [x] Deployed updates to remote repository

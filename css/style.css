@@ -2593,14 +2593,18 @@ textarea.form-control {
   letter-spacing: -0.02em !important;
   line-height: 1.1 !important;
   text-transform: uppercase !important;
-  color: var(--white) !important;
+  color: #D4AF6A !important;
+}
+
+.hero-title span, .service-hero-title span {
+  color: #D4AF6A !important;
 }
 
 .hero-content .eyebrow, .service-hero-content .eyebrow {
   font-size: 0.95rem !important;
   letter-spacing: 0.3em !important;
   font-weight: 800 !important;
-  color: var(--gold) !important;
+  color: #D4AF6A !important;
   margin-bottom: 1.5rem !important;
   display: inline-block !important;
 }
@@ -2610,7 +2614,7 @@ textarea.form-control {
   font-weight: 600 !important;
   line-height: 1.6 !important;
   max-width: 700px !important;
-  color: #f9fafb !important;
+  color: #E5D3B3 !important;
 }
 
 @media (max-width: 768px) {
