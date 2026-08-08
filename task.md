@@ -1,6 +1,7 @@
-- [x] Resolve Home page hero banner share link to direct CDN image
-- [x] Convert Home page hero section into a clean, image-only banner and shift text content below
-- [x] Map and configure corresponding gallery photos as hero backgrounds on all 11 subpages
-- [x] Strip text overlays and dark covers from subpage heroes, moving title sections below the banner images
-- [x] Re-run global sequential numbering to ensure all badges remain synchronized
+- [x] Restore overlaid headings on top of all hero banners globally
+- [x] Configure double gradient overlay rules in style.css for high readability without masking background images
+- [x] Increase all service page hero banner heights significantly (70vh on desktop, 60vh on mobile)
+- [x] Set specific designated gallery photos as hero banner backgrounds for specified subpages
+- [x] Remove the showcase gallery sections from the 5 designated landing pages completely
+- [x] Re-run global sequential numbering to ensure all remaining badges are fully synchronized
 - [x] Deployed updates to remote repository
