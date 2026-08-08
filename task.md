@@ -1,4 +1,3 @@
-- [x] Configure hero section heights to 90vh (desktop) and 75vh (mobile) in style.css to extend banners downward
-- [x] Apply bold typography settings to hero headings (font weight 900, larger font size, gold eyebrows, bright descriptions)
-- [x] Align text containers with increased bottom padding (10rem on desktop, 6rem on mobile)
+- [x] Configure hero headings (titles, spans, and eyebrows) to champagne gold (#D4AF6A) in style.css
+- [x] Set hero descriptions and subheadings to muted champagne (#E5D3B3) in style.css
 - [x] Deployed updates to remote repository

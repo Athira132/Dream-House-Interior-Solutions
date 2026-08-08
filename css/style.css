@@ -2594,10 +2594,12 @@ textarea.form-control {
   line-height: 1.1 !important;
   text-transform: uppercase !important;
   color: #D4AF6A !important;
+  -webkit-text-stroke: 1px #0a0a0c !important;
 }
 
 .hero-title span, .service-hero-title span {
   color: #D4AF6A !important;
+  -webkit-text-stroke: 1px #0a0a0c !important;
 }
 
 .hero-content .eyebrow, .service-hero-content .eyebrow {
