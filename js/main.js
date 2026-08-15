@@ -283,7 +283,7 @@ function initProjectModal() {
       const badge = item.querySelector('.photo-badge');
 
       if (modalImg && img) {
-        modalImg.src = img.src;
+        modalImg.src = img.dataset.full || img.src;
         modalImg.alt = img.alt || 'Project Visual';
       }
       if (modalBadge && badge) {
@@ -320,24 +320,12 @@ function initProjectModal() {
   });
 }
 
-/* Floating Action buttons visibility threshold */
 function initFloatingButtons() {
   const floaters = document.querySelector('.floating-ctas');
   if (!floaters) return;
 
-  floaters.style.opacity = '0';
-  floaters.style.pointerEvents = 'none';
-  floaters.style.transition = 'opacity 0.4s ease';
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      floaters.style.opacity = '1';
-      floaters.style.pointerEvents = 'all';
-    } else {
-      floaters.style.opacity = '0';
-      floaters.style.pointerEvents = 'none';
-    }
-  });
+  floaters.style.opacity = '1';
+  floaters.style.pointerEvents = 'all';
 }
 
 /* FAQ Collapsible Accordions */
@@ -752,6 +740,15 @@ function initReviewsSlider() {
         dot.classList.remove('active');
       }
     });
+
+    // Update active review card
+    cards.forEach((card, idx) => {
+      if (idx === currentIndex) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    });
   }
 
   function nextSlide() {
@@ -996,4 +993,45 @@ function initAboutSlider() {
   startAutoplay();
   updateSlider();
 }
+
+/* Global helper to open booking modal with service pre-selected */
+window.openEnquiryModal = function(serviceName) {
+  const modal = document.querySelector('.booking-modal');
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Auto-select the service
+    const wrapper = document.querySelector('.custom-select-wrapper');
+    if (wrapper) {
+      const trigger = wrapper.querySelector('.custom-select-trigger');
+      const hiddenInput = wrapper.querySelector('input[type="hidden"]');
+      const options = wrapper.querySelectorAll('.custom-option');
+      
+      options.forEach(opt => {
+        const val = opt.getAttribute('data-value');
+        if (val && (
+            val.toLowerCase() === serviceName.toLowerCase() || 
+            (serviceName.toLowerCase().includes('kitchen') && val.toLowerCase().includes('kitchen')) ||
+            (serviceName.toLowerCase().includes('bedroom') && val.toLowerCase().includes('bedroom')) ||
+            (serviceName.toLowerCase().includes('living') && val.toLowerCase().includes('living')) ||
+            (serviceName.toLowerCase().includes('bathroom') && val.toLowerCase().includes('bathroom')) ||
+            (serviceName.toLowerCase().includes('wardrobe') && val.toLowerCase().includes('wardrobe')) ||
+            (serviceName.toLowerCase().includes('office') && val.toLowerCase().includes('office')) ||
+            (serviceName.toLowerCase().includes('gypsum') && val.toLowerCase().includes('gypsum')) ||
+            (serviceName.toLowerCase().includes('partition') && val.toLowerCase().includes('partition')) ||
+            (serviceName.toLowerCase().includes('door') && val.toLowerCase().includes('door')) ||
+            (serviceName.toLowerCase().includes('planning') && val.toLowerCase().includes('planning')) ||
+            (serviceName.toLowerCase().includes('designing') && val.toLowerCase().includes('designing'))
+        )) {
+          trigger.textContent = opt.textContent;
+          hiddenInput.value = val;
+          options.forEach(o => o.classList.remove('selected'));
+          opt.classList.add('selected');
+        }
+      });
+    }
+  }
+};
+
 
