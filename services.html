@@ -1,558 +1,591 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Dream House Interior Solutions</title>
-  <meta name="description" content="Explore our premium range of interior design and execution services at Dream House Interior Solutions. We handle residential, commercial, and turnkey projects.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" as="image" href="https://i.ibb.co/LXXxVT0r/image.png">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interior Design Services &amp; Solutions | Dream House Interior</title>
+<meta content="Discover our premium interior design solutions, including residential interior design, custom modular kitchens, wardrobe styling, and commercial space design." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://dream-house-interior-solutions-pied.vercel.app/services" rel="canonical"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="https://dream-house-interior-solutions-pied.vercel.app/services" property="og:url"/>
+<meta content="Interior Design Services &amp; Solutions | Dream House Interior" property="og:title"/>
+<meta content="Discover our premium interior design solutions, including residential interior design, custom modular kitchens, wardrobe styling, and commercial space design." property="og:description"/>
+<meta content="https://dream-house-interior-solutions-pied.vercel.app/assets/hero_kitchen.jpg" property="og:image"/>
+<!-- Twitter -->
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://dream-house-interior-solutions-pied.vercel.app/services" property="twitter:url"/>
+<meta content="Interior Design Services &amp; Solutions | Dream House Interior" property="twitter:title"/>
+<meta content="Discover our premium interior design solutions, including residential interior design, custom modular kitchens, wardrobe styling, and commercial space design." property="twitter:description"/>
+<meta content="https://dream-house-interior-solutions-pied.vercel.app/assets/hero_kitchen.jpg" property="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link as="image" href="https://i.ibb.co/LXXxVT0r/image.png" rel="preload"/>
+<!-- Structured Data (JSON-LD Schema) -->
+<script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dream-house-interior-solutions-pied.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://dream-house-interior-solutions-pied.vercel.app/services"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Interior Design",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Dream House Interior Solutions",
+        "url": "https://dream-house-interior-solutions-pied.vercel.app/"
+      },
+      "areaServed": "Kerala, India",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Interior Design Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Modular Kitchen Design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Residential Interior Design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Interior Design"
+            }
+          }
+        ]
+      }
+    }
+  ]
+  </script>
 </head>
 <body>
-
-  <!-- Site Navigation Header -->
-  <header class="site-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-link">
-        <img src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" alt="Dream House Logo" class="logo-img">
-      </a>
-      
-      <nav class="nav-menu">
-        <a href="index.html" class="nav-link">HOME</a>
-        <a href="about.html" class="nav-link">ABOUT US</a>
-        
-        <!-- Services Mega Menu Link -->
-        <div class="nav-dropdown">
-          <a href="services.html" class="nav-link active">SERVICES <span style="font-size:0.6rem; vertical-align:middle">&#9662;</span></a>
-          <div class="mega-menu">
-            <div class="mega-menu-grid">
-              <div class="mega-menu-col">
-                <h4>Core Architecture</h4>
-                <a href="services.html#designing" class="mega-menu-link">Designing</a>
-                <a href="services.html#planning-contracting" class="mega-menu-link">Planning & Contracting</a>
-                <a href="services.html#gypsum-pop" class="mega-menu-link">Gypsum & POP Work</a>
-              </div>
-              <div class="mega-menu-col">
-                <h4>Residential Areas</h4>
-                <a href="services.html#living-room" class="mega-menu-link">Living Room Interior</a>
-                <a href="services.html#bedroom" class="mega-menu-link">Bedroom Interior</a>
-                <a href="services.html#modular-kitchen" class="mega-menu-link">Modular Kitchen Design</a>
-                <a href="services.html#bathroom-vanity" class="mega-menu-link">Bathroom & Vanity Design</a>
-                <a href="services.html#wardrobes" class="mega-menu-link">Wardrobes & Storage</a>
-              </div>
-              <div class="mega-menu-col">
-                <h4>Specialized Fitouts</h4>
-                <a href="services.html#commercial" class="mega-menu-link">Office & Commercial</a>
-                <a href="services.html#glass-partition" class="mega-menu-link">Glass Partition</a>
-                <a href="services.html#wooden-door" class="mega-menu-link">Wooden Door</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="projects.html" class="nav-link">PROJECTS</a>
-        <a href="contact.html" class="nav-link">CONTACT</a>
-      </nav>
-
-      <div class="nav-right-info">
-        <div class="header-phone-container">
-          <a href="tel:+917012242265" class="header-phone-link">
-            <span class="phone-icon-wrapper">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            <div class="phone-text-wrapper">
-              <span class="phone-number">7012 242 265</span>
-              <span class="phone-subtext">Call us anytime</span>
-            </div>
-          </a>
-        </div>
-        <button class="mobile-toggle" aria-label="Toggle Navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Dropdown Navigation Panel -->
-  <div class="mobile-nav-panel">
-    <a href="index.html" class="nav-link">HOME</a>
-    <a href="about.html" class="nav-link">ABOUT</a>
-    <div>
-      <a href="#" class="nav-link mobile-dropdown-header">SERVICES 
-        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
-      <div class="mobile-submenu">
-        <a href="services.html#designing" class="mobile-submenu-link">Designing</a>
-        <a href="services.html#planning-contracting" class="mobile-submenu-link">Planning & Contracting</a>
-        <a href="services.html#living-room" class="mobile-submenu-link">Living Room Interior</a>
-        <a href="services.html#bedroom" class="mobile-submenu-link">Bedroom Interior</a>
-        <a href="services.html#modular-kitchen" class="mobile-submenu-link">Modular Kitchen Design</a>
-        <a href="services.html#bathroom-vanity" class="mobile-submenu-link">Bathroom & Vanity Design</a>
-        <a href="services.html#wardrobes" class="mobile-submenu-link">Wardrobes & Storage</a>
-        <a href="services.html#commercial" class="mobile-submenu-link">Office & Commercial</a>
-        <a href="services.html#gypsum-pop" class="mobile-submenu-link">Gypsum & POP Work</a>
-        <a href="services.html#glass-partition" class="mobile-submenu-link">Glass Partition</a>
-        <a href="services.html#wooden-door" class="mobile-submenu-link">Wooden Door</a>
-      </div>
-    </div>
-    <a href="projects.html" class="nav-link">PORTFOLIO</a>
-    <a href="contact.html" class="nav-link">CONTACT</a>
-  </div>
-
-  <!-- Hero Section -->
-  <section class="service-hero services-hero" style="height: 60vh; min-height: 400px; position: relative; display: flex; align-items: flex-end; justify-content: flex-start; text-align: left; padding: 0 0 5rem 0">
-    <div class="service-hero-bg">
-      <img src="https://i.ibb.co/LXXxVT0r/image.png" onerror="this.onerror=null; this.src='assets/hero_kitchen.jpg';" alt="Dream House Premium Services Hero Banner" fetchpriority="high" loading="eager">
-    </div>
-    <div class="service-hero-overlay"></div>
-    
-    <div class="container" style="position: relative; z-index: 10; width: 90%; max-width: 1200px; margin: 0 auto">
-      <div class="service-hero-content" style="max-width: 800px; padding: 0; text-align: left">
-        <span class="eyebrow" style="color: var(--gold) !important;">What We Do</span>
-        <h1 class="service-hero-title" style="margin-top: 0.5rem">Our Services</h1>
-        <p class="service-hero-desc" style="max-width: 600px">Consolidated turnkey design and execution expertise for stunning interior solutions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Consolidated Services Grid Section -->
-  <section style="padding: 6rem 0">
-    <div class="container">
-      <div class="services-grid">
-        
-        <!-- 1. Designing -->
-        <div id="designing" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/fVkHwxJc/IMG-2883-JPG.jpg" alt="Interior Designing Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Designing</h3>
-            <p class="service-card-desc">3D visualization, detailed space planning, and premium lighting layout design to bring your vision to life before execution starts.</p>
-            <a href="#" onclick="openEnquiryModal('Interior Designing'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 2. Planning & Contracting -->
-        <div id="planning-contracting" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" alt="Planning & Contracting Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Planning & Contracting</h3>
-            <p class="service-card-desc">Complete project management, budgeting, material procurement, and end-to-end contracting services with guaranteed timelines.</p>
-            <a href="#" onclick="openEnquiryModal('Planning & Contracting'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 3. Living Room Interior -->
-        <div id="living-room" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/qF54WBMb/IMG-20260810-WA0014.jpg" alt="Living Room Interior Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Living Room Interior</h3>
-            <p class="service-card-desc">Premium custom TV consoles, elegant wall panels, comfortable seating layouts, and bespoke partitions for a stunning lounge area.</p>
-            <a href="#" onclick="openEnquiryModal('Living Room Interior'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 4. Bedroom Interior -->
-        <div id="bedroom" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" alt="Bedroom Interior Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Bedroom Interior</h3>
-            <p class="service-card-desc">Bespoke bed frames, cozy headboards, matching side tables, and wardrobes styled to create a perfect relaxing sanctuary.</p>
-            <a href="#" onclick="openEnquiryModal('Bedroom Interior'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 5. Modular Kitchen Design -->
-        <div id="modular-kitchen" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/RGqqJVNQ/IMG-20260806-WA0025-jpg.jpg" alt="Modular Kitchen Design Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Modular Kitchen Design</h3>
-            <p class="service-card-desc">Ergonomic, modern modular kitchens with premium hardware, soft-close cabinets, smart accessories, and durable counter slabs.</p>
-            <a href="#" onclick="openEnquiryModal('Modular Kitchen Design'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 6. Bathroom & Vanity Design -->
-        <div id="bathroom-vanity" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/x8KrVgmH/image.png" alt="Bathroom & Vanity Design Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Bathroom & Vanity</h3>
-            <p class="service-card-desc">Luxury dry-wet zone planning, premium sanitary installations, modern mirrors, and waterproof vanity storage cabinets.</p>
-            <a href="#" onclick="openEnquiryModal('Bathroom & Vanity Design'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 7. Wardrobes & Storage Solutions -->
-        <div id="wardrobes" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/QqxykKg/IMG-2391-JPG.jpg" alt="Wardrobes & Storage Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Wardrobes & Storage</h3>
-            <p class="service-card-desc">Custom sliding/swing wardrobes, walk-in closets, loft cabinets, and smart storage organizers built for optimal space utility.</p>
-            <a href="#" onclick="openEnquiryModal('Wardrobes & Storage'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 8. Office & Commercial Interiors -->
-        <div id="commercial" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/M5GMGGDD/Screenshot-2026-07-28-125935.png" alt="Office & Commercial Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Office & Commercial</h3>
-            <p class="service-card-desc">Inspiring workspaces, executive cabins, collaborative areas, and reception desks tailored to enhance brand identity and productivity.</p>
-            <a href="#" onclick="openEnquiryModal('Office & Commercial'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 9. Gypsum & POP Work -->
-        <div id="gypsum-pop" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="Gypsum & POP Work Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Gypsum & POP Work</h3>
-            <p class="service-card-desc">Exquisite gypsum false ceilings, architectural POP cornices, and cove lighting channels for modern ceiling aesthetics.</p>
-            <a href="#" onclick="openEnquiryModal('Gypsum & POP Work'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 10. Glass Partition -->
-        <div id="glass-partition" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/6RLGyKcT/image.png" alt="Glass Partition Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Glass Partition</h3>
-            <p class="service-card-desc">Premium profile glass doors, acoustic glass partitions, and shower enclosures to divide spaces while maintaining openness.</p>
-            <a href="#" onclick="openEnquiryModal('Glass Partition'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 11. Wooden Door -->
-        <div id="wooden-door" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/dw7nDztc/image.png" alt="Wooden Door Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Wooden Door</h3>
-            <p class="service-card-desc">Crafted solid wood entry doors, durable flush interior doors, and custom frames with premium polished finishes.</p>
-            <a href="#" onclick="openEnquiryModal('Wooden Door'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-        <!-- 12. Book Full Home Interior -->
-        <div id="full-home" class="service-card">
-          <div class="service-card-img-wrapper">
-            <img src="https://i.ibb.co/qFNkBvZW/IMG-1815-2-JPG.jpg" alt="Book Full Home Interior Cover Photo" loading="lazy">
-          </div>
-          <div class="service-card-info">
-            <h3 class="service-card-title">Full Home Interior</h3>
-            <p class="service-card-desc">End-to-end turnkey interior design solutions for your entire home, managing everything from concept design to final handover.</p>
-            <a href="#" onclick="openEnquiryModal('Planning & Contracting'); return false;" class="btn btn-outline-gold" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- OUR WORKS Gallery Section -->
-  <section style="padding: 6rem 0; border-top: 1px solid var(--border-light); background-color: var(--bg-secondary)">
-    <div class="container">
-      <div class="portfolio-header-container reveal-on-scroll" style="margin-bottom: 4rem">
-        <div>
-          <span class="eyebrow" style="color: var(--gold) !important;">Showcase</span>
-          <h2 class="section-title" style="margin-bottom: 0">OUR WORKS</h2>
-        </div>
-        <div>
-          <a href="projects.html" class="btn btn-gold-view">VIEW ALL PROJECTS</a>
-        </div>
-      </div>
-
-      <div class="projects-grid reveal-on-scroll">
-        <!-- Work 1: Modern Living Room -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/qF54WBMb/IMG-20260810-WA0014.jpg" alt="Modern Living Room Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Modern Living Room</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Work 2: Luxury Kitchen -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/RGqqJVNQ/IMG-20260806-WA0025-jpg.jpg" alt="Luxury Modular Kitchen Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Modular Kitchen</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Work 3: Elegant Bedroom -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" alt="Elegant Bedroom Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Elegant Bedroom</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Work 4: TV Foyer Console -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" alt="Custom TV Console Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">TV Foyer Console</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Work 5: Modern Wardrobes -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/LXkNkymY/Screenshot-2026-07-28-130733.png" alt="Bespoke Wardrobe Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Modern Wardrobes</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Work 6: Premium Staircase Entry -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
-            <img src="https://i.ibb.co/qFNkBvZW/IMG-1815-2-JPG.jpg" alt="Premium Foyer Entry Completed Project" style="width: 100%; height: 100%; object-fit: cover" loading="lazy">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Premium Foyer Entry</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- New Portfolio Section -->
-  <section class="portfolio-new-section">
-    <div class="container">
-      <div class="portfolio-new-grid reveal-on-scroll">
-
-        <!-- Partition -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail">
-            <img src="https://i.ibb.co/PvxsnvzQ/Whats-App-Image-2026-08-12-at-4-51-55-PM.jpg" alt="Partition" loading="lazy" decoding="async">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Partition</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Showcase -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail">
-            <img src="https://i.ibb.co/SLLPZKx/Whats-App-Image-2026-08-12-at-4-51-56-PM-2.jpg" alt="Showcase" loading="lazy" decoding="async">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Showcase</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Modular Kitchen -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail">
-            <img src="https://i.ibb.co/60qR0vgB/Whats-App-Image-2026-08-12-at-4-51-56-PM-1.jpg" alt="Modular Kitchen" loading="lazy" decoding="async">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Modular Kitchen</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cupboard -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail">
-            <img src="https://i.ibb.co/mCP5R1z4/Whats-App-Image-2026-08-12-at-4-51-56-PM.jpg" alt="Cupboard" loading="lazy" decoding="async">
-            <div class="project-caption">
-              <h3 class="project-caption-title">Cupboard</h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- TV Unit -->
-        <div class="project-grid-item">
-          <div class="project-thumbnail">
-            <img src="https://i.ibb.co/DT2gS6q/Whats-App-Image-2026-08-12-at-4-49-49-PM.jpg" alt="TV Unit" loading="lazy" decoding="async">
-            <div class="project-caption">
-              <h3 class="project-caption-title">TV Unit</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Unified Footer Section -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid reveal-on-scroll">
-        <!-- Column 1: Info -->
-        <div class="footer-info">
-          <a href="index.html" class="logo-link footer-logo-link" style="margin-bottom: 1.2rem">
-            <img src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" alt="Dream House Logo" class="logo-img footer-logo-img">
-          </a>
-          <p class="footer-tagline">Creating elegant, functional and timeless interiors that elevate your lifestyle.</p>
-        </div>
-
-        <!-- Column 2: Quick Links -->
-        <div>
-          <h4 class="footer-column-title">QUICK LINKS</h4>
-          <ul class="footer-links-list">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="projects.html" class="footer-link">Portfolio</a></li>
-            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Services -->
-        <div>
-          <h4 class="footer-column-title">SERVICES</h4>
-          <ul class="footer-links-list">
-            <li><a href="services.html#living-room" class="footer-link">Living Room</a></li>
-            <li><a href="services.html#modular-kitchen" class="footer-link">Modular Kitchen</a></li>
-            <li><a href="services.html#bedroom" class="footer-link">Bedroom</a></li>
-            <li><a href="services.html#planning-contracting" class="footer-link">Full Home Interiors</a></li>
-            <li><a href="services.html#commercial" class="footer-link">Commercial Interiors</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Contact Us & Socials -->
-        <div>
-          <h4 class="footer-column-title">CONTACT US</h4>
-          <ul class="footer-links-list" style="font-size: 0.85rem; color: var(--text-secondary); gap: 0.8rem; margin-bottom: 1.5rem">
-            <li style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <a href="tel:+917012242265" style="color: inherit; text-decoration: none">7012 242 265</a>&nbsp;|&nbsp;<a href="tel:+918086560895" style="color: inherit; text-decoration: none">8086 560 895</a>
-            </li>
-            <li style="display: flex; align-items: center; gap: 0.5rem">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+<!-- Site Navigation Header -->
+<header class="site-header">
+<div class="nav-container">
+<a class="logo-link" href="index.html">
+<img alt="Dream House Logo" class="logo-img" height="75" src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" width="160"/>
+</a>
+<nav class="nav-menu">
+<a class="nav-link" href="index.html">HOME</a>
+<a class="nav-link" href="about.html">ABOUT US</a>
+<!-- Services Mega Menu Link -->
+<div class="nav-dropdown">
+<a class="nav-link active" href="services.html">SERVICES <span style="font-size:0.6rem; vertical-align:middle">▾</span></a>
+<div class="mega-menu">
+<div class="mega-menu-grid">
+<div class="mega-menu-col">
+<h4>Core Architecture</h4>
+<a class="mega-menu-link" href="services.html#designing">Designing</a>
+<a class="mega-menu-link" href="services.html#planning-contracting">Planning &amp; Contracting</a>
+<a class="mega-menu-link" href="services.html#gypsum-pop">Gypsum &amp; POP Work</a>
+</div>
+<div class="mega-menu-col">
+<h4>Residential Areas</h4>
+<a class="mega-menu-link" href="services.html#living-room">Living Room Interior</a>
+<a class="mega-menu-link" href="services.html#bedroom">Bedroom Interior</a>
+<a class="mega-menu-link" href="services.html#modular-kitchen">Modular Kitchen Design</a>
+<a class="mega-menu-link" href="services.html#bathroom-vanity">Bathroom &amp; Vanity Design</a>
+<a class="mega-menu-link" href="services.html#wardrobes">Wardrobes &amp; Storage</a>
+</div>
+<div class="mega-menu-col">
+<h4>Specialized Fitouts</h4>
+<a class="mega-menu-link" href="services.html#commercial">Office &amp; Commercial</a>
+<a class="mega-menu-link" href="services.html#glass-partition">Glass Partition</a>
+<a class="mega-menu-link" href="services.html#wooden-door">Wooden Door</a>
+</div>
+</div>
+</div>
+</div>
+<a class="nav-link" href="projects.html">PROJECTS</a>
+<a class="nav-link" href="contact.html">CONTACT</a>
+</nav>
+<div class="nav-right-info">
+<div class="header-phone-container">
+<a class="header-phone-link" href="tel:+917012242265">
+<span class="phone-icon-wrapper">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</span>
+<div class="phone-text-wrapper">
+<span class="phone-number">7012 242 265</span>
+<span class="phone-subtext">Call us anytime</span>
+</div>
+</a>
+</div>
+<button aria-label="Toggle Navigation" class="mobile-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Dropdown Navigation Panel -->
+<div class="mobile-nav-panel">
+<a class="nav-link" href="index.html">HOME</a>
+<a class="nav-link" href="about.html">ABOUT</a>
+<div>
+<a class="nav-link mobile-dropdown-header" href="#">SERVICES 
+        <svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</a>
+<div class="mobile-submenu">
+<a class="mobile-submenu-link" href="services.html#designing">Designing</a>
+<a class="mobile-submenu-link" href="services.html#planning-contracting">Planning &amp; Contracting</a>
+<a class="mobile-submenu-link" href="services.html#living-room">Living Room Interior</a>
+<a class="mobile-submenu-link" href="services.html#bedroom">Bedroom Interior</a>
+<a class="mobile-submenu-link" href="services.html#modular-kitchen">Modular Kitchen Design</a>
+<a class="mobile-submenu-link" href="services.html#bathroom-vanity">Bathroom &amp; Vanity Design</a>
+<a class="mobile-submenu-link" href="services.html#wardrobes">Wardrobes &amp; Storage</a>
+<a class="mobile-submenu-link" href="services.html#commercial">Office &amp; Commercial</a>
+<a class="mobile-submenu-link" href="services.html#gypsum-pop">Gypsum &amp; POP Work</a>
+<a class="mobile-submenu-link" href="services.html#glass-partition">Glass Partition</a>
+<a class="mobile-submenu-link" href="services.html#wooden-door">Wooden Door</a>
+</div>
+</div>
+<a class="nav-link" href="projects.html">PORTFOLIO</a>
+<a class="nav-link" href="contact.html">CONTACT</a>
+</div>
+<!-- Hero Section -->
+<section class="service-hero services-hero" style="height: 60vh; min-height: 400px; position: relative; display: flex; align-items: flex-end; justify-content: flex-start; text-align: left; padding: 0 0 5rem 0">
+<div class="service-hero-bg">
+<img alt="Interior Design Services &amp; Solutions Hero Banner" fetchpriority="high" height="600" loading="eager" onerror="this.onerror=null; this.src='assets/hero_kitchen.jpg';" src="https://i.ibb.co/LXXxVT0r/image.png" width="1920"/>
+</div>
+<div class="service-hero-overlay"></div>
+<div class="container" style="position: relative; z-index: 10; width: 90%; max-width: 1200px; margin: 0 auto">
+<div class="service-hero-content" style="max-width: 800px; padding: 0; text-align: left">
+<span class="eyebrow" style="color: var(--gold) !important;">What We Do</span>
+<h1 class="service-hero-title" style="margin-top: 0.5rem">Interior Design Services &amp; Solutions</h1>
+<p class="service-hero-desc" style="max-width: 600px">Consolidated turnkey design and execution expertise for stunning interior solutions.</p>
+</div>
+</div>
+</section>
+<!-- Consolidated Services Grid Section -->
+<section style="padding: 6rem 0">
+<div class="container">
+<div class="services-grid">
+<!-- 1. Designing -->
+<div class="service-card" id="designing">
+<div class="service-card-img-wrapper">
+<img alt="Interior Designing Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/fVkHwxJc/IMG-2883-JPG.jpg" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Designing</h3>
+<p class="service-card-desc">3D visualization, detailed space planning, and premium lighting layout design to bring your vision to life before execution starts.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Interior Designing'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 2. Planning & Contracting -->
+<div class="service-card" id="planning-contracting">
+<div class="service-card-img-wrapper">
+<img alt="Planning &amp; Contracting Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/gLyj7vjV/Screenshot-2026-07-28-125910.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Planning &amp; Contracting</h3>
+<p class="service-card-desc">Complete project management, budgeting, material procurement, and end-to-end contracting services with guaranteed timelines.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Planning &amp; Contracting'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 3. Living Room Interior -->
+<div class="service-card" id="living-room">
+<div class="service-card-img-wrapper">
+<img alt="Living Room Interior Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/qF54WBMb/IMG-20260810-WA0014.jpg" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Living Room Interior</h3>
+<p class="service-card-desc">Premium custom TV consoles, elegant wall panels, comfortable seating layouts, and bespoke partitions for a stunning lounge area.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Living Room Interior'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 4. Bedroom Interior -->
+<div class="service-card" id="bedroom">
+<div class="service-card-img-wrapper">
+<img alt="Bedroom Interior Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Bedroom Interior</h3>
+<p class="service-card-desc">Bespoke bed frames, cozy headboards, matching side tables, and wardrobes styled to create a perfect relaxing sanctuary.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Bedroom Interior'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 5. Modular Kitchen Design -->
+<div class="service-card" id="modular-kitchen">
+<div class="service-card-img-wrapper">
+<img alt="Modular Kitchen Design Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/RGqqJVNQ/IMG-20260806-WA0025-jpg.jpg" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Modular Kitchen Design</h3>
+<p class="service-card-desc">Ergonomic, modern modular kitchens with premium hardware, soft-close cabinets, smart accessories, and durable counter slabs.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Modular Kitchen Design'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 6. Bathroom & Vanity Design -->
+<div class="service-card" id="bathroom-vanity">
+<div class="service-card-img-wrapper">
+<img alt="Bathroom &amp; Vanity Design Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/x8KrVgmH/image.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Bathroom &amp; Vanity</h3>
+<p class="service-card-desc">Luxury dry-wet zone planning, premium sanitary installations, modern mirrors, and waterproof vanity storage cabinets.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Bathroom &amp; Vanity Design'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 7. Wardrobes & Storage Solutions -->
+<div class="service-card" id="wardrobes">
+<div class="service-card-img-wrapper">
+<img alt="Wardrobes &amp; Storage Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/QqxykKg/IMG-2391-JPG.jpg" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Wardrobes &amp; Storage</h3>
+<p class="service-card-desc">Custom sliding/swing wardrobes, walk-in closets, loft cabinets, and smart storage organizers built for optimal space utility.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Wardrobes &amp; Storage'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 8. Office & Commercial Interiors -->
+<div class="service-card" id="commercial">
+<div class="service-card-img-wrapper">
+<img alt="Office &amp; Commercial Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/M5GMGGDD/Screenshot-2026-07-28-125935.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Office &amp; Commercial</h3>
+<p class="service-card-desc">Inspiring workspaces, executive cabins, collaborative areas, and reception desks tailored to enhance brand identity and productivity.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Office &amp; Commercial'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 9. Gypsum & POP Work -->
+<div class="service-card" id="gypsum-pop">
+<div class="service-card-img-wrapper">
+<img alt="Gypsum &amp; POP Work Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Gypsum &amp; POP Work</h3>
+<p class="service-card-desc">Exquisite gypsum false ceilings, architectural POP cornices, and cove lighting channels for modern ceiling aesthetics.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Gypsum &amp; POP Work'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 10. Glass Partition -->
+<div class="service-card" id="glass-partition">
+<div class="service-card-img-wrapper">
+<img alt="Glass Partition Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/6RLGyKcT/image.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Glass Partition</h3>
+<p class="service-card-desc">Premium profile glass doors, acoustic glass partitions, and shower enclosures to divide spaces while maintaining openness.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Glass Partition'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 11. Wooden Door -->
+<div class="service-card" id="wooden-door">
+<div class="service-card-img-wrapper">
+<img alt="Wooden Door Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/dw7nDztc/image.png" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Wooden Door</h3>
+<p class="service-card-desc">Crafted solid wood entry doors, durable flush interior doors, and custom frames with premium polished finishes.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Wooden Door'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+<!-- 12. Book Full Home Interior -->
+<div class="service-card" id="full-home">
+<div class="service-card-img-wrapper">
+<img alt="Book Full Home Interior Cover Photo" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/qFNkBvZW/IMG-1815-2-JPG.jpg" width="800"/>
+</div>
+<div class="service-card-info">
+<h3 class="service-card-title">Full Home Interior</h3>
+<p class="service-card-desc">End-to-end turnkey interior design solutions for your entire home, managing everything from concept design to final handover.</p>
+<a class="btn btn-outline-gold" href="#" onclick="openEnquiryModal('Planning &amp; Contracting'); return false;" style="align-self: flex-start; margin-top: auto">ENQUIRE NOW</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- OUR WORKS Gallery Section -->
+<section style="padding: 6rem 0; border-top: 1px solid var(--border-light); background-color: var(--bg-secondary)">
+<div class="container">
+<div class="portfolio-header-container reveal-on-scroll" style="margin-bottom: 4rem">
+<div>
+<span class="eyebrow" style="color: var(--gold) !important;">Showcase</span>
+<h2 class="section-title" style="margin-bottom: 0">OUR WORKS</h2>
+</div>
+<div>
+<a class="btn btn-gold-view" href="projects.html">VIEW ALL PROJECTS</a>
+</div>
+</div>
+<div class="projects-grid reveal-on-scroll">
+<!-- Work 1: Modern Living Room -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Modern Living Room Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/qF54WBMb/IMG-20260810-WA0014.jpg" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Modern Living Room</h3>
+</div>
+</div>
+</div>
+<!-- Work 2: Luxury Kitchen -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Luxury Modular Kitchen Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/RGqqJVNQ/IMG-20260806-WA0025-jpg.jpg" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Modular Kitchen</h3>
+</div>
+</div>
+</div>
+<!-- Work 3: Elegant Bedroom -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Elegant Bedroom Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/7tmZvT9t/Screenshot-2026-07-28-125918.png" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Elegant Bedroom</h3>
+</div>
+</div>
+</div>
+<!-- Work 4: TV Foyer Console -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Custom TV Console Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/FLhLvyZC/Screenshot-2026-07-28-130711.png" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">TV Foyer Console</h3>
+</div>
+</div>
+</div>
+<!-- Work 5: Modern Wardrobes -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Bespoke Wardrobe Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/LXkNkymY/Screenshot-2026-07-28-130733.png" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Modern Wardrobes</h3>
+</div>
+</div>
+</div>
+<!-- Work 6: Premium Staircase Entry -->
+<div class="project-grid-item">
+<div class="project-thumbnail" style="height: 300px; overflow: hidden; position: relative">
+<img alt="Premium Foyer Entry Completed Project" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/qFNkBvZW/IMG-1815-2-JPG.jpg" style="width: 100%; height: 100%; object-fit: cover" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Premium Foyer Entry</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Portfolio Section -->
+<section class="portfolio-new-section">
+<div class="container">
+<div class="portfolio-new-grid reveal-on-scroll">
+<!-- Partition -->
+<div class="project-grid-item">
+<div class="project-thumbnail">
+<img alt="Partition" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/PvxsnvzQ/Whats-App-Image-2026-08-12-at-4-51-55-PM.jpg" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Partition</h3>
+</div>
+</div>
+</div>
+<!-- Showcase -->
+<div class="project-grid-item">
+<div class="project-thumbnail">
+<img alt="Showcase" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/SLLPZKx/Whats-App-Image-2026-08-12-at-4-51-56-PM-2.jpg" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Showcase</h3>
+</div>
+</div>
+</div>
+<!-- Modular Kitchen -->
+<div class="project-grid-item">
+<div class="project-thumbnail">
+<img alt="Modular Kitchen" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/60qR0vgB/Whats-App-Image-2026-08-12-at-4-51-56-PM-1.jpg" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Modular Kitchen</h3>
+</div>
+</div>
+</div>
+<!-- Cupboard -->
+<div class="project-grid-item">
+<div class="project-thumbnail">
+<img alt="Cupboard" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/mCP5R1z4/Whats-App-Image-2026-08-12-at-4-51-56-PM.jpg" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">Cupboard</h3>
+</div>
+</div>
+</div>
+<!-- TV Unit -->
+<div class="project-grid-item">
+<div class="project-thumbnail">
+<img alt="TV Unit" decoding="async" height="600" loading="lazy" src="https://i.ibb.co/DT2gS6q/Whats-App-Image-2026-08-12-at-4-49-49-PM.jpg" width="800"/>
+<div class="project-caption">
+<h3 class="project-caption-title">TV Unit</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Unified Footer Section -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid reveal-on-scroll">
+<!-- Column 1: Info -->
+<div class="footer-info">
+<a class="logo-link footer-logo-link" href="index.html" style="margin-bottom: 1.2rem">
+<img alt="Dream House Logo" class="logo-img footer-logo-img" height="95" src="https://i.ibb.co/7Nb0Vqbk/Untitled-design-55-jpg-removebg-preview.png" width="200"/>
+</a>
+<p class="footer-tagline">Creating elegant, functional and timeless interiors that elevate your lifestyle.</p>
+</div>
+<!-- Column 2: Quick Links -->
+<div>
+<h4 class="footer-column-title">QUICK LINKS</h4>
+<ul class="footer-links-list">
+<li><a class="footer-link" href="index.html">Home</a></li>
+<li><a class="footer-link" href="about.html">About Us</a></li>
+<li><a class="footer-link" href="services.html">Services</a></li>
+<li><a class="footer-link" href="projects.html">Portfolio</a></li>
+<li><a class="footer-link" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Column 3: Services -->
+<div>
+<h4 class="footer-column-title">SERVICES</h4>
+<ul class="footer-links-list">
+<li><a class="footer-link" href="services.html#living-room">Living Room</a></li>
+<li><a class="footer-link" href="services.html#modular-kitchen">Modular Kitchen</a></li>
+<li><a class="footer-link" href="services.html#bedroom">Bedroom</a></li>
+<li><a class="footer-link" href="services.html#planning-contracting">Full Home Interiors</a></li>
+<li><a class="footer-link" href="services.html#commercial">Commercial Interiors</a></li>
+</ul>
+</div>
+<!-- Column 4: Contact Us & Socials -->
+<div>
+<h4 class="footer-column-title">CONTACT US</h4>
+<ul class="footer-links-list" style="font-size: 0.85rem; color: var(--text-secondary); gap: 0.8rem; margin-bottom: 1.5rem">
+<li style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<a href="tel:+917012242265" style="color: inherit; text-decoration: none">7012 242 265</a> | <a href="tel:+918086560895" style="color: inherit; text-decoration: none">8086 560 895</a>
+</li>
+<li style="display: flex; align-items: center; gap: 0.5rem">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               dreamhouseinteriorsolution@gmail.com
             </li>
-            <li style="display: flex; align-items: center; gap: 0.5rem">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+<li style="display: flex; align-items: center; gap: 0.5rem">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               Pattambi, Palakkad, Kerala
             </li>
-          </ul>
-          <div class="footer-social-links" style="justify-content: flex-start; gap: 0.8rem">
-            <a href="https://www.facebook.com/profile.php?id=100064077821686" target="_blank" class="social-icon-btn" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/dreamhouseptb" target="_blank" class="social-icon-btn" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UC_JZIRee_6iJRSRosFs3j-w" target="_blank" class="social-icon-btn" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2026 Dream House Interior Solutions. All Rights Reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          <a href="#" class="footer-bottom-link">Terms & Conditions</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Sticky Floating Contact Actions (WhatsApp & Call) -->
-  <div class="floating-ctas">
-    <a href="tel:+918086560895" class="floating-btn call-btn" aria-label="Call Us">
-      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    </a>
-    <!-- Official WhatsApp Logo Sticky Action Button -->
-    <a href="https://wa.me/917012242265" target="_blank" class="floating-btn whatsapp-btn" aria-label="Chat on WhatsApp">
-      <svg viewBox="0 0 448 512" fill="currentColor">
-        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-      </svg>
-    </a>
-  </div>
-
-  <!-- Consultation Booking popup modal -->
-  <div class="booking-modal">
-    <div class="booking-modal-content glass-card">
-      <button class="booking-modal-close" aria-label="Close Popup">&times;</button>
-      <h2 class="booking-modal-title" style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center">Book a Free Consultation</h2>
-      <form id="bookingForm" class="compact-form">
-        <div class="form-group">
-          <label class="form-label" for="bookName">Full Name *</label>
-          <input type="text" id="bookName" class="form-control" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group-row">
-          <div class="form-group">
-            <label class="form-label" for="bookPhone">Phone *</label>
-            <input type="tel" id="bookPhone" class="form-control" placeholder="Phone number" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="bookEmail">Email</label>
-            <input type="email" id="bookEmail" class="form-control" placeholder="Email address">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Preferred Service *</label>
-          <div class="custom-select-wrapper">
-            <div class="custom-select-trigger" id="bookServiceTrigger">Select service</div>
-            <div class="custom-select-options">
-              <div class="custom-option" data-value="Interior Designing">Interior Designing</div>
-              <div class="custom-option" data-value="Planning & Contracting">Planning & Contracting</div>
-              <div class="custom-option" data-value="Living Room Interior">Living Room Interior</div>
-              <div class="custom-option" data-value="Bedroom Interior">Bedroom Interior</div>
-              <div class="custom-option" data-value="Modular Kitchen Design">Modular Kitchen Design</div>
-              <div class="custom-option" data-value="Bathroom & Vanity Design">Bathroom & Vanity Design</div>
-              <div class="custom-option" data-value="Wardrobes & Storage">Wardrobes & Storage</div>
-              <div class="custom-option" data-value="Office & Commercial">Office & Commercial</div>
-              <div class="custom-option" data-value="Gypsum & POP Work">Gypsum & POP Work</div>
-              <div class="custom-option" data-value="Glass Partition">Glass Partition</div>
-              <div class="custom-option" data-value="Wooden Door">Wooden Door</div>
-            </div>
-            <input type="hidden" id="bookService" required value="">
-          </div>
-        </div>
-        <div class="form-group" style="margin-bottom: 1.5rem">
-          <label class="form-label" for="bookMessage">Message</label>
-          <textarea id="bookMessage" class="form-control" placeholder="Describe layout details..."></textarea>
-        </div>
-        <div class="booking-modal-buttons">
-          <button type="submit" class="btn btn-primary">Book Now</button>
-          <button type="button" id="btnWaBooking" class="btn btn-outline-gold">WhatsApp Booking</button>
-          <button type="button" class="btn btn-secondary btn-close-modal">Close</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
-  <script>
+</ul>
+<div class="footer-social-links" style="justify-content: flex-start; gap: 0.8rem">
+<a aria-label="Facebook" class="social-icon-btn" href="https://www.facebook.com/profile.php?id=100064077821686" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Instagram" class="social-icon-btn" href="https://www.instagram.com/dreamhouseptb" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg>
+</a>
+<a aria-label="YouTube" class="social-icon-btn" href="https://www.youtube.com/channel/UC_JZIRee_6iJRSRosFs3j-w" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copyright">© 2026 Dream House Interior Solutions. All Rights Reserved.</p>
+<div class="footer-bottom-links">
+<a class="footer-bottom-link" href="#">Privacy Policy</a>
+<a class="footer-bottom-link" href="#">Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Sticky Floating Contact Actions (WhatsApp & Call) -->
+<div class="floating-ctas">
+<a aria-label="Call Us" class="floating-btn call-btn" href="tel:+918086560895">
+<svg viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</a>
+<!-- Official WhatsApp Logo Sticky Action Button -->
+<a aria-label="Chat on WhatsApp" class="floating-btn whatsapp-btn" href="https://wa.me/917012242265" target="_blank">
+<svg fill="currentColor" viewbox="0 0 448 512">
+<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+</svg>
+</a>
+</div>
+<!-- Consultation Booking popup modal -->
+<div class="booking-modal">
+<div class="booking-modal-content glass-card">
+<button aria-label="Close Popup" class="booking-modal-close">×</button>
+<h2 class="booking-modal-title" style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center">Book a Free Consultation</h2>
+<form class="compact-form" id="bookingForm">
+<div class="form-group">
+<label class="form-label" for="bookName">Full Name *</label>
+<input class="form-control" id="bookName" placeholder="Enter your full name" required="" type="text"/>
+</div>
+<div class="form-group-row">
+<div class="form-group">
+<label class="form-label" for="bookPhone">Phone *</label>
+<input class="form-control" id="bookPhone" placeholder="Phone number" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="bookEmail">Email</label>
+<input class="form-control" id="bookEmail" placeholder="Email address" type="email"/>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Preferred Service *</label>
+<div class="custom-select-wrapper">
+<div class="custom-select-trigger" id="bookServiceTrigger">Select service</div>
+<div class="custom-select-options">
+<div class="custom-option" data-value="Interior Designing">Interior Designing</div>
+<div class="custom-option" data-value="Planning &amp; Contracting">Planning &amp; Contracting</div>
+<div class="custom-option" data-value="Living Room Interior">Living Room Interior</div>
+<div class="custom-option" data-value="Bedroom Interior">Bedroom Interior</div>
+<div class="custom-option" data-value="Modular Kitchen Design">Modular Kitchen Design</div>
+<div class="custom-option" data-value="Bathroom &amp; Vanity Design">Bathroom &amp; Vanity Design</div>
+<div class="custom-option" data-value="Wardrobes &amp; Storage">Wardrobes &amp; Storage</div>
+<div class="custom-option" data-value="Office &amp; Commercial">Office &amp; Commercial</div>
+<div class="custom-option" data-value="Gypsum &amp; POP Work">Gypsum &amp; POP Work</div>
+<div class="custom-option" data-value="Glass Partition">Glass Partition</div>
+<div class="custom-option" data-value="Wooden Door">Wooden Door</div>
+</div>
+<input id="bookService" required="" type="hidden" value=""/>
+</div>
+</div>
+<div class="form-group" style="margin-bottom: 1.5rem">
+<label class="form-label" for="bookMessage">Message</label>
+<textarea class="form-control" id="bookMessage" placeholder="Describe layout details..."></textarea>
+</div>
+<div class="booking-modal-buttons">
+<button class="btn btn-primary" type="submit">Book Now</button>
+<button class="btn btn-outline-gold" id="btnWaBooking" type="button">WhatsApp Booking</button>
+<button class="btn btn-secondary btn-close-modal" type="button">Close</button>
+</div>
+</form>
+</div>
+</div>
+<script src="js/main.js"></script>
+<script>
     document.querySelectorAll('.btn-book-trigger').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();

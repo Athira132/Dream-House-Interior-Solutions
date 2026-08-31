@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /scratch/
+Disallow: /task.md
+Disallow: /implementation_plan.md
+Disallow: /walkthrough.md
+
+Sitemap: https://dream-house-interior-solutions-pied.vercel.app/sitemap.xml
